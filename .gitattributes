@@ -1,0 +1,8 @@
+# Normalize line endings so the repo always stores LF, whatever machine a file
+# was written on. Without this, Git on Windows prints a "LF will be replaced by
+# CRLF" warning on every commit, and a Windows edit to a file can show up as a
+# whole-file diff that hides the one line that actually changed.
+* text=auto eol=lf
+
+# Lock files are generated; collapse them in diffs and reviews.
+package-lock.json linguist-generated=true -diff

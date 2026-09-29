@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <!--
+      Title and description are set from the i18n files by src/main.js as soon as
+      the language is resolved. The values here are the English fallbacks that
+      show before JavaScript runs (and to crawlers that do not run it).
+    -->
+    <title>Paso a Paso — Scholarship Finder for El Paso Students</title>
+    <meta
+      name="description"
+      content="A free, bilingual scholarship search for El Paso-area students. No account. No personal info stored."
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip_to_content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__bar">
+        <p class="brand">
+          <span class="brand__name">Paso a Paso</span>
+          <span class="brand__tagline" data-i18n="site.tagline"></span>
+        </p>
+
+        <!--
+          Language toggle. Two buttons rather than a <select> so the current
+          language is announced by screen readers via aria-pressed, and so it
+          works with one tap on a phone.
+        -->
+        <nav class="lang-toggle" aria-label="Language / Idioma">
+          <button type="button" class="lang-toggle__btn" data-set-lang="en" lang="en">
+            English
+          </button>
+          <button type="button" class="lang-toggle__btn" data-set-lang="es" lang="es">
+            Español
+          </button>
+        </nav>
+      </div>
+
+      <p class="trust-line" data-i18n="site.trust_line"></p>
+    </header>
+
+    <main id="main">
+      <h1 data-i18n="site.title"></h1>
+      <p class="lede" data-i18n="placeholder.heading"></p>
+      <p data-i18n="placeholder.body"></p>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="site.footer_note"></p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

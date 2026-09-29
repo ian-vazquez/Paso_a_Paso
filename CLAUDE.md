@@ -99,17 +99,27 @@ A public, free, bilingual (English/Spanish) scholarship search site for El Paso-
 
 ├── scripts/
 
-│   └── validate.py
+│   ├── validate.py
+
+│   ├── test\_validate.py       \# tests for the validator
+
+│   └── check\_i18n.py          \# en.json / es.json parity check
 
 ├── .github/workflows/
 
-│   ├── validate.yml
+│   ├── validate.yml           \# data \+ i18n checks on every push and PR
 
-│   └── deploy.yml
+│   ├── firebase-hosting-pull-request.yml   \# checks, build, preview URL on a PR
+
+│   └── firebase-hosting-merge.yml          \# checks, build, deploy on merge to main
 
 ├── firebase.json
 
+├── .gitattributes
+
 └── .firebaserc
+
+The two `firebase-hosting-*.yml` names are the ones the Firebase CLI generated. They keep those names on purpose (renaming them would break nothing but gains nothing either). The deploy workflow is `firebase-hosting-merge.yml`, not `deploy.yml`.
 
 Keep `search.js` free of DOM code. The Phase 6 AI pre-filter will reuse the same filtering logic.
 
@@ -202,8 +212,8 @@ Every entry in `data/scholarships.json` follows this shape. **Unknown \= `null`.
 - `grade_levels`: `hs_junior` | `hs_senior` | `college`  
 - `residency`: `el_paso_county` | `specific_districts` | `specific_schools` | `texas` | `national`  
 - `degree_types`: `associate` | `bachelor` | `trade_technical`  
-- `fields_of_study`: empty \= any field. Otherwise tags such as `stem`, `cs`, `nursing`, `education`, `hospitality`, `business` (new tags need Ian's approval)  
-- `demographics`: empty \= no restriction. Otherwise tags such as `hispanic`, `first_gen`, `female`, `african_american`, `aapi`, `native_american` (new tags need approval)  
+- `fields_of_study`: empty \= any field. Otherwise `stem`, `cs`, `nursing`, `education`, `hospitality`, `business` (approved at Checkpoint 1\. New tags still need Ian's approval, and a new tag needs a label in both i18n files or `check_i18n.py` fails)  
+- `demographics`: empty \= no restriction. Otherwise `hispanic`, `first_gen`, `female`, `african_american`, `aapi`, `native_american`, `military_connected` (approved at Checkpoint 1; `military_connected` added there. New tags still need approval, and a new tag needs a label in both i18n files or `check_i18n.py` fails)  
 - `eligible_institutions`: empty \= any institution  
 - `application_language`: `en` | `es` | `both`
 
@@ -220,14 +230,17 @@ Filters in v1, and the AI pre-filter in Phase 6, both read these structured fiel
 - Bad date format (must be ISO `YYYY-MM-DD`)  
 - URL not starting with `https://`  
 - `summary.en` empty  
-- `cycle_status: "open"` but `deadline` is in the past
+- `amount_min` greater than `amount_max` (when both are set)
 
 **Warnings (print, don't fail):**
 
 - `summary.es` empty, or `translation_reviewed: false`  
 - `last_verified` older than 45 days  
 - Deadline within 14 days (so Ian re-checks it)  
-- Many null requirement fields (entry may need more research)
+- Many null requirement fields (entry may need more research)  
+- `cycle_status: "open"` but `deadline` is in the past. A warning, not an error, so one entry nobody got around to updating cannot block an unrelated deploy (say, an urgent bug fix during workshop week). Phase 2 owns the other half of this: the UI must treat an `open` entry whose deadline has passed as closed, so an expired entry is never shown as open.  
+- `cycle_status: "open"` but `deadline` is null  
+- `cycle_status: "upcoming"` but `opens_month` is null
 
 Output should be human-readable, listing each problem with its entry `id`.
 
@@ -259,7 +272,7 @@ Name, sponsor, amount display, deadline or cycle-status badge, category badges, 
 - No hardcoded user-facing strings. Every string comes from the i18n files.  
 - EN/ES toggle is visible in the header. Default is the browser language, falling back to English. The choice is saved to localStorage (language only).  
 - `<html lang>` updates when the language changes.  
-- If `translation_reviewed` is false, show the Spanish summary with a small "Traducción pendiente de revisión" label. (Ian may change this at Checkpoint 1: see Open Decisions.)  
+- If `translation_reviewed` is false, **fall back to the English summary** and show a small note saying so ("Este resumen aún no está traducido, así que se muestra en inglés."). Decided at Checkpoint 1, Open Decision 3: clear English beats unreviewed Spanish that might be wrong. This applies to the per-entry `summary` and `notes` text, not to the UI strings in `es.json`.  
 - Test layouts with Spanish, which runs about 20–30% longer. Nothing may overflow or truncate badly.
 
 ### Quality bar
@@ -320,11 +333,13 @@ Parking lot: ...
 
 ### Phase 0 — Setup and schema (target: Sep 28 – Oct 3\)
 
-**Ian first:** create the GitHub repo and Firebase project, install the Firebase CLI, and add the deploy service-account key as a GitHub Actions secret (`FIREBASE_SERVICE_ACCOUNT`). Tell Claude the Firebase project ID. Do not paste the key. **Claude:**
+**Ian first:** create the GitHub repo and Firebase project, install the Firebase CLI, and add the deploy service-account key as a GitHub Actions secret. Tell Claude the Firebase project ID. Do not paste the key. **Claude:**
+
+Done: the project is `scholarship-site-fd70f` and the secret the Firebase CLI created is **`FIREBASE_SERVICE_ACCOUNT_SCHOLARSHIP_SITE_FD70F`**. That is the name the workflows use.
 
 - Scaffold the repo per section 3, with `firebase.json` configured for Hosting  
 - Set up the i18n helper plus starter `en.json`/`es.json`  
-- Write `validate.py` per section 4, plus the `validate.yml` and `deploy.yml` workflows  
+- Write `validate.py` per section 4, plus the `validate.yml` workflow and the validation gate in the two `firebase-hosting-*.yml` workflows  
 - Create `data/scholarships.json` with **2 clearly fake example entries** (ids starting `example-`) that exercise every field, and a README section on how to add an entry  
 - Deploy a placeholder page through the pipeline to prove it works
 
@@ -385,9 +400,18 @@ AI chat · live scraping or auto-discovery · accounts or saved lists · essay h
 
 ## 10\. Open decisions (Ian answers at Checkpoint 1\)
 
-1. Exact workshop date  October 15th
-2. Custom domain, or the default Firebase URL for v1?  
-3. Unreviewed Spanish summaries: show them with a "pending review" label, or fall back to English until reviewed?  Fall Back to English
-4. Who is the Spanish reviewer?  Ian
-5. Approve the starter tags for `fields_of_study` and `demographics`  
-6. Paso a Paso
+### Answered at Checkpoint 1
+
+1. **Exact workshop date:** October 15th (2026 — see the open item below).  
+2. **Custom domain, or the default Firebase URL for v1?** Default Firebase URL for now.  
+3. **Unreviewed Spanish summaries:** fall back to English, with a note saying the summary is only available in English. Reflected in section 5\.  
+4. **Who is the Spanish reviewer?** Ian.  
+5. **Approve the starter tags for `fields_of_study` and `demographics`** — approved as listed in section 4, with `military_connected` added to `demographics`.  
+6. **Site name:** Paso a Paso.  
+7. **Workshop year:** 2026\. The exact date is still to be confirmed, so the placeholder stays.
+
+### Still open
+
+8. **Custom domain or a second Hosting site — decide by Oct 19.** The default Firebase URL covers the workshop; this is about what goes on the poster and QR code longer term.  
+9. **Spanish register: `tú` or `usted`?** The current drafts mix registers and no strings have been changed pending this decision. It matters because the audience is both students (`tú` reads natural) and parents (`usted` reads respectful). Whatever is chosen applies to every string in `es.json` and to every scholarship summary.  
+10. **The exact workshop date.** The year is 2026 and the day is October 15th, but the date is not final, so `WORKSHOP_DATE_TBD` stays in section 1 until Ian confirms it.

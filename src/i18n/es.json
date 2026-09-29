@@ -1,0 +1,143 @@
+{
+  "_meta": {
+    "translation_reviewed": false,
+    "note": "DRAFT — translated by Claude, not reviewed by a fluent speaker. Ian reviews and edits before launch. Keys beginning with _ are ignored by src/i18n.js."
+  },
+
+  "site": {
+    "title": "Buscador de becas para estudiantes de El Paso",
+    "tagline": "Becas para estudiantes de El Paso",
+    "trust_line": "Sin cuenta. No guardamos tu información personal.",
+    "meta_description": "Un buscador de becas gratuito y bilingüe para estudiantes del área de El Paso. Sin cuenta. No guardamos tu información personal.",
+    "footer_note": "Confirma siempre los detalles en el sitio web de la beca antes de aplicar. Las fechas límite cambian."
+  },
+
+  "a11y": {
+    "skip_to_content": "Ir al contenido",
+    "language_switcher": "Idioma",
+    "opens_new_tab": "se abre en una pestaña nueva"
+  },
+
+  "placeholder": {
+    "heading": "Este sitio está en construcción.",
+    "body": "La lista de becas y el buscador estarán listos antes del taller de octubre. Nada de lo que ves aquí es definitivo."
+  },
+
+  "search": {
+    "label": "Buscar becas",
+    "placeholder": "Nombre, patrocinador o palabra clave",
+    "clear": "Borrar búsqueda"
+  },
+
+  "filters": {
+    "heading": "Filtros",
+    "category": "Tipo de beca",
+    "gpa": "Mi promedio (GPA)",
+    "gpa_help": "Muestra becas sin requisito de promedio, o con un requisito que ya cumples.",
+    "residency": "Quién puede aplicar",
+    "degree_type": "Qué pienso estudiar",
+    "no_essay": "Sin ensayo",
+    "no_citizenship": "Sin requisito de ciudadanía",
+    "accepts_tasfa": "Acepta TASFA",
+    "show_closed": "Mostrar también becas cerradas que vuelven a abrir",
+    "reset": "Borrar todos los filtros"
+  },
+
+  "categories": {
+    "merit": "Mérito",
+    "need_based": "Por necesidad económica",
+    "first_gen": "Primera generación",
+    "regional": "El Paso / regional",
+    "demographic": "Para grupos específicos",
+    "field_specific": "Para un campo de estudio específico"
+  },
+
+  "residency": {
+    "el_paso_county": "Condado de El Paso",
+    "specific_districts": "Distritos específicos",
+    "specific_schools": "Escuelas específicas",
+    "texas": "Texas",
+    "national": "Cualquier lugar de EE. UU."
+  },
+
+  "degree_types": {
+    "associate": "Grado asociado",
+    "bachelor": "Licenciatura",
+    "trade_technical": "Programa técnico o vocacional"
+  },
+
+  "grade_levels": {
+    "hs_junior": "Estudiante de tercer año de preparatoria",
+    "hs_senior": "Estudiante de último año de preparatoria",
+    "college": "Estudiante universitario"
+  },
+
+  "demographics": {
+    "hispanic": "Hispano o latino",
+    "first_gen": "Primera generación en la universidad",
+    "female": "Mujeres",
+    "african_american": "Afroamericano o negro",
+    "aapi": "Asiático-americano o de las islas del Pacífico",
+    "native_american": "Nativo americano",
+    "military_connected": "Familias militares o de veteranos"
+  },
+
+  "fields_of_study": {
+    "stem": "STEM (ciencias, tecnología, ingeniería y matemáticas)",
+    "cs": "Ciencias de la computación",
+    "nursing": "Enfermería",
+    "education": "Educación o docencia",
+    "hospitality": "Hotelería o turismo",
+    "business": "Negocios"
+  },
+
+  "cycle_status": {
+    "open": "Abierta ahora",
+    "upcoming": "Abre pronto",
+    "closed_reopens": "Cerrada — vuelve a abrir el próximo ciclo",
+    "rolling": "Fecha límite continua",
+    "unknown": "Estado no especificado"
+  },
+
+  "sort": {
+    "label": "Ordenar por",
+    "deadline": "Fecha límite más próxima",
+    "amount": "Cantidad más alta"
+  },
+
+  "card": {
+    "sponsor": "Ofrecida por",
+    "amount": "Monto",
+    "deadline": "Fecha límite",
+    "last_verified": "Verificada por última vez",
+    "source": "Fuente",
+    "apply": "Aplicar",
+    "essay_required": "Requiere ensayo",
+    "no_essay_required": "Sin ensayo",
+    "recs_needed": "Cartas de recomendación: {count}",
+    "fafsa_required": "Requiere FAFSA",
+    "accepts_tasfa": "Acepta TASFA",
+    "citizenship_required": "Requiere ciudadanía o residencia estadounidense",
+    "no_citizenship_required": "Sin requisito de ciudadanía",
+    "interview": "Requiere entrevista",
+    "renewable": "Renovable",
+    "gpa_min": "Promedio mínimo {gpa}",
+    "application_in_english": "La solicitud está en inglés.",
+    "summary_english_only": "Este resumen aún no está traducido, así que se muestra en inglés."
+  },
+
+  "value": {
+    "not_listed": "No especificado — consulta la fuente",
+    "yes": "Sí",
+    "no": "No"
+  },
+
+  "results": {
+    "count_one": "1 beca",
+    "count_other": "{count} becas",
+    "empty_heading": "Ninguna beca coincide con estos filtros.",
+    "empty_body": "Intenta quitar un filtro, bajar el promedio, o mostrar las becas que vuelven a abrir el próximo ciclo.",
+    "loading": "Cargando becas…",
+    "load_error": "No se pudo cargar la lista de becas. Por favor actualiza la página."
+  }
+}
