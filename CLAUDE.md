@@ -220,14 +220,17 @@ Filters in v1, and the AI pre-filter in Phase 6, both read these structured fiel
 - Bad date format (must be ISO `YYYY-MM-DD`)  
 - URL not starting with `https://`  
 - `summary.en` empty  
-- `cycle_status: "open"` but `deadline` is in the past
+- `amount_min` greater than `amount_max` (when both are set)
 
 **Warnings (print, don't fail):**
 
 - `summary.es` empty, or `translation_reviewed: false`  
 - `last_verified` older than 45 days  
 - Deadline within 14 days (so Ian re-checks it)  
-- Many null requirement fields (entry may need more research)
+- Many null requirement fields (entry may need more research)  
+- `cycle_status: "open"` but `deadline` is in the past. A warning, not an error, so one entry nobody got around to updating cannot block an unrelated deploy (say, an urgent bug fix during workshop week). Phase 2 owns the other half of this: the UI must treat an `open` entry whose deadline has passed as closed, so an expired entry is never shown as open.  
+- `cycle_status: "open"` but `deadline` is null  
+- `cycle_status: "upcoming"` but `opens_month` is null
 
 Output should be human-readable, listing each problem with its entry `id`.
 

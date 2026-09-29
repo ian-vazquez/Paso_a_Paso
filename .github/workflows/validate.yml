@@ -1,0 +1,33 @@
+# Validates the scholarship data on every push and every pull request.
+#
+# This is the cheap, always-on gate: no Node, no npm, no secrets, nothing that
+# can touch Firebase. It runs the data validator and the validator's own tests.
+# Ubuntu runners ship with Python 3.12, and validate.py is standard library
+# only, so there is nothing to install.
+#
+# The deploy workflow re-runs these same two commands as its own gate rather
+# than trusting this one, because a `needs:` cannot reach across workflows.
+
+name: Validate data
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show Python version
+        run: python3 --version
+
+      - name: Validate scholarship data
+        run: python3 scripts/validate.py
+
+      - name: Test the validator itself
+        run: python3 scripts/test_validate.py
