@@ -1,0 +1,96 @@
+[
+  {
+    "id": "example-complete-entry",
+    "name": "EXAMPLE — Complete Entry (fake, delete before launch)",
+    "sponsor": "Example Foundation (not a real sponsor)",
+    "amount_min": 500,
+    "amount_max": 2500,
+    "amount_display": {
+      "en": "$500–$2,500 per student",
+      "es": "$500–$2,500 por estudiante"
+    },
+    "renewable": true,
+    "deadline": "2027-03-01",
+    "cycle_status": "open",
+    "opens_month": 9,
+    "categories": ["merit", "need_based", "first_gen"],
+    "grade_levels": ["hs_senior", "college"],
+    "residency": "specific_districts",
+    "districts": ["EPISD", "YISD"],
+    "schools": [],
+    "eligible_institutions": ["UTEP", "EPCC"],
+    "degree_types": ["associate", "bachelor", "trade_technical"],
+    "gpa_min": 3.0,
+    "fields_of_study": ["stem", "nursing"],
+    "demographics": ["hispanic", "first_gen"],
+    "requirements": {
+      "essay_required": true,
+      "recs_needed": 2,
+      "fafsa_required": true,
+      "accepts_tasfa": true,
+      "citizenship_required": false,
+      "interview": false,
+      "other": {
+        "en": "Applicants must also submit a copy of their class schedule.",
+        "es": "Los solicitantes también deben enviar una copia de su horario de clases."
+      }
+    },
+    "application_language": "both",
+    "source_url": "https://example.com/scholarships/complete-entry",
+    "apply_url": "https://example.com/scholarships/complete-entry/apply",
+    "summary": {
+      "en": "This is a fake entry used to test every field in the schema and every part of the result card. It is not a real scholarship and must be deleted before the site launches.",
+      "es": "Esta es una entrada falsa que sirve para probar todos los campos del esquema y todas las partes de la tarjeta de resultados. No es una beca real y debe eliminarse antes de publicar el sitio."
+    },
+    "notes": {
+      "en": "Every field on this entry is filled in, so validate.py should report no warnings for it.",
+      "es": "Todos los campos de esta entrada están completos, así que validate.py no debe mostrar advertencias."
+    },
+    "translation_reviewed": true,
+    "last_verified": "2026-09-28"
+  },
+  {
+    "id": "example-mostly-unknown",
+    "name": "EXAMPLE — Mostly Unknown Entry (fake, delete before launch)",
+    "sponsor": "Example Community Group (not a real sponsor)",
+    "amount_min": null,
+    "amount_max": null,
+    "amount_display": {
+      "en": "Amount not listed",
+      "es": "Monto no especificado"
+    },
+    "renewable": null,
+    "deadline": null,
+    "cycle_status": "closed_reopens",
+    "opens_month": null,
+    "categories": ["regional"],
+    "grade_levels": [],
+    "residency": "specific_schools",
+    "districts": [],
+    "schools": ["Example High School"],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": { "en": "", "es": "" }
+    },
+    "application_language": "en",
+    "source_url": "https://example.com/scholarships/mostly-unknown",
+    "apply_url": null,
+    "summary": {
+      "en": "This is a fake entry used to test how the site handles unknown values. Every unknown is null, never a guess. It is not a real scholarship and must be deleted before the site launches.",
+      "es": ""
+    },
+    "notes": { "en": "", "es": "" },
+    "translation_reviewed": false,
+    "last_verified": "2026-07-01"
+  }
+]
