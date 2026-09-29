@@ -57,7 +57,15 @@ GRADE_LEVELS = {"hs_junior", "hs_senior", "college"}
 RESIDENCY = {"el_paso_county", "specific_districts", "specific_schools", "texas", "national"}
 DEGREE_TYPES = {"associate", "bachelor", "trade_technical"}
 FIELDS_OF_STUDY = {"stem", "cs", "nursing", "education", "hospitality", "business"}
-DEMOGRAPHICS = {"hispanic", "first_gen", "female", "african_american", "aapi", "native_american"}
+DEMOGRAPHICS = {
+    "hispanic",
+    "first_gen",
+    "female",
+    "african_american",
+    "aapi",
+    "native_american",
+    "military_connected",
+}
 APPLICATION_LANGUAGE = {"en", "es", "both"}
 
 ID_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")

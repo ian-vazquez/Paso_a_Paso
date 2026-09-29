@@ -212,8 +212,8 @@ Every entry in `data/scholarships.json` follows this shape. **Unknown \= `null`.
 - `grade_levels`: `hs_junior` | `hs_senior` | `college`  
 - `residency`: `el_paso_county` | `specific_districts` | `specific_schools` | `texas` | `national`  
 - `degree_types`: `associate` | `bachelor` | `trade_technical`  
-- `fields_of_study`: empty \= any field. Otherwise tags such as `stem`, `cs`, `nursing`, `education`, `hospitality`, `business` (new tags need Ian's approval)  
-- `demographics`: empty \= no restriction. Otherwise tags such as `hispanic`, `first_gen`, `female`, `african_american`, `aapi`, `native_american` (new tags need approval)  
+- `fields_of_study`: empty \= any field. Otherwise `stem`, `cs`, `nursing`, `education`, `hospitality`, `business` (approved at Checkpoint 1\. New tags still need Ian's approval, and a new tag needs a label in both i18n files or `check_i18n.py` fails)  
+- `demographics`: empty \= no restriction. Otherwise `hispanic`, `first_gen`, `female`, `african_american`, `aapi`, `native_american`, `military_connected` (approved at Checkpoint 1; `military_connected` added there. New tags still need approval, and a new tag needs a label in both i18n files or `check_i18n.py` fails)  
 - `eligible_institutions`: empty \= any institution  
 - `application_language`: `en` | `es` | `both`
 
@@ -406,12 +406,12 @@ AI chat · live scraping or auto-discovery · accounts or saved lists · essay h
 2. **Custom domain, or the default Firebase URL for v1?** Default Firebase URL for now.  
 3. **Unreviewed Spanish summaries:** fall back to English, with a note saying the summary is only available in English. Reflected in section 5\.  
 4. **Who is the Spanish reviewer?** Ian.  
-5. **Approve the starter tags for `fields_of_study` and `demographics`** — still open, see below.  
-6. **Site name:** Paso a Paso.
+5. **Approve the starter tags for `fields_of_study` and `demographics`** — approved as listed in section 4, with `military_connected` added to `demographics`.  
+6. **Site name:** Paso a Paso.  
+7. **Workshop year:** 2026\. The exact date is still to be confirmed, so the placeholder stays.
 
 ### Still open
 
-7. **Approve the starter tags** for `fields_of_study` (`stem`, `cs`, `nursing`, `education`, `hospitality`, `business`) and `demographics` (`hispanic`, `first_gen`, `female`, `african_american`, `aapi`, `native_american`). They are enforced as enums in `scripts/validate.py` today, so nothing breaks either way, but the filter UI in Phase 2 is built from this list.  
 8. **Custom domain or a second Hosting site — decide by Oct 19.** The default Firebase URL covers the workshop; this is about what goes on the poster and QR code longer term.  
 9. **Spanish register: `tú` or `usted`?** The current drafts mix registers and no strings have been changed pending this decision. It matters because the audience is both students (`tú` reads natural) and parents (`usted` reads respectful). Whatever is chosen applies to every string in `es.json` and to every scholarship summary.  
-10. **Confirm the workshop year is 2026** and replace `WORKSHOP_DATE_TBD` in section 1 with the full date.
+10. **The exact workshop date.** The year is 2026 and the day is October 15th, but the date is not final, so `WORKSHOP_DATE_TBD` stays in section 1 until Ian confirms it.

@@ -182,6 +182,39 @@ class TestExpiredOpenEntry(ValidateTestCase):
         self.assertIn("deadline is in 5 day(s)", out)
 
 
+class TestTagLists(ValidateTestCase):
+    """The approved tag lists are the gate for new tags, so pin them down."""
+
+    def test_approved_demographics_tags_are_accepted(self):
+        code, out = self.run_validator(
+            [entry(demographics=sorted(validate.DEMOGRAPHICS))]
+        )
+        self.assertEqual(code, 0, msg=out)
+        self.assertClean(out)
+
+    def test_military_connected_is_approved(self):
+        code, out = self.run_validator([entry(demographics=["military_connected"])])
+        self.assertEqual(code, 0, msg=out)
+        self.assertClean(out)
+
+    def test_unapproved_demographic_tag_is_an_error(self):
+        code, out = self.run_validator([entry(demographics=["left_handed"])])
+        self.assertEqual(code, 1, msg=out)
+        self.assertIn("'left_handed' is not one of", out)
+
+    def test_approved_fields_of_study_tags_are_accepted(self):
+        code, out = self.run_validator(
+            [entry(fields_of_study=sorted(validate.FIELDS_OF_STUDY))]
+        )
+        self.assertEqual(code, 0, msg=out)
+        self.assertClean(out)
+
+    def test_unapproved_field_of_study_is_an_error(self):
+        code, out = self.run_validator([entry(fields_of_study=["underwater_basketry"])])
+        self.assertEqual(code, 1, msg=out)
+        self.assertIn("'underwater_basketry' is not one of", out)
+
+
 class TestMalformedFile(ValidateTestCase):
     """Rule 1: a syntax error exits 2 with a readable message, not a traceback."""
 

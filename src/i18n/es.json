@@ -72,6 +72,25 @@
     "college": "Estudiante universitario"
   },
 
+  "demographics": {
+    "hispanic": "Hispano o latino",
+    "first_gen": "Primera generación en la universidad",
+    "female": "Mujeres",
+    "african_american": "Afroamericano o negro",
+    "aapi": "Asiático-americano o de las islas del Pacífico",
+    "native_american": "Nativo americano",
+    "military_connected": "Familias militares o de veteranos"
+  },
+
+  "fields_of_study": {
+    "stem": "STEM (ciencias, tecnología, ingeniería y matemáticas)",
+    "cs": "Ciencias de la computación",
+    "nursing": "Enfermería",
+    "education": "Educación o docencia",
+    "hospitality": "Hotelería o turismo",
+    "business": "Negocios"
+  },
+
   "cycle_status": {
     "open": "Abierta ahora",
     "upcoming": "Abre pronto",

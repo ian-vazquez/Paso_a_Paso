@@ -67,6 +67,25 @@
     "college": "College student"
   },
 
+  "demographics": {
+    "hispanic": "Hispanic or Latino",
+    "first_gen": "First-generation college student",
+    "female": "Women",
+    "african_american": "African American or Black",
+    "aapi": "Asian American or Pacific Islander",
+    "native_american": "Native American",
+    "military_connected": "Military or veteran families"
+  },
+
+  "fields_of_study": {
+    "stem": "STEM",
+    "cs": "Computer science",
+    "nursing": "Nursing",
+    "education": "Education or teaching",
+    "hospitality": "Hospitality or tourism",
+    "business": "Business"
+  },
+
   "cycle_status": {
     "open": "Open now",
     "upcoming": "Opens soon",

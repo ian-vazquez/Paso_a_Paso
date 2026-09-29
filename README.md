@@ -154,7 +154,7 @@ and explain what it actually says in `notes`.
 | `degree_types` | `associate`, `bachelor`, `trade_technical` |
 | `gpa_min` | the number the sponsor states, e.g. `2.5`. `null` if no GPA rule |
 | `fields_of_study` | empty means any field. Otherwise: `stem`, `cs`, `nursing`, `education`, `hospitality`, `business` |
-| `demographics` | empty means no restriction. Otherwise: `hispanic`, `first_gen`, `female`, `african_american`, `aapi`, `native_american` |
+| `demographics` | empty means no restriction. Otherwise: `hispanic`, `first_gen`, `female`, `african_american`, `aapi`, `native_american`, `military_connected` |
 | `requirements.recs_needed` | how many letters, as a number |
 | `application_language` | `en`, `es`, or `both` — the language of the **application form**, not the summary |
 | `source_url` | the page you verified against. Shown on every card. Required, `https://` |
@@ -165,7 +165,10 @@ and explain what it actually says in `notes`.
 
 Adding a tag that is not in the `fields_of_study` or `demographics` lists needs
 approval first, because the filter UI and the Phase 6 pre-filter both read them.
-The lists live in `scripts/validate.py`, so a new tag shows up in a diff.
+The lists live in `scripts/validate.py`, so a new tag shows up in a diff. A new
+tag also needs a label in **both** `en.json` and `es.json`, or `check_i18n.py`
+fails the build — which is the point: an unlabelled tag would render as a raw
+`snake_case` string on a card.
 
 ### 5. Validate before committing
 
