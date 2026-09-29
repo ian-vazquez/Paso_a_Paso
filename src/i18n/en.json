@@ -1,0 +1,119 @@
+{
+  "site": {
+    "title": "Scholarship Finder for El Paso Students",
+    "tagline": "Scholarships for El Paso students",
+    "trust_line": "No account. No personal info stored.",
+    "meta_description": "A free, bilingual scholarship search for El Paso-area students. No account. No personal info stored.",
+    "footer_note": "Always confirm details on the scholarship's own website before you apply. Deadlines change."
+  },
+
+  "a11y": {
+    "skip_to_content": "Skip to content",
+    "language_switcher": "Language",
+    "opens_new_tab": "opens in a new tab"
+  },
+
+  "placeholder": {
+    "heading": "This site is being built.",
+    "body": "The scholarship list and search are coming before the October workshop. Nothing here is final yet."
+  },
+
+  "search": {
+    "label": "Search scholarships",
+    "placeholder": "Name, sponsor, or keyword",
+    "clear": "Clear search"
+  },
+
+  "filters": {
+    "heading": "Filters",
+    "category": "Type of scholarship",
+    "gpa": "My GPA",
+    "gpa_help": "Shows scholarships with no GPA rule, or a rule you already meet.",
+    "residency": "Who can apply",
+    "degree_type": "What I plan to study",
+    "no_essay": "No essay required",
+    "no_citizenship": "Citizenship not required",
+    "accepts_tasfa": "Accepts TASFA",
+    "show_closed": "Also show closed scholarships that reopen",
+    "reset": "Clear all filters"
+  },
+
+  "categories": {
+    "merit": "Merit",
+    "need_based": "Need-based",
+    "first_gen": "First-generation",
+    "regional": "El Paso / regional",
+    "demographic": "Demographic-specific",
+    "field_specific": "Specific field of study"
+  },
+
+  "residency": {
+    "el_paso_county": "El Paso County",
+    "specific_districts": "Specific districts",
+    "specific_schools": "Specific schools",
+    "texas": "Texas",
+    "national": "Anywhere in the U.S."
+  },
+
+  "degree_types": {
+    "associate": "Associate degree",
+    "bachelor": "Bachelor's degree",
+    "trade_technical": "Trade or technical program"
+  },
+
+  "grade_levels": {
+    "hs_junior": "High school junior",
+    "hs_senior": "High school senior",
+    "college": "College student"
+  },
+
+  "cycle_status": {
+    "open": "Open now",
+    "upcoming": "Opens soon",
+    "closed_reopens": "Closed — reopens next cycle",
+    "rolling": "Rolling deadline",
+    "unknown": "Status not listed"
+  },
+
+  "sort": {
+    "label": "Sort by",
+    "deadline": "Deadline soonest",
+    "amount": "Largest amount"
+  },
+
+  "card": {
+    "sponsor": "Offered by",
+    "amount": "Award",
+    "deadline": "Deadline",
+    "last_verified": "Last verified",
+    "source": "Source",
+    "apply": "Apply",
+    "essay_required": "Essay required",
+    "no_essay_required": "No essay",
+    "recs_needed": "Recommendation letters: {count}",
+    "fafsa_required": "FAFSA required",
+    "accepts_tasfa": "Accepts TASFA",
+    "citizenship_required": "U.S. citizenship or residency required",
+    "no_citizenship_required": "No citizenship requirement",
+    "interview": "Interview required",
+    "renewable": "Renewable",
+    "gpa_min": "Minimum GPA {gpa}",
+    "application_in_english": "The application itself is in English.",
+    "summary_english_only": "This summary has not been translated yet, so it is shown in English."
+  },
+
+  "value": {
+    "not_listed": "Not listed — check source",
+    "yes": "Yes",
+    "no": "No"
+  },
+
+  "results": {
+    "count_one": "1 scholarship",
+    "count_other": "{count} scholarships",
+    "empty_heading": "No scholarships match these filters.",
+    "empty_body": "Try removing a filter, lowering the GPA, or turning on scholarships that reopen next cycle.",
+    "loading": "Loading scholarships…",
+    "load_error": "The scholarship list could not be loaded. Please refresh the page."
+  }
+}

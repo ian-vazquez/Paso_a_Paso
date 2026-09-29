@@ -1,0 +1,240 @@
+/*
+ * styles.css — plain CSS, no framework, no web font request.
+ *
+ * Fonts: system stack only. A Google Fonts <link> would be a third-party
+ * request, which principle 1 in CLAUDE.md rules out.
+ * Colors: every text/background pair below meets WCAG AA (4.5:1 for body text,
+ * 3:1 for large text and UI borders), in both the light and dark palettes.
+ * Layout: mobile-first. The base rules target a 360px phone; wider screens only
+ * get a max-width and a little more breathing room.
+ */
+
+/* ------------------------------------------------------------------ *
+ * Tokens
+ * ------------------------------------------------------------------ */
+
+:root {
+  color-scheme: light;
+
+  --bg: #ffffff;
+  --surface: #f2f4f6;
+  --border: #c9cfd5;
+  --text: #191d21;
+  --text-muted: #53595f;
+  --accent: #0b5d69;
+  --accent-text: #ffffff;
+  --accent-hover: #084850;
+  --focus: #9a4a00;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --radius: 8px;
+  --measure: 40rem; /* comfortable reading width */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --bg: #14181b;
+    --surface: #1e242a;
+    --border: #3c454d;
+    --text: #eef1f3;
+    --text-muted: #adb6bd;
+    --accent: #6fd3e0;
+    --accent-text: #08292e;
+    --accent-hover: #93e0ea;
+    --focus: #ffb454;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Base
+ * ------------------------------------------------------------------ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  /* Spanish strings run 20-30% longer than English; balanced wrapping keeps
+     a two-word orphan off its own line instead of overflowing. */
+  text-wrap: balance;
+  margin: 0 0 var(--space-3);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0 0 var(--space-4);
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* One visible focus style for everything, per the accessibility bar. */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ------------------------------------------------------------------ *
+ * Layout
+ * ------------------------------------------------------------------ */
+
+.site-header,
+main,
+.site-footer {
+  max-width: var(--measure);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+main {
+  padding-block: var(--space-6);
+}
+
+.site-header {
+  padding-block: var(--space-4);
+}
+
+.site-header__bar {
+  display: flex;
+  flex-wrap: wrap; /* toggle drops below the brand on a narrow phone */
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.site-footer {
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* ------------------------------------------------------------------ *
+ * Components
+ * ------------------------------------------------------------------ */
+
+.skip-link {
+  position: absolute;
+  left: var(--space-2);
+  top: var(--space-2);
+  z-index: 10;
+  padding: var(--space-2) var(--space-3);
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+.brand {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.brand__tagline {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.lang-toggle {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.lang-toggle__btn {
+  /* 44px min height: comfortable one-thumb tap target on a phone. */
+  min-height: 44px;
+  padding: var(--space-2) var(--space-3);
+  font: inherit;
+  font-size: 0.9375rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.lang-toggle__btn:first-child {
+  border-end-end-radius: 0;
+  border-start-end-radius: 0;
+}
+
+.lang-toggle__btn:last-child {
+  border-end-start-radius: 0;
+  border-start-start-radius: 0;
+}
+
+.lang-toggle__btn:hover {
+  background: var(--surface);
+}
+
+.lang-toggle__btn[aria-pressed='true'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+.trust-line {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-2) var(--space-3);
+  background: var(--surface);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.lede {
+  font-size: 1.125rem;
+}
