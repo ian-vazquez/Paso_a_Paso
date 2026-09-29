@@ -17,7 +17,7 @@ contradicts it, `CLAUDE.md` wins.
 
 | Tool | Version | Why |
 | :--- | :--- | :--- |
-| Node.js | 22 or newer | Vite dev server and build |
+| Node.js | 24 or newer | Vite dev server and build; enforced by `engines` in package.json |
 | Python | 3.10 or newer | `scripts/validate.py` (standard library only) |
 | Firebase CLI | any recent | only needed for manual deploys; CI deploys on its own |
 
@@ -37,6 +37,9 @@ npm run build      # production build into dist/
 npm run preview    # serve the built site locally
 npm run validate   # check data/scholarships.json
 npm test           # runs tests/ — empty until Phase 2 adds search.js tests
+
+python scripts/test_validate.py   # tests for the validator itself
+python scripts/check_i18n.py      # en.json and es.json must stay in step
 ```
 
 ---
@@ -55,6 +58,7 @@ src/styles.css             all styles; system fonts, no web font request
 data/scholarships.json     the scholarship list — the heart of the project
 scripts/validate.py        schema + sanity checks; CI runs this
 scripts/test_validate.py   tests for the validator
+scripts/check_i18n.py      en/es key parity; CI runs this too
 ```
 
 Two rules about this layout are worth repeating:
@@ -220,12 +224,23 @@ Deploys are automatic. Nobody should need to run `firebase deploy` by hand.
 
 | Event | What happens |
 | :--- | :--- |
-| push to any branch | `validate.yml` checks the data and runs the validator's tests |
+| push to any branch | `validate.yml` checks the data, runs the validator's tests, and checks en/es parity |
 | open a pull request | data is validated, the site is built, and a temporary preview URL is posted to the PR |
 | merge to `main` | data is validated, the site is built, and it deploys to production |
 
 Validation runs *before* the build in both Firebase workflows, so malformed data
-can never reach production.
+can never reach production. All three checks run in all three workflows:
+
+```bash
+python3 scripts/validate.py        # the data
+python3 scripts/test_validate.py   # the validator's own tests
+python3 scripts/check_i18n.py      # English and Spanish in step
+```
+
+`check_i18n.py` is there because "bilingual from the start" fails quietly: a key
+added to `en.json` and forgotten in `es.json` does not crash anything — it just
+puts an English word in the middle of a Spanish page, where nobody notices until
+a student does.
 
 **Merging to `main` is a production deploy, so only Ian merges.** Work happens on
 branches named after their phase (`phase-0-setup`, `phase-2-search`, …).
