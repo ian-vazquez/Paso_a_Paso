@@ -34,10 +34,13 @@ jobs:
       - name: Test the validator itself
         run: python3 scripts/test_validate.py
 
+      - name: Check the English and Spanish files agree
+        run: python3 scripts/check_i18n.py
+
       # --- build ------------------------------------------------------------
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
 
       - run: npm ci
