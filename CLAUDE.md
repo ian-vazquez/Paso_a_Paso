@@ -36,7 +36,7 @@ A public, free, bilingual (English/Spanish) scholarship search site for El Paso-
 
 ### Ian does. Claude never does these.
 
-- **All scholarship data sourcing and verification.** Claude never adds, removes, or edits a scholarship's facts (amount, deadline, eligibility, URLs) unless Ian supplies them. Claude never sets or updates `last_verified`.  
+- **Final verification of all scholarship data.** Claude may DRAFT entries from sponsor pages under the Evidence Rule below. Only Ian sets `last_verified`, and only after checking the evidence. Claude never sets or updates `last_verified`.
 - **All credentials and accounts:** creating the Firebase project, the GitHub repo, and the service-account secret for deploys; the Blaze plan and billing; API keys. Claude never asks Ian to paste a secret into chat, and never writes one into any file.  
 - **Final approval of Spanish translations** (Ian or a fluent reviewer he picks)  
 - **Merging to `main`,** since merging to `main` deploys to production  
@@ -44,7 +44,7 @@ A public, free, bilingual (English/Spanish) scholarship search site for El Paso-
 
 ### Claude never
 
-- Invents scholarship data, fills unknowns with plausible guesses, or "fixes" data it thinks is wrong. It flags it instead.  
+- Invents scholarship data, fills unknowns with plausible guesses, uses its own general knowledge or memory as a source, or "fixes" data it thinks is wrong. It flags it instead.
 - Changes the schema without approval  
 - Adds a dependency, library, font service, CDN, or third-party script without approval  
 - Adds analytics, cookies, tracking, or any storage of user input  
@@ -243,6 +243,23 @@ Filters in v1, and the AI pre-filter in Phase 6, both read these structured fiel
 - `cycle_status: "upcoming"` but `opens_month` is null
 
 Output should be human-readable, listing each problem with its entry `id`.
+
+### Evidence Rule (drafting entries from sponsor pages)
+When Ian asks Claude to draft entries:
+1. Sources: fetch only the entry's `source_url` and pages on the same sponsor domain linked from it (eligibility, FAQ, application pages). No aggregators, no search results, no memory.
+2. Every non-null field must have a supporting quote copied verbatim from a fetched page, plus that page's URL. No quote → the field stays `null`. Reasoning from a quote ("Pell-eligible, so FAFSA is required") is NOT evidence — the conclusion must be stated on the page.
+3. If a page can't be fetched (blocked, login, JavaScript-only), say so and leave that entry's fields for Ian.
+4. Write the evidence to `research/review/batch-N.md` (format below). Draft entries go in `data/scholarships.json` with `last_verified: null` so the validator blocks them until Ian verifies.
+5. Spanish text is drafted as usual and marked unreviewed.
+
+### Review file format (research/review/batch-N.md)
+## dell-scholars
+Pages fetched: <url1>, <url2>
+| Field | Value | Quote | Page |
+|---|---|---|---|
+| gpa_min | 2.4 | "…exact words…" | <url> |
+Left null (no quote found): renewable, interview, …
+Couldn't fetch: (none)
 
 ---
 
