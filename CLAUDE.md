@@ -10,7 +10,7 @@ A public, free, bilingual (English/Spanish) scholarship search site for El Paso-
 
 - **Audience:** El Paso-area students. Region decides who is searching, not which scholarships qualify. The list includes local/regional scholarships AND nationwide ones relevant to these students.  
 - **Coverage:** merit, need-based, first-gen, regional, and demographic-specific scholarships. This is not a CS/merit tool. Need-based and first-gen entries matter as much as merit ones.  
-- **v1 deadline:** a school scholarship workshop before the end of October 2026 (exact date: `WORKSHOP_DATE_TBD` — Ian fills this in).  
+- **v1 deadline:** v1: static page live by Nov 15, 2026 for the Nov 17 workshop; filters come in January 2027.  
 - **Later versions:** an AI chat feature (Phase 6+). v1 must be built so it can be added without a rebuild.
 
 ### Core principles (these override convenience)
@@ -36,7 +36,7 @@ A public, free, bilingual (English/Spanish) scholarship search site for El Paso-
 
 ### Ian does. Claude never does these.
 
-- **Final verification of all scholarship data.** Claude may DRAFT entries from sponsor pages under the Evidence Rule below. Only Ian sets `last_verified`, and only after checking the evidence. Claude never sets or updates `last_verified`.
+- **Final verification of all scholarship data.** Claude may DRAFT entries from sponsor pages under the Evidence Rule below. Only Ian sets `last_verified`, and only after checking the evidence. Claude never sets or updates `last_verified` on its own. Claude may copy a last_verified date only when Ian has written it in a research file or the prompt.
 - **All credentials and accounts:** creating the Firebase project, the GitHub repo, and the service-account secret for deploys; the Blaze plan and billing; API keys. Claude never asks Ian to paste a secret into chat, and never writes one into any file.  
 - **Final approval of Spanish translations** (Ian or a fluent reviewer he picks)  
 - **Merging to `main`,** since merging to `main` deploys to production  
@@ -362,6 +362,10 @@ Done: the project is `scholarship-site-fd70f` and the secret the Firebase CLI cr
 
 **🛑 CHECKPOINT 1 — Schema lock.** Ian reviews the schema, enums, and validation rules, and answers the Open Decisions. After this, schema changes require a STOP.
 
+### v1 — Workshop release (live by Nov 15, 2026, for the Nov 17 workshop)
+
+One page with two sections: **"Open now"**, sorted by deadline (soonest first), and **"Opening soon"**. No filters, search, or sort controls in v1. The full schema in section 4 is kept unchanged, so the January 2027 filtered version reads the same data.
+
 ### Phase 1 — Data collection (target: Oct 1 – Oct 16\) — mostly Ian
 
 **Ian:** sources and verifies 40–60 entries, then adds them to the JSON himself (or pastes verified facts to Claude to format). **Claude:** only formats data Ian provides, drafts Spanish summaries (marked unreviewed), and runs validation. Reports category counts on request.
@@ -380,7 +384,7 @@ Done: the project is `scholarship-site-fd70f` and the secret the Firebase CLI cr
 
 **🛑 CHECKPOINT 4 — Launch readiness.** Claude fixes only what the testers hit. Ian merges to `main`.
 
-### Phase 4 — Workshop launch (last week of October)
+### Phase 4 — Workshop launch (Nov 17, 2026)
 
 **Code freeze:** bug fixes only, no new features. Ian handles the QR code, poster, and a separate Google Form for feedback (the site itself stays stateless).
 
@@ -419,16 +423,15 @@ AI chat · live scraping or auto-discovery · accounts or saved lists · essay h
 
 ### Answered at Checkpoint 1
 
-1. **Exact workshop date:** October 15th (2026 — see the open item below).  
+1. **Exact workshop date:** November 17, 2026.  
 2. **Custom domain, or the default Firebase URL for v1?** Default Firebase URL for now.  
 3. **Unreviewed Spanish summaries:** fall back to English, with a note saying the summary is only available in English. Reflected in section 5\.  
 4. **Who is the Spanish reviewer?** Ian.  
 5. **Approve the starter tags for `fields_of_study` and `demographics`** — approved as listed in section 4, with `military_connected` added to `demographics`.  
 6. **Site name:** Paso a Paso.  
-7. **Workshop year:** 2026\. The exact date is still to be confirmed, so the placeholder stays.
+7. **Workshop year:** 2026\.
+8. **Custom domain or a second Hosting site?** Default Firebase URL. (Answered after Checkpoint 1.)
 
 ### Still open
 
-8. **Custom domain or a second Hosting site — decide by Oct 19.** The default Firebase URL covers the workshop; this is about what goes on the poster and QR code longer term.  
 9. **Spanish register: `tú` or `usted`?** The current drafts mix registers and no strings have been changed pending this decision. It matters because the audience is both students (`tú` reads natural) and parents (`usted` reads respectful). Whatever is chosen applies to every string in `es.json` and to every scholarship summary.  
-10. **The exact workshop date.** The year is 2026 and the day is October 15th, but the date is not final, so `WORKSHOP_DATE_TBD` stays in section 1 until Ian confirms it.

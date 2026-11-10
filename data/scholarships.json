@@ -476,7 +476,7 @@
     "categories": [
       "need_based"
     ],
-    "grade_levels": [],
+    "grade_levels": ["hs_senior"],
     "residency": "national",
     "districts": [],
     "schools": [],
@@ -501,7 +501,7 @@
     "source_url": "https://www.dellscholars.org/",
     "apply_url": null,
     "summary": {
-      "en": "$20,000 plus a laptop and textbook credits for students with significant financial need who have overcome substantial obstacles. Requires a minimum 2.4 GPA, and the application values resilience over test scores.",
+      "en": "$20,000 plus a laptop and textbook credits for students with significant financial need who have overcome substantial obstacles. For students in an approved college-readiness program. Requires a minimum 2.4 GPA, and the application values resilience over test scores.",
       "es": "$20,000 más una computadora portátil y crédito para libros, para estudiantes con necesidad económica significativa que han superado obstáculos importantes. Requiere un promedio mínimo de 2.4, y la solicitud valora la resiliencia más que los exámenes estandarizados."
     },
     "notes": {

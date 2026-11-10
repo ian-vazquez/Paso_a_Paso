@@ -7,7 +7,7 @@
     "application_requirements": "Single portal application covers dozens of named funds; essay and reference requirements vary by fund; FAFSA required for some need-based funds.",
     "source_url": "https://epcf.org/grants-and-scholarships/apply-for-a-scholarship",
     "category": "regional_local",
-    "last_verified": "2026-09-25",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "Umbrella community foundation hosting many El Paso-area named funds. Check the portal each cycle for exact per-fund dates."
   },
   {
@@ -62,7 +62,7 @@
     "application_requirements": "FAFSA required; separate Terry Scholars application submitted on top of standard UTEP admission.",
     "source_url": "https://www.utep.edu/student-affairs/terryscholars/become-a-scholar/",
     "category": "regional_local",
-    "last_verified": "2026-09-25",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "Combines need and merit; requires UTEP admission as a prerequisite."
   },
   {
@@ -79,12 +79,12 @@
   {
     "name": "Dell Scholars Program",
     "award_amount": "$20,000 plus a laptop and textbook credits",
-    "deadline": "~February 15, 2027 (estimated, based on the recurring annual window)",
+    "deadline": "January 12, 2027 (estimated, based on the recurring annual window)",
     "eligibility": "Demonstrated significant financial need (Pell-eligible range) and evidence of overcoming substantial obstacles; minimum 2.4 GPA.",
     "application_requirements": "Online application; personal essay; values resilience and grit over test scores.",
     "source_url": "https://www.dellscholars.org/",
     "category": "need_based_first_gen",
-    "last_verified": "2026-09-25",
+    "last_verified": "Verified: 2026-11-12",
     "notes": ""
   },
   {
@@ -172,7 +172,7 @@
     "application_requirements": "Online application through NHS; transcript, activity record, and essay.",
     "source_url": "https://www.nationalhonorsociety.org/the-nhs-scholarship/",
     "category": "merit_based",
-    "last_verified": "2026-09-25",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "Large national applicant pool. Confirm active NHS chapter membership status first."
   },
   {
@@ -205,29 +205,29 @@
     "application_requirements": "Short essay contest per the official rules PDF published by Regions Bank.",
     "source_url": "https://www.regions.com/about-regions/inclusion-belonging-impact/supporting-communities/essay-contest-scholarship",
     "category": "merit_based",
-    "last_verified": "2026-09-25",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "Repeats every quarter, so it's worth entering more than once a year."
   },
   {
     "name": "Hispanic Scholarship Fund (HSF) Scholarship",
     "award_amount": "$500-$5,000, renewable",
-    "deadline": "~February 15, 2027 (estimated, recurring window)",
+    "deadline": "February 15, 2027",
     "eligibility": "Hispanic heritage (self-identified); minimum 3.0 GPA; enrolling full-time at an accredited US institution; US citizen, permanent resident, DACA recipient, or eligible non-citizen.",
     "application_requirements": "FAFSA or state financial aid application required; online application; essay.",
     "source_url": "https://www.hsf.net/scholarship",
     "category": "demographic_specific",
-    "last_verified": "2026-09-25",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "One of the largest and most established Hispanic-serving scholarship programs in the country."
   },
   {
     "name": "McDonald's HACER National Scholarship",
     "award_amount": "$1 million total pool shared across up to 100 students nationally",
-    "deadline": "CLOSED as of last check (mcdonalds.com states the application period is currently closed); next cycle date not posted",
+    "deadline": "February 15, 2027",
     "eligibility": "At least one parent of Hispanic heritage; demonstrated financial need; graduating high school senior. Full GPA/grade-level criteria are on the sponsor's separate eligibility page, not confirmed here.",
     "application_requirements": "Online application; personal statement; financial-need documentation.",
     "source_url": "https://www.mcdonalds.com/us/en-us/community/hacer.html",
     "category": "demographic_specific",
-    "last_verified": "2026-09-25",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "STALE/AMBIGUOUS: sponsor's own page shows the application period closed and does not display the next cycle's dates. Confirm reopening date directly before relying on this."
   },
   {
@@ -247,7 +247,7 @@
     "deadline": "~April (2026 cycle already closed; 2027 date not yet posted)",
     "eligibility": "Explicitly race-neutral despite the NAACP LDF branding. Family income must be $70,000 or under.",
     "application_requirements": "Online application via the LDF portal; income documentation; essay.",
-    "source_url": "https://naacp-ldf.smapply.io/prog/herbert_lehman_education_fund/",
+    "source_url": "Verified: 2026-11-12",
     "category": "demographic_specific",
     "last_verified": "2026-09-25",
     "notes": "Most applicants assume this is race-restricted and skip it; it is not."
@@ -271,7 +271,7 @@
     "application_requirements": "Online application; financial documentation; check the sponsor's FAQ and Application Guide for exact essay requirements.",
     "source_url": "https://apiascholars.org/scholarships/",
     "category": "demographic_specific",
-    "last_verified": "2026-09-25",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "Ethnicity requirement confirmed directly against the sponsor's own eligibility criteria."
   },
   {
@@ -299,16 +299,16 @@
   {
     "name": "FirstLight Community Foundation Graduating Seniors Scholarship",
     "award_amount": "Varies",
-    "deadline": "Cycle historically opens January; exact 2027 date not yet posted",
+    "deadline": "March 20, 2027",
     "eligibility": "Any graduate of an El Paso, Fort Bliss, or Doña Ana County (NM) high school; minimum 2.5 GPA. This is the PUBLIC award, distinct from FirstLight's credit-union-employee-dependent scholarship.",
     "application_requirements": "Online application via the foundation's own site; essay typical.",
     "source_url": "https://firstlightcommunityfoundation.org/scholarships/",
     "category": "regional_local",
-    "last_verified": "2026-09-28",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "Do not confuse with FirstLight Federal Credit Union's separate employee-dependent scholarship, which has a hard eligibility gate this one does not."
   },
   {
-    "name": "MountainStar All-Star Scholarship (El Paso Chihuahuas)",
+    "name": "All-Star Scholarship (El Paso Chihuahuas)",
     "award_amount": "$2,500-$10,000 (five awards totaling $25,000)",
     "deadline": "2026 cycle closed April 30, 2026; expect a February 2027 reopen",
     "eligibility": "Juniors and seniors at any high school across El Paso and Las Cruces, NM.",
@@ -332,12 +332,12 @@
   {
     "name": "Makios Technology Fund",
     "award_amount": "Varies",
-    "deadline": "~December 31, 2026 (estimated, based on the recurring cycle)",
+    "deadline": "~February 15, 2027",
     "eligibility": "El Paso County residents pursuing an IT or technology career path.",
     "application_requirements": "Applies via the El Paso Community Foundation portal.",
     "source_url": "https://epcf.org/grants-and-scholarships/apply-for-a-scholarship",
     "category": "regional_local",
-    "last_verified": "2026-09-28",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "Narrow geographic and major restriction keeps the applicant pool small — a strong bet for a CS/IT-track student."
   },
   {
@@ -365,12 +365,12 @@
   {
     "name": "Amazon Future Engineer Scholarship",
     "award_amount": "Up to $10,000/year, renewable",
-    "deadline": "2026-27 cycle not yet open at last check",
+    "deadline": "~January 5, 2027",
     "eligibility": "Demonstrated financial need; minimum 2.3 GPA; must have taken CS coursework; no race or gender restriction; requires US work authorization.",
     "application_requirements": "Online application; CS coursework record; financial documentation.",
     "source_url": "https://www.amazonfutureengineer.com/scholarships",
     "category": "need_based_first_gen",
-    "last_verified": "2026-09-28",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "Strong fit for a CS-track student with financial need."
   },
   {
@@ -381,7 +381,7 @@
     "application_requirements": "Flows through UT Austin's general scholarship application; supplemental essay.",
     "source_url": "https://onestop.utexas.edu/managing-costs/scholarships-financial-aid/",
     "category": "need_based_first_gen",
-    "last_verified": "2026-09-28",
+    "last_verified": "Verified: 2026-11-12",
     "notes": "The Terry Foundation also funds tracks at several other Texas public universities (A&M, UT Dallas, etc.) under separate applications."
   },
   {
@@ -519,7 +519,7 @@
   {
     "name": "SWE (Society of Women Engineers) Emerging First Year Scholars",
     "award_amount": "Individual award amounts vary; over $1.6 million distributed across 330+ awards in a recent cycle",
-    "deadline": "2026-27 cycle already closed (Feb-Mar window); 2027-28 cycle expected to open February 2027",
+    "deadline": "March 31, 2027",
     "eligibility": "Identifies as a woman (per SWE's program mission and guidelines); minimum 3.5 GPA; intending to enroll in an ABET-accredited engineering, engineering technology, or computer science program.",
     "application_requirements": "Online application through SWE's portal; exact essay/recommendation requirements not fully detailed on the overview page — confirm via SWE's FAQ.",
     "source_url": "https://swe.org/apply-for-a-swe-scholarship/",
