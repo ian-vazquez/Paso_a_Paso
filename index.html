@@ -9,10 +9,10 @@
       the language is resolved. The values here are the English fallbacks that
       show before JavaScript runs (and to crawlers that do not run it).
     -->
-    <title>Paso a Paso — Scholarship Finder for El Paso Students</title>
+    <title>Paso a Paso — Scholarships you can apply for</title>
     <meta
       name="description"
-      content="A free, bilingual scholarship search for El Paso-area students. No account. No personal info stored."
+      content="A free, bilingual list of scholarships for El Paso-area students. No account. No personal info stored."
     />
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
@@ -46,8 +46,18 @@
 
     <main id="main">
       <h1 data-i18n="site.title"></h1>
-      <p class="lede" data-i18n="placeholder.heading"></p>
-      <p data-i18n="placeholder.body"></p>
+      <p class="lede" data-i18n="page.intro"></p>
+
+      <!-- Both lists are filled by src/render.js. -->
+      <section class="section" aria-labelledby="open-now-heading">
+        <h2 id="open-now-heading" data-i18n="sections.open_now"></h2>
+        <div id="open-now-list"></div>
+      </section>
+
+      <section class="section" aria-labelledby="opening-soon-heading">
+        <h2 id="opening-soon-heading" data-i18n="sections.opening_soon"></h2>
+        <div id="opening-soon-list"></div>
+      </section>
     </main>
 
     <footer class="site-footer">

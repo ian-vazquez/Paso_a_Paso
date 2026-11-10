@@ -1,100 +1,358 @@
 [
   {
-    "id": "example-complete-entry",
-    "name": "EXAMPLE — Complete Entry (fake, delete before launch)",
-    "sponsor": "Example Foundation (not a real sponsor)",
-    "amount_min": 500,
-    "amount_max": 2500,
+    "id": "burger-king-scholars-2027",
+    "name": "Burger King Scholars (General Track)",
+    "sponsor": "Burger King Foundation",
+    "amount_min": 1000,
+    "amount_max": 60000,
     "amount_display": {
-      "en": "$500–$2,500 per student",
-      "es": "$500–$2,500 por estudiante"
+      "en": "$1,000–$60,000; most awards are $1,000–$5,000",
+      "es": ""
     },
-    "renewable": true,
-    "deadline": "2027-03-01",
+    "renewable": null,
+    "deadline": "2026-12-15",
     "cycle_status": "open",
-    "opens_month": 9,
+    "opens_month": null,
     "categories": [
       "merit",
-      "need_based",
-      "first_gen"
+      "need_based"
     ],
     "grade_levels": [
-      "hs_senior",
-      "college"
+      "hs_senior"
     ],
-    "residency": "specific_districts",
-    "districts": [
-      "EPISD",
-      "YISD"
-    ],
+    "residency": "national",
+    "districts": [],
     "schools": [],
-    "eligible_institutions": [
-      "UTEP",
-      "EPCC"
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": 2.0,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "Needs a transcript and the first two pages of the most recent IRS Form 1040.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://scholarshipamerica.org/scholarship/burgerking/",
+    "apply_url": "https://burgerking.scholarsapply.org",
+    "summary": {
+      "en": "For Class of 2027 seniors living in the US with a GPA of 2.0 or higher. Awards range from $1,000 to $60,000, with most between $1,000 and $5,000. Selection weighs GPA, work experience, extracurriculars, financial need and community service.",
+      "es": ""
+    },
+    "notes": {
+      "en": "Deadline is 11:59 PM CT on Dec 15, 2026. Only the first 30,000 community applications are reviewed. Run by Scholarship America.",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "regions-riding-forward-q4-2026",
+    "name": "Regions Riding Forward Scholarship Contest",
+    "sponsor": "Regions",
+    "amount_min": 8000,
+    "amount_max": 8000,
+    "amount_display": {
+      "en": "$8,000",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2026-12-31",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "merit"
     ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": 2.0,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": true,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://www.regions.com/about-regions/inclusion-belonging-impact/supporting-communities/essay-contest-scholarship",
+    "apply_url": null,
+    "summary": {
+      "en": "Quarterly essay contest. Open to legal U.S. residents of an eligible state (Texas is one), age 16 or older, with a cumulative GPA of 2.0 or higher. You need at least one year (or 18 semester hours) left before your undergraduate graduation; if you are not in college yet, you must start your freshman year by the 2027–28 school year.",
+      "es": ""
+    },
+    "notes": {
+      "en": "This is the Q-4 contest: it opened Oct 1 and closes Dec 31, 2026 at 11:59:59 PM CT. The contest chart only covers 2026, so 2027 quarters are unconfirmed.",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "taco-bell-live-mas-2027",
+    "name": "Taco Bell Live Más Scholarship",
+    "sponsor": "Taco Bell Foundation",
+    "amount_min": 5000,
+    "amount_max": 25000,
+    "amount_display": {
+      "en": "$5,000, $10,000 or $25,000",
+      "es": ""
+    },
+    "renewable": true,
+    "deadline": "2027-01-05",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "merit"
+    ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
     "degree_types": [
       "associate",
       "bachelor",
       "trade_technical"
     ],
-    "gpa_min": 3.0,
-    "fields_of_study": [
-      "stem",
-      "nursing"
-    ],
-    "demographics": [
-      "hispanic",
-      "first_gen"
-    ],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
     "requirements": {
-      "essay_required": true,
-      "recs_needed": 2,
-      "fafsa_required": true,
-      "accepts_tasfa": true,
-      "citizenship_required": false,
-      "interview": false,
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
       "other": {
-        "en": "Applicants must also submit a copy of their class schedule.",
-        "es": "Los solicitantes también deben enviar una copia de su horario de clases."
+        "en": "Submit a two-minute video or a 250–500-word essay. No GPA, test scores or résumé needed.",
+        "es": ""
       }
     },
-    "application_language": "both",
-    "source_url": "https://example.com/scholarships/complete-entry",
-    "apply_url": "https://example.com/scholarships/complete-entry/apply",
+    "application_language": "en",
+    "source_url": "https://tacobellfoundation.org/live-mas-scholarship/",
+    "apply_url": null,
     "summary": {
-      "en": "This is a fake entry used to test every field in the schema and every part of the result card. It is not a real scholarship and must be deleted before the site launches.",
-      "es": "Esta es una entrada falsa que sirve para probar todos los campos del esquema y todas las partes de la tarjeta de resultados. No es una beca real y debe eliminarse antes de publicar el sitio."
+      "en": "For ages 16–26 who are on track for a diploma or GED, or enrolled in a two-year, four-year, vocational or trade program. Awards are $5,000, $10,000 or $25,000, renewable up to 3 times. Apply with a two-minute video or a 250–500-word essay; no GPA, test scores or résumé are needed.",
+      "es": ""
     },
     "notes": {
-      "en": "Every field on this entry is filled in, so validate.py should report no warnings for it.",
-      "es": "Todos los campos de esta entrada están completos, así que validate.py no debe mostrar advertencias."
+      "en": "Open to legal residents of the 50 states or D.C., or dependent children of an active-duty U.S. service member.",
+      "es": ""
     },
-    "translation_reviewed": true,
-    "last_verified": "2026-09-28"
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
   },
   {
-    "id": "example-mostly-unknown",
-    "name": "EXAMPLE — Mostly Unknown Entry (fake, delete before launch)",
-    "sponsor": "Example Community Group (not a real sponsor)",
+    "id": "amazon-future-engineer-2027",
+    "name": "Amazon Future Engineer Scholarship",
+    "sponsor": "Amazon",
+    "amount_min": 10000,
+    "amount_max": 40000,
+    "amount_display": {
+      "en": "$10,000 per year, up to $40,000 total",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2027-01-05",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "need_based",
+      "field_specific"
+    ],
+    "grade_levels": [
+      "hs_senior"
+    ],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [
+      "bachelor"
+    ],
+    "gpa_min": 2.3,
+    "fields_of_study": [
+      "cs",
+      "stem"
+    ],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "Must be currently enrolled in or have finished a high school or college dual-credit course in computer science or engineering, or opt in to Amazon's assessment instead. Must be authorized to work in the U.S.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://www.amazonfutureengineer.com/scholarships",
+    "apply_url": null,
+    "summary": {
+      "en": "For U.S. high school seniors with financial need and a cumulative GPA of 2.3 or higher on a 4.0 scale who plan a bachelor's in computer science, computer engineering, data science, information systems, or electrical, automation, mechanical or industrial engineering, or a related field. $10,000 per year, up to $40,000 total.",
+      "es": ""
+    },
+    "notes": {
+      "en": "",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "apia-scholars-general-2027",
+    "name": "APIA Scholars General Scholarship",
+    "sponsor": "APIA Scholars",
+    "amount_min": 2500,
+    "amount_max": 20000,
+    "amount_display": {
+      "en": "$2,500 (one year) to $20,000 (multi-year)",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2027-01-15",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "need_based",
+      "first_gen"
+    ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [
+      "associate",
+      "bachelor"
+    ],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "High financial need. Citizen, national or legal permanent resident of the U.S., Marshall Islands, FSM or Palau.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://apiascholars.org/scholarships/",
+    "apply_url": null,
+    "summary": {
+      "en": "Open to all undergraduate students at U.S.-accredited colleges, with a focus on students at or below the poverty line and first-generation college students. Requires high financial need. You must be enrolling as an undergraduate (associate or bachelor's) and be a citizen, national or legal permanent resident of the U.S., Marshall Islands, FSM or Palau.",
+      "es": ""
+    },
+    "notes": {
+      "en": "",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "utep-future-miner-2027",
+    "name": "UTEP Future Miner Scholarship Application",
+    "sponsor": "UTEP",
     "amount_min": null,
     "amount_max": null,
     "amount_display": {
-      "en": "Amount not listed",
-      "es": "Monto no especificado"
+      "en": "Varies by scholarship; see the summary",
+      "es": ""
     },
     "renewable": null,
-    "deadline": null,
-    "cycle_status": "closed_reopens",
+    "deadline": "2027-01-31",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "merit"
+    ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [
+      "UTEP"
+    ],
+    "degree_types": [],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "Optional extra section for the Terry Scholarship and the Miguel A. Loya Engineering Scholarship: two essays (overcoming a challenge, and leadership), for U.S. citizens or permanent residents, due Jan 11, 2027.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://futureminer.awardspring.com",
+    "apply_url": null,
+    "summary": {
+      "en": "One application for incoming UTEP students. Submitting it gets you considered for the UTEP Excellence Scholarship (top 25% of junior class; $2,000–$8,000 per year, renewable up to 4 years), the Presidential Scholarship (up to 10 students; full cost of attendance, including on-campus housing), and many endowed scholarships, with automatic matching. You can apply before you are admitted: the application tells you to finish your UTEP admission while you wait for results.",
+      "es": ""
+    },
+    "notes": {
+      "en": "Submitting lets UTEP share your name, major, address, GPA, FAFSA information (including federal tax information) and email with scholarship donors.",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "el-paso-community-foundation",
+    "name": "El Paso Community Foundation Scholarships",
+    "sponsor": "El Paso Community Foundation",
+    "amount_min": null,
+    "amount_max": null,
+    "amount_display": {
+      "en": "",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2027-02-15",
+    "cycle_status": "open",
     "opens_month": null,
     "categories": [
       "regional"
     ],
     "grade_levels": [],
-    "residency": "specific_schools",
+    "residency": "el_paso_county",
     "districts": [],
-    "schools": [
-      "Example High School"
-    ],
+    "schools": [],
     "eligible_institutions": [],
     "degree_types": [],
     "gpa_min": null,
@@ -113,10 +371,64 @@
       }
     },
     "application_language": "en",
-    "source_url": "https://example.com/scholarships/mostly-unknown",
+    "source_url": "https://www.grantinterface.com/Home/Logon?urlkey=epcfscholarship",
     "apply_url": null,
     "summary": {
-      "en": "This is a fake entry used to test how the site handles unknown values. Every unknown is null, never a guess. It is not a real scholarship and must be deleted before the site launches.",
+      "en": "One portal, but each fund is its own application. Funds seen so far: Makios Technology Fund (computer/technology majors), El Paso Electric, El Paso Military Officers Association memorial, El Paso in Austin, Catherine L. McPike, Joe and Halina Kallaby/SEAot Leadership Award, and Fabens High School. Each fund's Preview PDF shows its eligibility without applying.",
+      "es": ""
+    },
+    "notes": {
+      "en": "Deadline is Feb 15, 2027, 11:59 PM CST, as shown in the logged-in portal. The public page (epcf.org) still says Jan 1–May 1 with no year; trust the portal.",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "firstlight-graduating-seniors-2027",
+    "name": "FirstLight Community Foundation Graduating Seniors Scholarship",
+    "sponsor": "FirstLight Community Foundation",
+    "amount_min": null,
+    "amount_max": null,
+    "amount_display": {
+      "en": "",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": null,
+    "cycle_status": "upcoming",
+    "opens_month": 1,
+    "categories": [
+      "regional"
+    ],
+    "grade_levels": [
+      "hs_senior"
+    ],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://firstlightcommunityfoundation.org/scholarships/",
+    "apply_url": null,
+    "summary": {
+      "en": "Scholarship for graduating seniors from the FirstLight Community Foundation. Expected to open in January 2027.",
       "es": ""
     },
     "notes": {
@@ -124,498 +436,6 @@
       "es": ""
     },
     "translation_reviewed": false,
-    "last_verified": "2026-07-01"
-  },
-  {
-    "id": "el-paso-community-foundation",
-    "name": "El Paso Community Foundation Scholarships",
-    "sponsor": "El Paso Community Foundation",
-    "amount_min": 500,
-    "amount_max": 5000,
-    "amount_display": {
-      "en": "Varies by fund; typically $500–$5,000",
-      "es": "Varía según el fondo; por lo general $500–$5,000"
-    },
-    "renewable": null,
-    "deadline": null,
-    "cycle_status": "upcoming",
-    "opens_month": null,
-    "categories": [
-      "regional"
-    ],
-    "grade_levels": [
-      "hs_senior"
-    ],
-    "residency": "el_paso_county",
-    "districts": [],
-    "schools": [],
-    "eligible_institutions": [],
-    "degree_types": [],
-    "gpa_min": null,
-    "fields_of_study": [],
-    "demographics": ["hispanic"],
-    "requirements": {
-      "essay_required": null,
-      "recs_needed": null,
-      "fafsa_required": null,
-      "accepts_tasfa": null,
-      "citizenship_required": null,
-      "interview": null,
-      "other": {
-        "en": "One portal application covers dozens of named funds. GPA, financial need, major, essay, and reference requirements are set by each individual fund. FAFSA is required for some need-based funds.",
-        "es": "Una sola solicitud en el portal cubre docenas de fondos con nombre. Cada fondo establece sus propios requisitos de promedio, necesidad económica, especialidad, ensayo y referencias. Algunos fondos por necesidad económica requieren FAFSA."
-      }
-    },
-    "application_language": "en",
-    "source_url": "https://epcf.org/grants-and-scholarships/apply-for-a-scholarship",
-    "apply_url": null,
-    "summary": {
-      "en": "A single application to the El Paso Community Foundation covers dozens of named scholarship funds open to El Paso-area graduating seniors. Each fund sets its own GPA, financial need, and major requirements, and awards typically range from $500 to $5,000.",
-      "es": "Una sola solicitud a la El Paso Community Foundation cubre docenas de fondos con nombre para estudiantes del área de El Paso que se graduarán de la preparatoria. Cada fondo establece sus propios requisitos de promedio, necesidad económica y especialidad, y los montos suelen ir de $500 a $5,000."
-    },
-    "notes": {
-      "en": "Umbrella community foundation hosting many El Paso-area named funds. Check the portal each cycle for exact per-fund dates. The deadline recurs annually around early March; the exact 2027 date was not yet posted at the time of research.",
-      "es": "Fundación comunitaria que agrupa muchos fondos con nombre del área de El Paso. Revisa el portal cada ciclo para conocer las fechas exactas de cada fondo. La fecha límite se repite cada año a principios de marzo; la fecha exacta para 2027 aún no estaba publicada al momento de la investigación."
-    },
-    "translation_reviewed": false,
-    "last_verified": "2026-09-30"
-  },
-  {
-    "id": "paso-del-norte-community-foundation",
-    "name": "Paso del Norte Community Foundation Scholarships",
-    "sponsor": "Paso del Norte Community Foundation",
-    "amount_min": null,
-    "amount_max": null,
-    "amount_display": {
-      "en": "Varies by fund",
-      "es": "Varía según el fondo"
-    },
-    "renewable": null,
-    "deadline": null,
-    "cycle_status": "unknown",
-    "opens_month": null,
-    "categories": [
-      "regional"
-    ],
-    "grade_levels": [
-      "hs_senior"
-    ],
-    "residency": "el_paso_county",
-    "districts": [],
-    "schools": [],
-    "eligible_institutions": [],
-    "degree_types": [],
-    "gpa_min": null,
-    "fields_of_study": [],
-    "demographics": ["hispanic"],
-    "requirements": {
-      "essay_required": null,
-      "recs_needed": null,
-      "fafsa_required": null,
-      "accepts_tasfa": null,
-      "citizenship_required": null,
-      "interview": null,
-      "other": {
-        "en": "One portal application (Going Merry / Scholarship360) is considered for many named funds. Individual funds add GPA, service-hour, or campus-specific requirements. An essay and one to two recommendation letters are typical per fund.",
-        "es": "Una sola solicitud en el portal (Going Merry / Scholarship360) se considera para muchos fondos con nombre. Cada fondo agrega requisitos de promedio, horas de servicio o de un campus específico. Por lo general se piden un ensayo y una o dos cartas de recomendación."
-      }
-    },
-    "application_language": "en",
-    "source_url": "https://pdnfoundation.org/grants-and-scholarships/scholarships",
-    "apply_url": null,
-    "summary": {
-      "en": "One application through the Paso del Norte Community Foundation is considered for many named funds open to El Paso County graduating seniors. Award amounts and deadlines are set by each individual fund.",
-      "es": "Una sola solicitud a través de la Paso del Norte Community Foundation se considera para muchos fondos con nombre abiertos a estudiantes del condado de El Paso que se graduarán de la preparatoria. Cada fondo establece su propio monto y fecha límite."
-    },
-    "notes": {
-      "en": "Hosts named funds including Tito's Way, the Richard Castro Community Service Scholarship, the Braden Aboud B STRONG UTEP Scholarship, and the EPISD Education Foundation fund. Deadlines vary by fund; most have historically closed in spring, March to April.",
-      "es": "Alberga fondos con nombre como Tito's Way, la Richard Castro Community Service Scholarship, la Braden Aboud B STRONG UTEP Scholarship y el fondo de la EPISD Education Foundation. Las fechas límite varían según el fondo; la mayoría han cerrado en primavera, de marzo a abril."
-    },
-    "translation_reviewed": false,
-    "last_verified": "2026-09-30"
-  },
-  {
-    "id": "sisd-foundation",
-    "name": "SISD Foundation Scholarship",
-    "sponsor": "SISD Foundation",
-    "amount_min": null,
-    "amount_max": null,
-    "amount_display": {
-      "en": "$3,000–$3,500 district-wide award split among winners, plus separate school-specific awards of $1,000–$2,500",
-      "es": "Premio de $3,000–$3,500 a nivel del distrito, repartido entre los ganadores, más premios por escuela de $1,000–$2,500"
-    },
-    "renewable": null,
-    "deadline": null,
-    "cycle_status": "unknown",
-    "opens_month": null,
-    "categories": [
-      "regional"
-    ],
-    "grade_levels": [
-      "hs_senior"
-    ],
-    "residency": "specific_districts",
-    "districts": [
-      "Socorro ISD"
-    ],
-    "schools": [],
-    "eligible_institutions": [],
-    "degree_types": [],
-    "gpa_min": null,
-    "fields_of_study": [],
-    "demographics": [],
-    "requirements": {
-      "essay_required": null,
-      "recs_needed": null,
-      "fafsa_required": null,
-      "accepts_tasfa": null,
-      "citizenship_required": null,
-      "interview": null,
-      "other": {
-        "en": "Applicants must have completed two full years, 11th and 12th grade, at a Socorro ISD high school. An essay and transcript are typically required.",
-        "es": "Los solicitantes deben haber completado dos años completos, los grados 11 y 12, en una preparatoria de Socorro ISD. Por lo general se piden un ensayo y el historial académico."
-      }
-    },
-    "application_language": "en",
-    "source_url": "https://sisdfoundation.org/apply-now/",
-    "apply_url": null,
-    "summary": {
-      "en": "For Socorro ISD seniors who have attended an SISD high school for both 11th and 12th grade. A district-wide award is split among the winners, and individual campuses offer separate awards.",
-      "es": "Para estudiantes de último año de Socorro ISD que hayan asistido a una preparatoria del distrito en los grados 11 y 12. El premio a nivel del distrito se reparte entre los ganadores, y cada escuela ofrece premios por separado."
-    },
-    "notes": {
-      "en": "STALE DEADLINE FLAG: the sponsor page still showed the 2024-25 cycle at last check, so no deadline is recorded here. Call the SISD Foundation at (915) 937-1618 to confirm the Class-of-2027 dates before relying on this entry.",
-      "es": "AVISO DE FECHA DESACTUALIZADA: la página del patrocinador todavía mostraba el ciclo 2024-25 en la última revisión, así que aquí no se registra ninguna fecha límite. Llama a la SISD Foundation al (915) 937-1618 para confirmar las fechas de la generación 2027 antes de confiar en esta entrada."
-    },
-    "translation_reviewed": false,
-    "last_verified": "2026-09-30"
-  },
-  {
-    "id": "episd-education-foundation",
-    "name": "El Paso ISD Education Foundation Scholarship",
-    "sponsor": "El Paso ISD Education Foundation",
-    "amount_min": null,
-    "amount_max": 5000,
-    "amount_display": {
-      "en": "Up to $5,000",
-      "es": "Hasta $5,000"
-    },
-    "renewable": null,
-    "deadline": null,
-    "cycle_status": "upcoming",
-    "opens_month": null,
-    "categories": [
-      "regional"
-    ],
-    "grade_levels": [
-      "hs_senior"
-    ],
-    "residency": "specific_districts",
-    "districts": [
-      "El Paso ISD"
-    ],
-    "schools": [],
-    "eligible_institutions": [],
-    "degree_types": [],
-    "gpa_min": null,
-    "fields_of_study": [],
-    "demographics": [],
-    "requirements": {
-      "essay_required": true,
-      "recs_needed": null,
-      "fafsa_required": null,
-      "accepts_tasfa": null,
-      "citizenship_required": null,
-      "interview": null,
-      "other": {
-        "en": "The personal essay must be the student's own original work; AI-generated content is explicitly disqualifying. Selection weighs academics, leadership, and community service. Open only to El Paso ISD students, not to students in Socorro ISD, Ysleta ISD, Canutillo ISD, or other districts.",
-        "es": "El ensayo personal debe ser trabajo original del estudiante; el contenido generado por inteligencia artificial descalifica de forma explícita. La selección considera el rendimiento académico, el liderazgo y el servicio comunitario. Solo para estudiantes de El Paso ISD, no para estudiantes de Socorro ISD, Ysleta ISD, Canutillo ISD u otros distritos."
-      }
-    },
-    "application_language": "en",
-    "source_url": "https://www.episd.org/educationfoundation",
-    "apply_url": null,
-    "summary": {
-      "en": "Up to $5,000 for graduating seniors at El Paso ISD schools only. Selection weighs academics, leadership, and community service, and the personal essay must be the student's own original work.",
-      "es": "Hasta $5,000 para estudiantes de último año de las escuelas de El Paso ISD únicamente. La selección considera el rendimiento académico, el liderazgo y el servicio comunitario, y el ensayo personal debe ser trabajo original del estudiante."
-    },
-    "notes": {
-      "en": "District-restricted. Confirm the applicant's high school is inside El Paso ISD boundaries, not Socorro, Ysleta, or Canutillo ISD, before applying. The 2026 cycle closed on April 10, 2026; the 2027 date was not yet posted at the time of research.",
-      "es": "Restringido por distrito. Confirma que la preparatoria del solicitante esté dentro de los límites de El Paso ISD, no Socorro, Ysleta ni Canutillo ISD, antes de aplicar. El ciclo 2026 cerró el 10 de abril de 2026; la fecha para 2027 aún no estaba publicada al momento de la investigación."
-    },
-    "translation_reviewed": false,
-    "last_verified": "2026-09-30"
-  },
-  {
-    "id": "braden-aboud-b-strong-utep",
-    "name": "Braden Aboud B STRONG UTEP Scholarship",
-    "sponsor": "B STRONG El Paso",
-    "amount_min": 2000,
-    "amount_max": 2000,
-    "amount_display": {
-      "en": "$2,000, one-time",
-      "es": "$2,000, pago único"
-    },
-    "renewable": false,
-    "deadline": null,
-    "cycle_status": "upcoming",
-    "opens_month": null,
-    "categories": [
-      "regional"
-    ],
-    "grade_levels": [
-      "hs_senior"
-    ],
-    "residency": "el_paso_county",
-    "districts": [],
-    "schools": [],
-    "eligible_institutions": [
-      "UTEP"
-    ],
-    "degree_types": [],
-    "gpa_min": null,
-    "fields_of_study": [],
-    "demographics": [],
-    "requirements": {
-      "essay_required": null,
-      "recs_needed": 2,
-      "fafsa_required": null,
-      "accepts_tasfa": null,
-      "citizenship_required": null,
-      "interview": null,
-      "other": {
-        "en": "Applicants must be accepted to and plan to attend the University of Texas at El Paso. A high school transcript is required, along with two letters of recommendation: one academic and one community-based. Applications go through the Scholarships360 portal.",
-        "es": "Los solicitantes deben ser aceptados en la Universidad de Texas en El Paso y tener planes de asistir ahí. Se requiere el historial académico de preparatoria y dos cartas de recomendación: una académica y una de la comunidad. La solicitud se envía por el portal Scholarships360."
-      }
-    },
-    "application_language": "en",
-    "source_url": "https://bstrongelpaso.org/grants-scholarships",
-    "apply_url": null,
-    "summary": {
-      "en": "A one-time $2,000 award for El Paso-area graduating seniors who have been accepted to UTEP and plan to enroll there. Requires a high school transcript and two letters of recommendation, one academic and one from the community.",
-      "es": "Un premio único de $2,000 para estudiantes del área de El Paso que se graduarán de la preparatoria, que hayan sido aceptados en UTEP y planeen inscribirse ahí. Se requiere el historial académico y dos cartas de recomendación, una académica y una de la comunidad."
-    },
-    "notes": {
-      "en": "Requires a genuine intent to enroll at UTEP specifically, not just an admission offer used as a backup. The 2026 cycle deadline was April 3, 2026; confirm the 2027 date.",
-      "es": "Requiere la intención real de inscribirse específicamente en UTEP, no solo una carta de aceptación usada como respaldo. La fecha límite del ciclo 2026 fue el 3 de abril de 2026; confirma la fecha para 2027."
-    },
-    "translation_reviewed": false,
-    "last_verified": "2026-09-30"
-  },
-  {
-    "id": "utep-terry-scholars",
-    "name": "UTEP Terry Scholars Program",
-    "sponsor": "Terry Foundation / The University of Texas at El Paso",
-    "amount_min": null,
-    "amount_max": null,
-    "amount_display": {
-      "en": "Full cost of attendance",
-      "es": "Costo total de asistencia"
-    },
-    "renewable": null,
-    "deadline": "2027-01-11",
-    "cycle_status": "upcoming",
-    "opens_month": null,
-    "categories": [
-      "merit",
-      "need_based"
-    ],
-    "grade_levels": [
-      "hs_senior"
-    ],
-    "residency": "national",
-    "districts": [],
-    "schools": [],
-    "eligible_institutions": [
-      "UTEP"
-    ],
-    "degree_types": [],
-    "gpa_min": 3.0,
-    "fields_of_study": [],
-    "demographics": [],
-    "requirements": {
-      "essay_required": null,
-      "recs_needed": 1,
-      "fafsa_required": true,
-      "accepts_tasfa": null,
-      "citizenship_required": null,
-      "interview": null,
-      "other": {
-        "en": "Requires admission to UTEP as a prerequisite, financial need demonstrated through the FAFSA, and a separate Terry Scholars application on top of standard UTEP admission. Scholars must live in scholar housing during their freshman year.",
-        "es": "Requiere la admisión a UTEP como requisito previo, necesidad económica demostrada mediante la FAFSA y una solicitud aparte de Terry Scholars además de la admisión normal a UTEP. Los becarios deben vivir en la residencia designada durante su primer año."
-      }
-    },
-    "application_language": "en",
-    "source_url": "https://www.utep.edu/student-affairs/terryscholars/become-a-scholar/",
-    "apply_url": null,
-    "summary": {
-      "en": "Covers the full cost of attendance at UTEP for students with financial need demonstrated through the FAFSA and a GPA of 3.0 or higher. Scholars must live in scholar housing during their freshman year.",
-      "es": "Cubre el costo total de asistencia en UTEP para estudiantes con necesidad económica demostrada mediante la FAFSA y un promedio de 3.0 o más. Los becarios deben vivir en la residencia designada durante su primer año."
-    },
-    "notes": {
-      "en": "Combines need and merit; requires UTEP admission as a prerequisite. The deadline falls in early January 2027, historically the first week of January, but the exact date was not posted at the time of research.",
-      "es": "Combina necesidad económica y mérito; requiere la admisión a UTEP como requisito previo. La fecha límite cae a principios de enero de 2027, por lo general la primera semana de enero, pero la fecha exacta no estaba publicada al momento de la investigación."
-    },
-    "translation_reviewed": false,
-    "last_verified": null
-  },
-  {
-    "id": "dell-scholars",
-    "name": "Dell Scholars Program",
-    "sponsor": "Michael & Susan Dell Foundation",
-    "amount_min": 20000,
-    "amount_max": 20000,
-    "amount_display": {
-      "en": "$20,000, plus a laptop and textbook credits",
-      "es": "$20,000, más una computadora portátil y crédito para libros"
-    },
-    "renewable": null,
-    "deadline": null,
-    "cycle_status": "upcoming",
-    "opens_month": null,
-    "categories": [
-      "need_based"
-    ],
-    "grade_levels": ["hs_senior"],
-    "residency": "national",
-    "districts": [],
-    "schools": [],
-    "eligible_institutions": [],
-    "degree_types": [],
-    "gpa_min": 2.4,
-    "fields_of_study": [],
-    "demographics": [],
-    "requirements": {
-      "essay_required": true,
-      "recs_needed": null,
-      "fafsa_required": null,
-      "accepts_tasfa": null,
-      "citizenship_required": null,
-      "interview": null,
-      "other": {
-        "en": "Requires demonstrated significant financial need in the Pell-eligible range and evidence of overcoming substantial obstacles. The application values resilience and grit over test scores.",
-        "es": "Requiere necesidad económica significativa comprobada, dentro del rango de elegibilidad para la beca Pell, y evidencia de haber superado obstáculos importantes. La solicitud valora la resiliencia y la perseverancia más que los exámenes estandarizados."
-      }
-    },
-    "application_language": "en",
-    "source_url": "https://www.dellscholars.org/",
-    "apply_url": null,
-    "summary": {
-      "en": "$20,000 plus a laptop and textbook credits for students with significant financial need who have overcome substantial obstacles. For students in an approved college-readiness program. Requires a minimum 2.4 GPA, and the application values resilience over test scores.",
-      "es": "$20,000 más una computadora portátil y crédito para libros, para estudiantes con necesidad económica significativa que han superado obstáculos importantes. Requiere un promedio mínimo de 2.4, y la solicitud valora la resiliencia más que los exámenes estandarizados."
-    },
-    "notes": {
-      "en": "The deadline is estimated at around February 15, 2027 based on the recurring annual window; no exact date was stated at the time of research.",
-      "es": "La fecha límite se estima alrededor del 15 de febrero de 2027, según el ciclo anual que se repite; no se indicó una fecha exacta al momento de la investigación."
-    },
-    "translation_reviewed": false,
-    "last_verified": null
-  },
-  {
-    "id": "horatio-alger-national-texas",
-    "name": "Horatio Alger National / Texas Scholarship",
-    "sponsor": "Horatio Alger Association",
-    "amount_min": 10000,
-    "amount_max": 25000,
-    "amount_display": {
-      "en": "$25,000 national award; $10,000 Texas award, same application",
-      "es": "$25,000 en el premio nacional; $10,000 en el premio de Texas, con la misma solicitud"
-    },
-    "renewable": null,
-    "deadline": null,
-    "cycle_status": "upcoming",
-    "opens_month": null,
-    "categories": [
-      "need_based"
-    ],
-    "grade_levels": [],
-    "residency": "national",
-    "districts": [],
-    "schools": [],
-    "eligible_institutions": [],
-    "degree_types": [],
-    "gpa_min": null,
-    "fields_of_study": [],
-    "demographics": [],
-    "requirements": {
-      "essay_required": true,
-      "recs_needed": null,
-      "fafsa_required": null,
-      "accepts_tasfa": null,
-      "citizenship_required": null,
-      "interview": null,
-      "other": {
-        "en": "Requires significant financial need with family income under a published threshold, demonstrated resilience through personal adversity, involvement in co-curricular activities, and income documentation. The personal essay is on adversity and perseverance.",
-        "es": "Requiere necesidad económica significativa, con un ingreso familiar por debajo de un límite publicado, resiliencia comprobada ante la adversidad personal, participación en actividades extracurriculares y documentación de ingresos. El ensayo personal trata sobre la adversidad y la perseverancia."
-      }
-    },
-    "application_language": "en",
-    "source_url": "https://scholars.horatioalger.org/",
-    "apply_url": null,
-    "summary": {
-      "en": "One application is considered for both a $25,000 national award and a $10,000 Texas award. For students with significant financial need who have shown resilience through personal adversity and are involved in co-curricular activities.",
-      "es": "Una sola solicitud se considera tanto para el premio nacional de $25,000 como para el premio de Texas de $10,000. Para estudiantes con necesidad económica significativa que han mostrado resiliencia ante la adversidad personal y participan en actividades extracurriculares."
-    },
-    "notes": {
-      "en": "Texas residents are automatically considered for both the National and Texas-specific awards on one application. The deadline is estimated at around October 25, 2026 based on the recurring cycle. Verify this one early: it may fall within weeks of the workshop.",
-      "es": "Los residentes de Texas se consideran automáticamente para el premio nacional y el de Texas con una sola solicitud. La fecha límite se estima alrededor del 25 de octubre de 2026 según el ciclo que se repite. Verifica esta entrada pronto: podría caer a pocas semanas del taller."
-    },
-    "translation_reviewed": false,
-    "last_verified": null
-  },
-  {
-    "id": "jack-kent-cooke-college",
-    "name": "Jack Kent Cooke Foundation College Scholarship",
-    "sponsor": "Jack Kent Cooke Foundation",
-    "amount_min": null,
-    "amount_max": 55000,
-    "amount_display": {
-      "en": "Up to $55,000 per year, renewable for up to 4 years",
-      "es": "Hasta $55,000 por año, renovable por hasta 4 años"
-    },
-    "renewable": true,
-    "deadline": null,
-    "cycle_status": "upcoming",
-    "opens_month": null,
-    "categories": [
-      "merit",
-      "need_based"
-    ],
-    "grade_levels": [
-      "hs_senior"
-    ],
-    "residency": "national",
-    "districts": [],
-    "schools": [],
-    "eligible_institutions": [],
-    "degree_types": [],
-    "gpa_min": null,
-    "fields_of_study": [],
-    "demographics": [],
-    "requirements": {
-      "essay_required": true,
-      "recs_needed": 2,
-      "fafsa_required": null,
-      "accepts_tasfa": null,
-      "citizenship_required": null,
-      "interview": null,
-      "other": {
-        "en": "Requires academic performance in roughly the top 15%, financial need with household income typically under roughly $95,000, a leadership and service record, a transcript, and financial documentation. The application is extensive and includes multiple essays.",
-        "es": "Requiere un rendimiento académico dentro del 15% superior aproximadamente, necesidad económica con un ingreso familiar por lo general menor a unos $95,000, un historial de liderazgo y servicio, el historial académico y documentación financiera. La solicitud es extensa e incluye varios ensayos."
-      }
-    },
-    "application_language": "en",
-    "source_url": "https://www.jkcf.org/our-scholarships/",
-    "apply_url": null,
-    "summary": {
-      "en": "Up to $55,000 per year, renewable for up to four years, for students in roughly the top 15% academically who also have financial need and a record of leadership or service. The application is extensive and requires multiple essays and two recommendation letters.",
-      "es": "Hasta $55,000 por año, renovable por hasta cuatro años, para estudiantes dentro del 15% superior a nivel académico que también tienen necesidad económica y un historial de liderazgo o servicio. La solicitud es extensa y requiere varios ensayos y dos cartas de recomendación."
-    },
-    "notes": {
-      "en": "One of the largest need-based awards available directly to a high school senior; highly competitive. The deadline is estimated at around November 13, 2026. Verify this one early: it falls soon after the workshop.",
-      "es": "Uno de los premios por necesidad económica más grandes disponibles directamente para un estudiante de último año de preparatoria; muy competitivo. La fecha límite se estima alrededor del 13 de noviembre de 2026. Verifica esta entrada pronto: cae poco después del taller."
-    },
-    "translation_reviewed": false,
-    "last_verified": null
+    "last_verified": "2026-11-09"
   }
 ]

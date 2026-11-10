@@ -1,14 +1,18 @@
 /**
- * main.js — entry point. Wires up the language toggle and (from Phase 2 on)
- * the search UI.
+ * main.js — entry point. Wires up the language toggle and renders the two v1
+ * sections ("Open now" and "Opening soon").
  *
- * Phase 0 scope: the placeholder page plus a fully working language toggle,
- * so the bilingual plumbing is proven before any data or filters exist.
+ * The scholarship data is imported, not fetched, so Vite bundles it into the
+ * page: no extra request, no loading state, and nothing to fail on a weak
+ * phone connection.
  */
 
 // styles.css is loaded by the <link> in index.html, not imported here, so the
 // page is styled before this module runs (no flash of unstyled content).
 import { resolveInitialLang, setLang, getLang } from './i18n.js';
+import { toISODate, openNow, openingSoon } from './search.js';
+import { renderOpenNow, renderOpeningSoon } from './render.js';
+import scholarships from '../data/scholarships.json';
 
 /** Reflects the active language on the two toggle buttons. */
 function syncLangToggle() {
@@ -19,18 +23,30 @@ function syncLangToggle() {
   }
 }
 
+/**
+ * "Today" is the student's own calendar day, read on every render, so an
+ * entry whose deadline has ended drops off on the next load with no data change.
+ */
+function renderLists() {
+  const today = toISODate(new Date());
+  renderOpenNow(document.getElementById('open-now-list'), openNow(scholarships, today));
+  renderOpeningSoon(document.getElementById('opening-soon-list'), openingSoon(scholarships, today));
+}
+
 function initLangToggle() {
   for (const button of document.querySelectorAll('[data-set-lang]')) {
     button.addEventListener('click', () => setLang(button.dataset.setLang));
   }
-  // setLang fires this, so the buttons stay in sync no matter who switched.
-  document.addEventListener('languagechange', syncLangToggle);
+  // setLang fires this, so the buttons and cards stay in sync no matter who switched.
+  document.addEventListener('languagechange', () => {
+    syncLangToggle();
+    renderLists();
+  });
 }
 
 function init() {
   initLangToggle();
   setLang(resolveInitialLang(), { persist: false }); // don't save a language the user never chose
-  syncLangToggle();
 }
 
 init();

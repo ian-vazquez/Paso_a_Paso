@@ -1,29 +1,30 @@
 {
   "site": {
-    "title": "Scholarship Finder for El Paso Students",
+    "title": "Scholarships you can apply for",
     "tagline": "Scholarships for El Paso students",
     "trust_line": "No account. No personal info stored.",
-    "meta_description": "A free, bilingual scholarship search for El Paso-area students. No account. No personal info stored.",
+    "meta_description": "A free, bilingual list of scholarships for El Paso-area students. No account. No personal info stored.",
     "footer_note": "Always confirm details on the scholarship's own website before you apply. Deadlines change."
   },
-
+  "page": {
+    "intro": "Scholarships El Paso-area students can apply for, soonest deadline first. Always check the official page before you apply."
+  },
+  "sections": {
+    "open_now": "Open now",
+    "opening_soon": "Opening soon",
+    "dates_not_posted": "Dates not posted yet",
+    "open_now_empty": "Nothing is open right now. See “Opening soon” below."
+  },
   "a11y": {
     "skip_to_content": "Skip to content",
     "language_switcher": "Language",
     "opens_new_tab": "opens in a new tab"
   },
-
-  "placeholder": {
-    "heading": "This site is being built.",
-    "body": "The scholarship list and search are coming before the October workshop. Nothing here is final yet."
-  },
-
   "search": {
     "label": "Search scholarships",
     "placeholder": "Name, sponsor, or keyword",
     "clear": "Clear search"
   },
-
   "filters": {
     "heading": "Filters",
     "category": "Type of scholarship",
@@ -37,7 +38,6 @@
     "show_closed": "Also show closed scholarships that reopen",
     "reset": "Clear all filters"
   },
-
   "categories": {
     "merit": "Merit",
     "need_based": "Need-based",
@@ -46,7 +46,6 @@
     "demographic": "Demographic-specific",
     "field_specific": "Specific field of study"
   },
-
   "residency": {
     "el_paso_county": "El Paso County",
     "specific_districts": "Specific districts",
@@ -54,19 +53,16 @@
     "texas": "Texas",
     "national": "Anywhere in the U.S."
   },
-
   "degree_types": {
     "associate": "Associate degree",
     "bachelor": "Bachelor's degree",
     "trade_technical": "Trade or technical program"
   },
-
   "grade_levels": {
     "hs_junior": "High school junior",
     "hs_senior": "High school senior",
     "college": "College student"
   },
-
   "demographics": {
     "hispanic": "Hispanic or Latino",
     "first_gen": "First-generation college student",
@@ -76,7 +72,6 @@
     "native_american": "Native American",
     "military_connected": "Military or veteran families"
   },
-
   "fields_of_study": {
     "stem": "STEM",
     "cs": "Computer science",
@@ -85,7 +80,6 @@
     "hospitality": "Hospitality or tourism",
     "business": "Business"
   },
-
   "cycle_status": {
     "open": "Open now",
     "upcoming": "Opens soon",
@@ -93,13 +87,11 @@
     "rolling": "Rolling deadline",
     "unknown": "Status not listed"
   },
-
   "sort": {
     "label": "Sort by",
     "deadline": "Deadline soonest",
     "amount": "Largest amount"
   },
-
   "card": {
     "sponsor": "Offered by",
     "amount": "Award",
@@ -118,15 +110,21 @@
     "renewable": "Renewable",
     "gpa_min": "Minimum GPA {gpa}",
     "application_in_english": "The application itself is in English.",
-    "summary_english_only": "This summary has not been translated yet, so it is shown in English."
+    "summary_english_only": "This summary has not been translated yet, so it is shown in English.",
+    "who": "Who it's for",
+    "requirements": "Key requirements",
+    "official_page": "Official page",
+    "check_dates": "Check the official page for dates.",
+    "institutions": "For students at {schools}",
+    "no_fafsa_required": "FAFSA not required",
+    "no_tasfa": "Does not accept TASFA",
+    "no_interview": "No interview"
   },
-
   "value": {
     "not_listed": "Not listed — check source",
     "yes": "Yes",
     "no": "No"
   },
-
   "results": {
     "count_one": "1 scholarship",
     "count_other": "{count} scholarships",
