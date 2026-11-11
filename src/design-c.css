@@ -311,6 +311,42 @@
   }
 }
 
+/* Wide screens: brand, trust line and language toggle share one row across
+   the full band, lined up with the page content below. The bar's box is
+   dropped (display: contents) so its two children join the header's grid. */
+@media (min-width: 56.25rem) {
+  [data-design='c'] .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: var(--space-4) var(--space-6);
+    padding-inline: max(
+      var(--space-8),
+      calc((100% - var(--measure)) / 2 + var(--space-8))
+    );
+  }
+
+  [data-design='c'] .site-header > * {
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  [data-design='c'] .site-header__bar {
+    display: contents;
+  }
+
+  /* Visual order only: brand, trust line, toggle. The trust line is not
+     focusable, so keyboard order is unchanged. */
+  [data-design='c'] .trust-line {
+    order: 1;
+    margin-top: 0;
+  }
+
+  [data-design='c'] .lang-toggle {
+    order: 2;
+  }
+}
+
 /* Only colour fades, and only for people who have not asked for less motion. */
 @media (prefers-reduced-motion: no-preference) {
   [data-design='c'] .card__links a,

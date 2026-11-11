@@ -350,3 +350,93 @@ h2 {
 .empty {
   color: var(--text-muted);
 }
+
+/* ------------------------------------------------------------------ *
+ * Wide screens (about 900px and up)
+ *
+ * Everything above is the phone layout and is not touched here. From 900px
+ * the page stops being one narrow column: the reading measure widens, the
+ * intro splits into two columns, and the cards sit in a grid (2 across,
+ * 3 from about 1300px). Same HTML; only these rules change.
+ * ------------------------------------------------------------------ */
+
+@media (min-width: 56.25rem) {
+  :root {
+    --measure: 92rem;
+  }
+
+  .site-header,
+  main,
+  .site-footer {
+    padding-inline: var(--space-8);
+  }
+
+  /* The footer's top rule lines up with the content edge, like the
+     section rules, instead of running into the side padding. */
+  .site-footer {
+    width: min(100% - 2 * var(--space-8), var(--measure) - 2 * var(--space-8));
+    padding-inline: 0;
+  }
+
+  /* Intro: title and lede on the left, the requirements note beside them.
+     Everything else in <main> (the two sections) spans the full width. */
+  main {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    column-gap: var(--space-8);
+  }
+
+  main > * {
+    grid-column: 1 / -1;
+  }
+
+  main > h1,
+  main > .lede {
+    grid-column: 1;
+  }
+
+  main > .requirements-note {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+  }
+
+  /* Card grid. Month headings and the empty-state message are not cards,
+     so they take a whole row. */
+  #open-now-list,
+  #opening-soon-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6);
+  }
+
+  #open-now-list > :not(.card),
+  #opening-soon-list > :not(.card) {
+    grid-column: 1 / -1;
+    justify-self: start; /* a heading styled as a pill stays pill-sized */
+    margin-block: var(--space-2) 0;
+  }
+
+  #opening-soon-list > .month-heading:first-child {
+    margin-top: 0;
+  }
+
+  /* Cards in a row share one height; the link and "last verified" line sit
+     at the bottom so they line up across the row. */
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .card__links {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 81.25rem) {
+  #open-now-list,
+  #opening-soon-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
