@@ -16,8 +16,9 @@ import scholarships from '../data/scholarships.json';
 
 /**
  * Design comparison (temporary, Nov 2026): ?design=a|b|c picks one of three
- * stylesheets, loaded on top of styles.css. Default is b. The chosen letter is
- * also set as <html data-design> so a stylesheet can scope rules if it wants.
+ * stylesheets, loaded on top of styles.css. Default is c, the warm design Ian
+ * picked for the Nov 17 workshop. The chosen letter is also set as
+ * <html data-design> so a stylesheet can scope rules if it wants.
  * Only the URL is read; nothing is stored. Delete this block once Ian picks one.
  */
 const DESIGNS = {
@@ -25,7 +26,7 @@ const DESIGNS = {
   b: () => import('./design-b.css'),
   c: () => import('./design-c.css'),
 };
-const DEFAULT_DESIGN = 'b';
+const DEFAULT_DESIGN = 'c';
 
 function loadDesign() {
   const requested = new URLSearchParams(location.search).get('design');
