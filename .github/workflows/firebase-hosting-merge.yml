@@ -54,3 +54,6 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SCHOLARSHIP_SITE_FD70F }}
           channelId: live
           projectId: scholarship-site-fd70f
+          # "live" is the deploy target in .firebaserc: the pasoapaso site,
+          # served at https://pasoapaso.web.app
+          target: live

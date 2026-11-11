@@ -52,3 +52,6 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SCHOLARSHIP_SITE_FD70F }}
           projectId: scholarship-site-fd70f
+          # "live" is the deploy target in .firebaserc: the pasoapaso site,
+          # served at https://pasoapaso.web.app
+          target: live
