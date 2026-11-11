@@ -107,6 +107,11 @@ a:hover {
   color: var(--accent-hover);
 }
 
+/* The hidden attribute always wins, even over a component's own display. */
+[hidden] {
+  display: none !important;
+}
+
 /* One visible focus style for everything, per the accessibility bar. */
 :focus-visible {
   outline: 3px solid var(--focus);

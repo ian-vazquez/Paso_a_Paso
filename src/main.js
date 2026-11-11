@@ -14,6 +14,16 @@ import { toISODate, openNow, openingSoon } from './search.js';
 import { renderOpenNow, renderOpeningSoon } from './render.js';
 import scholarships from '../data/scholarships.json';
 
+/**
+ * v1 (Nov 2026 workshop) ships in English only, because there was no time to
+ * review the Spanish before launch. While this is true the page always renders
+ * in English, whatever the browser language or a previously saved choice, and
+ * the toggle in index.html carries the hidden attribute. es.json and i18n.js
+ * are untouched. To bring Spanish back: set this to false and remove `hidden`
+ * from the toggle.
+ */
+const ENGLISH_ONLY = true;
+
 /** Reflects the active language on the two toggle buttons. */
 function syncLangToggle() {
   const active = getLang();
@@ -46,7 +56,8 @@ function initLangToggle() {
 
 function init() {
   initLangToggle();
-  setLang(resolveInitialLang(), { persist: false }); // don't save a language the user never chose
+  // persist: false so we never save a language the user did not choose.
+  setLang(ENGLISH_ONLY ? 'en' : resolveInitialLang(), { persist: false });
 }
 
 init();
