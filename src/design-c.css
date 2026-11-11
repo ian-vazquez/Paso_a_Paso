@@ -93,10 +93,6 @@
   color: var(--accent);
 }
 
-[data-design='c'] .brand__tagline {
-  color: var(--text-muted);
-}
-
 [data-design='c'] .lang-toggle__btn {
   background: var(--bg);
   border-color: var(--border-strong);
@@ -311,13 +307,13 @@
   }
 }
 
-/* Wide screens: brand, trust line and language toggle share one row across
+/* Wide screens: brand and language toggle share one row across
    the full band, lined up with the page content below. The bar's box is
    dropped (display: contents) so its two children join the header's grid. */
 @media (min-width: 56.25rem) {
   [data-design='c'] .site-header {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
     gap: var(--space-4) var(--space-6);
     padding-inline: max(
@@ -333,17 +329,6 @@
 
   [data-design='c'] .site-header__bar {
     display: contents;
-  }
-
-  /* Visual order only: brand, trust line, toggle. The trust line is not
-     focusable, so keyboard order is unchanged. */
-  [data-design='c'] .trust-line {
-    order: 1;
-    margin-top: 0;
-  }
-
-  [data-design='c'] .lang-toggle {
-    order: 2;
   }
 }
 

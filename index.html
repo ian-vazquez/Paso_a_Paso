@@ -12,7 +12,7 @@
     <title>Paso a Paso — Scholarships you can apply for</title>
     <meta
       name="description"
-      content="A free, bilingual list of scholarships for El Paso-area students. No account. No personal info stored."
+      content="A free list of scholarships for El Paso-area students. No account. No personal info stored."
     />
     <!--
       Icons live in public/ so they keep these exact URLs after the build.
@@ -32,15 +32,18 @@
       <div class="site-header__bar">
         <p class="brand">
           <span class="brand__name">Paso a Paso</span>
-          <span class="brand__tagline" data-i18n="site.tagline"></span>
         </p>
 
         <!--
           Language toggle. Two buttons rather than a <select> so the current
           language is announced by screen readers via aria-pressed, and so it
           works with one tap on a phone.
+
+          Hidden for the v1 workshop release, which is English only (see
+          ENGLISH_ONLY in src/main.js). Remove the hidden attribute to bring
+          it back.
         -->
-        <nav class="lang-toggle" aria-label="Language / Idioma">
+        <nav class="lang-toggle" aria-label="Language / Idioma" hidden>
           <button type="button" class="lang-toggle__btn" data-set-lang="en" lang="en">
             English
           </button>
@@ -49,8 +52,6 @@
           </button>
         </nav>
       </div>
-
-      <p class="trust-line" data-i18n="site.trust_line"></p>
     </header>
 
     <main id="main">
@@ -72,6 +73,7 @@
 
     <footer class="site-footer">
       <p data-i18n="site.footer_note"></p>
+      <p class="trust-line" data-i18n="site.trust_line"></p>
     </footer>
 
     <script type="module" src="/src/main.js"></script>

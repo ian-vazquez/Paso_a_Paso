@@ -3,7 +3,7 @@
     "title": "Scholarships you can apply for",
     "tagline": "Scholarships for El Paso students",
     "trust_line": "No account. No personal info stored.",
-    "meta_description": "A free, bilingual list of scholarships for El Paso-area students. No account. No personal info stored.",
+    "meta_description": "A free list of scholarships for El Paso-area students. No account. No personal info stored.",
     "footer_note": "Always confirm details on the scholarship's own website before you apply. Deadlines change."
   },
   "page": {
@@ -120,7 +120,7 @@
     "no_fafsa_required": "FAFSA not required",
     "no_tasfa": "Does not accept TASFA",
     "no_interview": "No interview",
-    "requirements_note": "Main requirements only. The application may ask for more."
+    "requirements_note": "There may be more required application steps than those listed here."
   },
   "value": {
     "not_listed": "Not listed — check source",
