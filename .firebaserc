@@ -1,5 +1,12 @@
 {
   "projects": {
     "default": "scholarship-site-fd70f"
+  },
+  "targets": {
+    "scholarship-site-fd70f": {
+      "hosting": {
+        "live": ["pasoapaso"]
+      }
+    }
   }
 }

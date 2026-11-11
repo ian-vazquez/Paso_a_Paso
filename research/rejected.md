@@ -1,0 +1,1 @@
+- GECU Robert A. Cunningham Memorial Scholarship — different credit union (gecreditunion.org), not El Paso's GECU. Cut 2026-09-29.

@@ -252,6 +252,12 @@ Firebase project: `scholarship-site-fd70f`. The deploy credential lives in the
 GitHub Actions secret `FIREBASE_SERVICE_ACCOUNT_SCHOLARSHIP_SITE_FD70F`. It is
 never in this repo, and it never gets pasted into a chat.
 
+The project has two Hosting sites. Deploys go to the `pasoapaso` site
+(https://pasoapaso.web.app) through the deploy target `live`, which `.firebaserc`
+maps to that site and `firebase.json` and both workflows name. The project's
+original site (https://scholarship-site-fd70f.web.app) no longer receives deploys
+and shows whatever was last published there.
+
 `firebase.json` also sets a few response headers: long-lived caching for hashed
 assets in `/assets/**`, no caching for `index.html` so a deploy is picked up
 immediately, `X-Content-Type-Options: nosniff`, and `Referrer-Policy: no-referrer`

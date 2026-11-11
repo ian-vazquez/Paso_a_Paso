@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-design="c">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,12 +9,21 @@
       the language is resolved. The values here are the English fallbacks that
       show before JavaScript runs (and to crawlers that do not run it).
     -->
-    <title>Paso a Paso — Scholarship Finder for El Paso Students</title>
+    <title>Paso a Paso — Scholarships you can apply for</title>
     <meta
       name="description"
-      content="A free, bilingual scholarship search for El Paso-area students. No account. No personal info stored."
+      content="A free, bilingual list of scholarships for El Paso-area students. No account. No personal info stored."
     />
+    <!--
+      Icons live in public/ so they keep these exact URLs after the build.
+      iOS ignores SVG for the home-screen icon, so apple-touch-icon is a
+      180px PNG rendered from favicon.svg.
+    -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="/src/styles.css" />
+    <!-- The site's one design. Its rules are scoped to data-design="c" on <html>. -->
+    <link rel="stylesheet" href="/src/design-c.css" />
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="a11y.skip_to_content">Skip to content</a>
@@ -46,8 +55,19 @@
 
     <main id="main">
       <h1 data-i18n="site.title"></h1>
-      <p class="lede" data-i18n="placeholder.heading"></p>
-      <p data-i18n="placeholder.body"></p>
+      <p class="lede" data-i18n="page.intro"></p>
+      <p class="requirements-note" data-i18n="page.requirements_note"></p>
+
+      <!-- Both lists are filled by src/render.js. -->
+      <section class="section" aria-labelledby="open-now-heading">
+        <h2 id="open-now-heading" data-i18n="sections.open_now"></h2>
+        <div id="open-now-list"></div>
+      </section>
+
+      <section class="section" aria-labelledby="opening-soon-heading">
+        <h2 id="opening-soon-heading" data-i18n="sections.opening_soon"></h2>
+        <div id="opening-soon-list"></div>
+      </section>
     </main>
 
     <footer class="site-footer">

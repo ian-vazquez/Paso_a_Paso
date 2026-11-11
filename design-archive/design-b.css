@@ -1,0 +1,294 @@
+/*
+ * design-b.css — design option B — Simple, "official and trustworthy": editorial typography, generous white space, restrained palette.
+ *
+ * Loaded AFTER styles.css (via ?design=b in src/main.js), so rules here at
+ * the same specificity override the base. styles.css still provides the
+ * reset, layout skeleton, skip link, focus ring and the base card structure;
+ * override whatever this design needs, including the :root tokens.
+ *
+ * Palette (Ian, Nov 10): royal purple, white, tangerine orange.
+ * Orange is never used as text on white. See the design brief for the rest.
+ */
+
+/*
+ * Concept: a printed counselor handout. Serif headings in royal purple, plain
+ * sans body, lots of air. The only orange on the page is the deadline tab on
+ * each card, so the eye goes there first. Fonts are system stacks: no
+ * download, nothing extra on a slow phone connection.
+ * Contrast ratios for every pair are listed in the design-B report.
+ */
+
+:root[data-design='b'] {
+  --bg: #ffffff;
+  --surface: #f6f4fa;
+  --border: #ddd8e8;        /* decorative hairlines only */
+  --border-strong: #8a83a0; /* control borders, 3.6:1 on white */
+  --text: #1c1530;
+  --text-muted: #5b5470;
+  --accent: #4a1f9e;        /* royal purple: headings, links */
+  --accent-text: #ffffff;
+  --accent-hover: #35137a;
+  --orange: #ff9933;        /* tangerine: deadline only, never as text */
+  --on-orange: #1c1530;
+  --focus: #4a1f9e;
+
+  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua',
+    Charter, 'Bitstream Charter', Georgia, serif;
+  --radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-design='b'] {
+    --bg: #1a1030;
+    --surface: #241940;
+    --border: #3a2d5c;
+    --border-strong: #6e6390;
+    --text: #ffffff;
+    --text-muted: #c4bad9;
+    --accent: #c8b4ff;
+    --accent-text: #1a1030;
+    --accent-hover: #e0d4ff;
+    --orange: #ff9933;
+    --on-orange: #1a1030;
+    --focus: #ffb15c;
+  }
+}
+
+/* ---- Type ---- */
+
+[data-design='b'] body {
+  line-height: 1.6;
+}
+
+[data-design='b'] h1,
+[data-design='b'] h2,
+[data-design='b'] .month-heading,
+[data-design='b'] .brand__name {
+  font-family: var(--font-serif);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+[data-design='b'] h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin-bottom: var(--space-4);
+}
+
+[data-design='b'] h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-4);
+}
+
+[data-design='b'] .month-heading {
+  font-size: 0.8125rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: var(--space-8) 0 var(--space-3);
+}
+
+[data-design='b'] .lede {
+  font-size: 1.125rem;
+  color: var(--text);
+}
+
+[data-design='b'] .requirements-note {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--border);
+}
+
+/* ---- Header ---- */
+
+[data-design='b'] .site-header {
+  padding-top: var(--space-6);
+}
+
+[data-design='b'] .site-header__bar {
+  align-items: center;
+}
+
+[data-design='b'] .brand__name {
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+[data-design='b'] .lang-toggle {
+  gap: 0;
+}
+
+[data-design='b'] .lang-toggle__btn {
+  background: var(--bg);
+  border-color: var(--border-strong);
+}
+
+[data-design='b'] .lang-toggle__btn + .lang-toggle__btn {
+  border-left-width: 0;
+}
+
+[data-design='b'] .lang-toggle__btn:hover {
+  background: var(--surface);
+}
+
+[data-design='b'] .lang-toggle__btn[aria-pressed='true'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+[data-design='b'] .trust-line {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  padding: 0 0 var(--space-4);
+  background: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+/* Small check mark drawn in CSS: no image, no extra request. */
+[data-design='b'] .trust-line::before {
+  content: '';
+  flex: none;
+  width: 0.45em;
+  height: 0.8em;
+  margin: 0.2em 0.35em 0 0.2em;
+  border: solid var(--accent);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+
+/* ---- Sections and cards ---- */
+
+[data-design='b'] main {
+  padding-top: var(--space-8);
+}
+
+[data-design='b'] .section {
+  margin-top: 3rem;
+}
+
+[data-design='b'] .card {
+  margin-bottom: var(--space-6);
+  padding: var(--space-4);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+/* Same space above every title, whether it is an h3 or an h4. */
+[data-design='b'] .card .card__title {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--accent);
+  text-wrap: balance;
+}
+
+/* The deadline: the one orange thing on the card, and the loudest. */
+[data-design='b'] .card__deadline {
+  display: block;
+  margin: 0 calc(var(--space-4) * -1) var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--orange);
+  color: var(--on-orange);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+}
+
+[data-design='b'] .card__facts {
+  margin: 0 0 var(--space-4);
+}
+
+[data-design='b'] .card__facts dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+[data-design='b'] .card__facts dd {
+  margin: 0 0 var(--space-3);
+}
+
+[data-design='b'] .card__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+[data-design='b'] .card__reqs {
+  padding-left: 1.125rem;
+}
+
+[data-design='b'] .card__reqs li {
+  margin-bottom: var(--space-1);
+}
+
+[data-design='b'] .card__reqs li::marker {
+  color: var(--accent);
+}
+
+[data-design='b'] .card__disclaimer {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+[data-design='b'] .card__notes {
+  padding: var(--space-3);
+  background: var(--surface);
+  color: var(--text);
+}
+
+[data-design='b'] .card__note {
+  color: var(--text-muted);
+}
+
+[data-design='b'] .card__links {
+  margin-bottom: var(--space-2);
+}
+
+[data-design='b'] .card__links a {
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+[data-design='b'] .card__verified {
+  margin-top: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border);
+  font-size: 0.8125rem;
+}
+
+[data-design='b'] .empty {
+  padding: var(--space-4);
+  background: var(--surface);
+  color: var(--text);
+}
+
+[data-design='b'] .site-footer {
+  margin-top: var(--space-8);
+}
+
+[data-design='b'] :focus-visible {
+  outline-color: var(--focus);
+}

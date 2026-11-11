@@ -238,3 +238,205 @@ main {
 .lede {
   font-size: 1.125rem;
 }
+
+/* ------------------------------------------------------------------ *
+ * v1 sections and cards
+ * ------------------------------------------------------------------ */
+
+.section {
+  margin-top: var(--space-8);
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+.month-heading {
+  font-size: 1.125rem;
+  margin-top: var(--space-6);
+}
+
+.card {
+  margin-bottom: var(--space-4);
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  /* Long names and pasted URLs wrap instead of pushing the page sideways. */
+  overflow-wrap: anywhere;
+}
+
+.card > :last-child,
+.card__prose > :last-child {
+  margin-bottom: 0;
+}
+
+.card__prose {
+  margin-bottom: var(--space-4);
+}
+
+.card__title {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-2);
+}
+
+.card__deadline {
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+}
+
+/* Label above value: Spanish labels run long, so no side-by-side columns. */
+.card__facts {
+  margin: 0 0 var(--space-3);
+}
+
+.card__facts dt {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.card__facts dd {
+  margin: 0 0 var(--space-2);
+}
+
+.card__label {
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+}
+
+.card__reqs {
+  margin: 0 0 var(--space-4);
+  padding-left: 1.25rem;
+}
+
+.card__notes,
+.card__note,
+.card__verified {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.card__note {
+  font-style: italic;
+}
+
+.card__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-4);
+}
+
+.card__links a {
+  /* 44px tall tap target, same as the language toggle. */
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button {
+  padding: var(--space-2) var(--space-4);
+  background: var(--accent);
+  color: var(--accent-text);
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--accent-hover);
+  color: var(--accent-text);
+}
+
+.empty {
+  color: var(--text-muted);
+}
+
+/* ------------------------------------------------------------------ *
+ * Wide screens (about 900px and up)
+ *
+ * Everything above is the phone layout and is not touched here. From 900px
+ * the page stops being one narrow column: the reading measure widens, the
+ * intro splits into two columns, and the cards sit in a grid (2 across,
+ * 3 from about 1300px). Same HTML; only these rules change.
+ * ------------------------------------------------------------------ */
+
+@media (min-width: 56.25rem) {
+  :root {
+    --measure: 92rem;
+  }
+
+  .site-header,
+  main,
+  .site-footer {
+    padding-inline: var(--space-8);
+  }
+
+  /* The footer's top rule lines up with the content edge, like the
+     section rules, instead of running into the side padding. */
+  .site-footer {
+    width: min(100% - 2 * var(--space-8), var(--measure) - 2 * var(--space-8));
+    padding-inline: 0;
+  }
+
+  /* Intro: title and lede on the left, the requirements note beside them.
+     Everything else in <main> (the two sections) spans the full width. */
+  main {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    column-gap: var(--space-8);
+  }
+
+  main > * {
+    grid-column: 1 / -1;
+  }
+
+  main > h1,
+  main > .lede {
+    grid-column: 1;
+  }
+
+  main > .requirements-note {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+  }
+
+  /* Card grid. Month headings and the empty-state message are not cards,
+     so they take a whole row. */
+  #open-now-list,
+  #opening-soon-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6);
+  }
+
+  #open-now-list > :not(.card),
+  #opening-soon-list > :not(.card) {
+    grid-column: 1 / -1;
+    justify-self: start; /* a heading styled as a pill stays pill-sized */
+    margin-block: var(--space-2) 0;
+  }
+
+  #opening-soon-list > .month-heading:first-child {
+    margin-top: 0;
+  }
+
+  /* Cards in a row share one height; the link and "last verified" line sit
+     at the bottom so they line up across the row. */
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .card__links {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 81.25rem) {
+  #open-now-list,
+  #opening-soon-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

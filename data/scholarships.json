@@ -1,73 +1,358 @@
 [
   {
-    "id": "example-complete-entry",
-    "name": "EXAMPLE — Complete Entry (fake, delete before launch)",
-    "sponsor": "Example Foundation (not a real sponsor)",
-    "amount_min": 500,
-    "amount_max": 2500,
+    "id": "burger-king-scholars-2027",
+    "name": "Burger King Scholars (General Track)",
+    "sponsor": "Burger King Foundation",
+    "amount_min": 1000,
+    "amount_max": 60000,
     "amount_display": {
-      "en": "$500–$2,500 per student",
-      "es": "$500–$2,500 por estudiante"
+      "en": "$1,000–$60,000; most awards are $1,000–$5,000",
+      "es": ""
     },
-    "renewable": true,
-    "deadline": "2027-03-01",
+    "renewable": null,
+    "deadline": "2026-12-15",
     "cycle_status": "open",
-    "opens_month": 9,
-    "categories": ["merit", "need_based", "first_gen"],
-    "grade_levels": ["hs_senior", "college"],
-    "residency": "specific_districts",
-    "districts": ["EPISD", "YISD"],
+    "opens_month": null,
+    "categories": [
+      "merit",
+      "need_based"
+    ],
+    "grade_levels": [
+      "hs_senior"
+    ],
+    "residency": "national",
+    "districts": [],
     "schools": [],
-    "eligible_institutions": ["UTEP", "EPCC"],
-    "degree_types": ["associate", "bachelor", "trade_technical"],
-    "gpa_min": 3.0,
-    "fields_of_study": ["stem", "nursing"],
-    "demographics": ["hispanic", "first_gen"],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": 2.0,
+    "fields_of_study": [],
+    "demographics": [],
     "requirements": {
-      "essay_required": true,
-      "recs_needed": 2,
-      "fafsa_required": true,
-      "accepts_tasfa": true,
-      "citizenship_required": false,
-      "interview": false,
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
       "other": {
-        "en": "Applicants must also submit a copy of their class schedule.",
-        "es": "Los solicitantes también deben enviar una copia de su horario de clases."
+        "en": "Needs a transcript and the first two pages of the most recent IRS Form 1040.",
+        "es": ""
       }
     },
-    "application_language": "both",
-    "source_url": "https://example.com/scholarships/complete-entry",
-    "apply_url": "https://example.com/scholarships/complete-entry/apply",
+    "application_language": "en",
+    "source_url": "https://scholarshipamerica.org/scholarship/burgerking/",
+    "apply_url": "https://burgerking.scholarsapply.org",
     "summary": {
-      "en": "This is a fake entry used to test every field in the schema and every part of the result card. It is not a real scholarship and must be deleted before the site launches.",
-      "es": "Esta es una entrada falsa que sirve para probar todos los campos del esquema y todas las partes de la tarjeta de resultados. No es una beca real y debe eliminarse antes de publicar el sitio."
+      "en": "For Class of 2027 seniors living in the US with a GPA of 2.0 or higher. Awards range from $1,000 to $60,000, with most between $1,000 and $5,000. Selection weighs GPA, work experience, extracurriculars, financial need and community service.",
+      "es": ""
     },
     "notes": {
-      "en": "Every field on this entry is filled in, so validate.py should report no warnings for it.",
-      "es": "Todos los campos de esta entrada están completos, así que validate.py no debe mostrar advertencias."
+      "en": "Deadline is 11:59 PM CT on Dec 15, 2026. Only the first 30,000 community applications are reviewed. Run by Scholarship America.",
+      "es": ""
     },
-    "translation_reviewed": true,
-    "last_verified": "2026-09-28"
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
   },
   {
-    "id": "example-mostly-unknown",
-    "name": "EXAMPLE — Mostly Unknown Entry (fake, delete before launch)",
-    "sponsor": "Example Community Group (not a real sponsor)",
+    "id": "regions-riding-forward-q4-2026",
+    "name": "Regions Riding Forward Scholarship Contest",
+    "sponsor": "Regions",
+    "amount_min": 8000,
+    "amount_max": 8000,
+    "amount_display": {
+      "en": "$8,000",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2026-12-31",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "merit"
+    ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": 2.0,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": true,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://www.regions.com/about-regions/inclusion-belonging-impact/supporting-communities/essay-contest-scholarship",
+    "apply_url": null,
+    "summary": {
+      "en": "Quarterly essay contest. Open to legal U.S. residents of an eligible state (Texas is one), age 16 or older, with a cumulative GPA of 2.0 or higher. You need at least one year (or 18 semester hours) left before your undergraduate graduation; if you are not in college yet, you must start your freshman year by the 2027–28 school year.",
+      "es": ""
+    },
+    "notes": {
+      "en": "This is the Q-4 contest: it opened Oct 1 and closes Dec 31, 2026 at 11:59:59 PM CT. The contest chart only covers 2026, so 2027 quarters are unconfirmed.",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "taco-bell-live-mas-2027",
+    "name": "Taco Bell Live Más Scholarship",
+    "sponsor": "Taco Bell Foundation",
+    "amount_min": 5000,
+    "amount_max": 25000,
+    "amount_display": {
+      "en": "$5,000, $10,000 or $25,000",
+      "es": ""
+    },
+    "renewable": true,
+    "deadline": "2027-01-05",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "merit"
+    ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [
+      "associate",
+      "bachelor",
+      "trade_technical"
+    ],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "Submit a two-minute video or a 250–500-word essay. No GPA, test scores or résumé needed.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://tacobellfoundation.org/live-mas-scholarship/",
+    "apply_url": null,
+    "summary": {
+      "en": "For ages 16–26 who are on track for a diploma or GED, or enrolled in a two-year, four-year, vocational or trade program. Awards are $5,000, $10,000 or $25,000, renewable up to 3 times. Apply with a two-minute video or a 250–500-word essay; no GPA, test scores or résumé are needed.",
+      "es": ""
+    },
+    "notes": {
+      "en": "Open to legal residents of the 50 states or D.C., or dependent children of an active-duty U.S. service member.",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "amazon-future-engineer-2027",
+    "name": "Amazon Future Engineer Scholarship",
+    "sponsor": "Amazon",
+    "amount_min": 10000,
+    "amount_max": 40000,
+    "amount_display": {
+      "en": "$10,000 per year, up to $40,000 total",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2027-01-05",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "need_based",
+      "field_specific"
+    ],
+    "grade_levels": [
+      "hs_senior"
+    ],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [
+      "bachelor"
+    ],
+    "gpa_min": 2.3,
+    "fields_of_study": [
+      "cs",
+      "stem"
+    ],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "Must be currently enrolled in or have finished a high school or college dual-credit course in computer science or engineering, or opt in to Amazon's assessment instead. Must be authorized to work in the U.S.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://www.amazonfutureengineer.com/scholarships",
+    "apply_url": null,
+    "summary": {
+      "en": "For U.S. high school seniors with financial need and a cumulative GPA of 2.3 or higher on a 4.0 scale who plan a bachelor's in computer science, computer engineering, data science, information systems, or electrical, automation, mechanical or industrial engineering, or a related field. $10,000 per year, up to $40,000 total.",
+      "es": ""
+    },
+    "notes": {
+      "en": "",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "apia-scholars-general-2027",
+    "name": "APIA Scholars General Scholarship",
+    "sponsor": "APIA Scholars",
+    "amount_min": 2500,
+    "amount_max": 20000,
+    "amount_display": {
+      "en": "$2,500 (one year) to $20,000 (multi-year)",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2027-01-15",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "need_based",
+      "first_gen"
+    ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [
+      "associate",
+      "bachelor"
+    ],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "High financial need. Citizen, national or legal permanent resident of the U.S., Marshall Islands, FSM or Palau.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://apiascholars.org/scholarships/",
+    "apply_url": null,
+    "summary": {
+      "en": "Open to all undergraduate students at U.S.-accredited colleges, with a focus on students at or below the poverty line and first-generation college students. Requires high financial need. You must be enrolling as an undergraduate (associate or bachelor's) and be a citizen, national or legal permanent resident of the U.S., Marshall Islands, FSM or Palau.",
+      "es": ""
+    },
+    "notes": {
+      "en": "",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "utep-future-miner-2027",
+    "name": "UTEP Future Miner Scholarship Application",
+    "sponsor": "UTEP",
     "amount_min": null,
     "amount_max": null,
     "amount_display": {
-      "en": "Amount not listed",
-      "es": "Monto no especificado"
+      "en": "Varies by scholarship; see the summary",
+      "es": ""
     },
     "renewable": null,
-    "deadline": null,
-    "cycle_status": "closed_reopens",
+    "deadline": "2027-01-31",
+    "cycle_status": "open",
     "opens_month": null,
-    "categories": ["regional"],
+    "categories": [
+      "merit"
+    ],
     "grade_levels": [],
-    "residency": "specific_schools",
+    "residency": "national",
     "districts": [],
-    "schools": ["Example High School"],
+    "schools": [],
+    "eligible_institutions": [
+      "UTEP"
+    ],
+    "degree_types": [],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "Optional extra section for the Terry Scholarship and the Miguel A. Loya Engineering Scholarship: two essays (overcoming a challenge, and leadership), for U.S. citizens or permanent residents, due Jan 11, 2027.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://futureminer.awardspring.com",
+    "apply_url": null,
+    "summary": {
+      "en": "One application for incoming UTEP students. Submitting it gets you considered for the UTEP Excellence Scholarship (top 25% of junior class; $2,000–$8,000 per year, renewable up to 4 years), the Presidential Scholarship (up to 10 students; full cost of attendance, including on-campus housing), and many endowed scholarships, with automatic matching. You can apply before you are admitted: the application tells you to finish your UTEP admission while you wait for results.",
+      "es": ""
+    },
+    "notes": {
+      "en": "Submitting lets UTEP share your name, major, address, GPA, FAFSA information (including federal tax information) and email with scholarship donors.",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "el-paso-community-foundation",
+    "name": "El Paso Community Foundation Scholarships",
+    "sponsor": "El Paso Community Foundation",
+    "amount_min": null,
+    "amount_max": null,
+    "amount_display": {
+      "en": "",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2027-02-15",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "regional"
+    ],
+    "grade_levels": [],
+    "residency": "el_paso_county",
+    "districts": [],
+    "schools": [],
     "eligible_institutions": [],
     "degree_types": [],
     "gpa_min": null,
@@ -80,17 +365,77 @@
       "accepts_tasfa": null,
       "citizenship_required": null,
       "interview": null,
-      "other": { "en": "", "es": "" }
+      "other": {
+        "en": "",
+        "es": ""
+      }
     },
     "application_language": "en",
-    "source_url": "https://example.com/scholarships/mostly-unknown",
+    "source_url": "https://www.grantinterface.com/Home/Logon?urlkey=epcfscholarship",
     "apply_url": null,
     "summary": {
-      "en": "This is a fake entry used to test how the site handles unknown values. Every unknown is null, never a guess. It is not a real scholarship and must be deleted before the site launches.",
+      "en": "One portal, but each fund is its own application. Funds seen so far: Makios Technology Fund (computer/technology majors), El Paso Electric, El Paso Military Officers Association memorial, El Paso in Austin, Catherine L. McPike, Joe and Halina Kallaby/SEAot Leadership Award, and Fabens High School. Each fund's Preview PDF shows its eligibility without applying.",
       "es": ""
     },
-    "notes": { "en": "", "es": "" },
+    "notes": {
+      "en": "Deadline is Feb 15, 2027, 11:59 PM CST, as shown in the logged-in portal. The public page (epcf.org) still says Jan 1–May 1 with no year; trust the portal.",
+      "es": ""
+    },
     "translation_reviewed": false,
-    "last_verified": "2026-07-01"
+    "last_verified": "2026-11-09"
+  },
+  {
+    "id": "firstlight-graduating-seniors-2027",
+    "name": "FirstLight Community Foundation Graduating Seniors Scholarship",
+    "sponsor": "FirstLight Community Foundation",
+    "amount_min": null,
+    "amount_max": null,
+    "amount_display": {
+      "en": "",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": null,
+    "cycle_status": "upcoming",
+    "opens_month": 1,
+    "categories": [
+      "regional"
+    ],
+    "grade_levels": [
+      "hs_senior"
+    ],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://firstlightcommunityfoundation.org/scholarships/",
+    "apply_url": null,
+    "summary": {
+      "en": "Scholarship for graduating seniors from the FirstLight Community Foundation. Expected to open in January 2027.",
+      "es": ""
+    },
+    "notes": {
+      "en": "",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-09"
   }
 ]

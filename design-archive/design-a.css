@@ -1,0 +1,408 @@
+/*
+ * design-a.css — design option A — Over the top: bold color, big type, motion. Memorable.
+ *
+ * Loaded AFTER styles.css (via ?design=a in src/main.js), so rules here at
+ * the same specificity override the base. styles.css still provides the
+ * reset, layout skeleton, skip link, focus ring and the base card structure;
+ * override whatever this design needs, including the :root tokens.
+ *
+ * Palette (Ian, Nov 10): royal purple, white, tangerine orange.
+ * Orange is never used as text on white. See the design brief for the rest.
+ */
+
+/*
+ * Idea: "paso a paso" = step by step. The purple header ends in a row of
+ * orange stair steps that climb in on load, and every card's deadline sits
+ * on an orange step. Display face: Archivo Black (SIL OFL 1.1, self-hosted,
+ * latin subset, 18 KB; license in design-archive/fonts/a/OFL.txt). Body: the system
+ * stack from styles.css. Every rule is scoped to [data-design='a'].
+ */
+
+@font-face {
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/a/archivo-black-latin.woff2') format('woff2');
+}
+
+/* ---------------------------------------------------------------- tokens */
+
+:root[data-design='a'] {
+  --a-purple: #5b21b6; /* royal purple: card borders, markers */
+  --a-ink: #22094d; /* near-black purple: text on orange */
+  --a-orange: #ff8a1f; /* tangerine: backgrounds and badges only */
+  --a-band: #5b21b6; /* full-bleed header and section bands */
+  --a-on-band-muted: #e4d9fb;
+  --a-card: #ffffff;
+  --a-shadow: #22094d;
+
+  --bg: #ffffff;
+  --surface: #f3edfd;
+  --border: #8a6fc4;
+  --text: #22094d;
+  --text-muted: #574a70;
+  --accent: #5b21b6;
+  --accent-text: #ffffff;
+  --accent-hover: #3f1185;
+  --focus: #c2410c;
+
+  --a-display: 'Archivo Black', 'Arial Black', Impact, sans-serif;
+  --radius: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-design='a'] {
+    --a-purple: #c9b2ff;
+    --a-band: #4a1a9e;
+    --a-card: #1f0f45;
+    --a-shadow: #ff8a1f;
+
+    --bg: #150832;
+    --surface: #2b1660;
+    --border: #8f74d6;
+    --text: #ffffff;
+    --text-muted: #cfc2ef;
+    --accent: #c9b2ff;
+    --accent-text: #22094d;
+    --accent-hover: #e2d6ff;
+    --focus: #ffb15c;
+  }
+}
+
+/* ------------------------------------------------------------------ base */
+
+[data-design='a'] body {
+  overflow-x: clip;
+}
+
+[data-design='a'] h1,
+[data-design='a'] h2,
+[data-design='a'] .month-heading,
+[data-design='a'] .brand__name,
+[data-design='a'] .card__deadline {
+  font-family: var(--a-display);
+  font-weight: 400; /* Archivo Black has one weight and it is already black */
+  letter-spacing: -0.01em;
+}
+
+/* ---------------------------------------------------------------- header */
+
+/* Full-bleed purple band: the huge box-shadow paints the sides, clip-path
+   stops it from widening the page. */
+[data-design='a'] .site-header {
+  position: relative;
+  background: var(--a-band);
+  box-shadow: 0 0 0 100vmax var(--a-band);
+  clip-path: inset(0 -100vmax);
+  color: #ffffff;
+  padding-block: var(--space-4) 3.25rem;
+}
+
+[data-design='a'] .site-header__bar {
+  align-items: center;
+}
+
+[data-design='a'] .brand__name {
+  font-size: clamp(2.25rem, 11vw, 3.25rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  animation: a-in-left 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+[data-design='a'] .brand__tagline {
+  margin-top: var(--space-2);
+  color: var(--a-on-band-muted);
+  font-size: 0.9375rem;
+}
+
+[data-design='a'] .lang-toggle {
+  gap: 0;
+}
+
+[data-design='a'] .lang-toggle__btn {
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+[data-design='a'] .lang-toggle__btn:first-child {
+  border-end-end-radius: 0;
+  border-start-end-radius: 0;
+}
+
+[data-design='a'] .lang-toggle__btn:last-child {
+  margin-left: -2px;
+  border-end-start-radius: 0;
+  border-start-start-radius: 0;
+}
+
+[data-design='a'] .lang-toggle__btn:hover {
+  background: var(--a-ink);
+}
+
+[data-design='a'] .lang-toggle__btn[aria-pressed='true'] {
+  background: var(--a-orange);
+  border-color: var(--a-orange);
+  color: var(--a-ink);
+}
+
+[data-design='a'] .site-header :focus-visible {
+  outline-color: #ffb15c;
+}
+
+[data-design='a'] .trust-line {
+  display: inline-block;
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-4) var(--space-2) 2.25rem;
+  background: var(--a-ink)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 8.5l3 3 7-7' fill='none' stroke='%23ff8a1f' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat 0.75rem 50% / 1rem;
+  color: #ffffff;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Signature: four orange stair steps climbing out of the header. */
+[data-design='a'] .site-header::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(14rem, 60%);
+  height: 2.5rem;
+  background: var(--a-orange);
+  clip-path: polygon(0 100%, 0 75%, 25% 75%, 25% 50%, 50% 50%, 50% 25%, 75% 25%, 75% 0, 100% 0, 100% 100%);
+  transform-origin: bottom;
+  animation: a-steps 0.7s 0.15s cubic-bezier(0.3, 1.4, 0.5, 1) both;
+}
+
+/* ------------------------------------------------------------------ main */
+
+[data-design='a'] main {
+  padding-top: var(--space-8);
+}
+
+[data-design='a'] h1 {
+  font-size: clamp(1.875rem, 8.5vw, 2.75rem);
+  line-height: 1.05;
+  margin-bottom: var(--space-4);
+}
+
+[data-design='a'] .lede {
+  font-size: 1.1875rem;
+  line-height: 1.5;
+}
+
+[data-design='a'] .requirements-note {
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border-left: 6px solid var(--a-orange);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.9375rem;
+}
+
+[data-design='a'] .section {
+  margin-top: 2.5rem;
+}
+
+/* Section titles are full-bleed purple slabs on a phone. */
+[data-design='a'] .section > h2 {
+  margin: 0 calc(-1 * var(--space-4)) var(--space-6);
+  padding: var(--space-4);
+  background: var(--a-band);
+  color: #ffffff;
+  font-size: clamp(1.625rem, 7vw, 2.125rem);
+  line-height: 1.1;
+  box-shadow: inset 0 -6px 0 var(--a-orange);
+}
+
+[data-design='a'] .month-heading {
+  display: inline-block;
+  margin: var(--space-6) 0 var(--space-4);
+  padding: var(--space-1) var(--space-4);
+  background: var(--a-orange);
+  color: var(--a-ink);
+  border-radius: 999px;
+  font-size: 1.125rem;
+}
+
+/* ----------------------------------------------------------------- cards */
+
+[data-design='a'] .card {
+  margin-bottom: var(--space-6);
+  padding: 0 var(--space-4) var(--space-4);
+  background: var(--a-card);
+  border: 3px solid var(--a-purple);
+  border-radius: var(--radius);
+  box-shadow: 6px 6px 0 var(--a-shadow);
+  overflow: hidden;
+  animation: a-rise 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+[data-design='a'] .card:nth-of-type(2) { animation-delay: 0.08s; }
+[data-design='a'] .card:nth-of-type(3) { animation-delay: 0.16s; }
+[data-design='a'] .card:nth-of-type(n + 4) { animation-delay: 0.24s; }
+
+@media (hover: hover) {
+  [data-design='a'] .card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 var(--a-shadow);
+  }
+}
+
+/* Same top spacing whether the title is an h3 or an h4. */
+[data-design='a'] .card__title {
+  margin: var(--space-4) 0 var(--space-3);
+  font-size: 1.1875rem;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+/* The deadline: the loudest thing on the card, a full-width orange step. */
+[data-design='a'] .card__deadline {
+  margin: 0 calc(-1 * var(--space-4)) var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--a-orange);
+  color: var(--a-ink);
+  font-size: 1.3125rem;
+  line-height: 1.2;
+}
+
+[data-design='a'] .card__facts dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+[data-design='a'] .card__facts dd {
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+
+[data-design='a'] .card__label {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--a-orange);
+}
+
+[data-design='a'] .card__reqs li {
+  margin-bottom: var(--space-1);
+}
+
+[data-design='a'] .card__reqs li::marker {
+  color: var(--a-purple);
+}
+
+[data-design='a'] .card__disclaimer {
+  padding-top: var(--space-2);
+  border-top: 2px dashed var(--border);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+[data-design='a'] .card__links {
+  margin-bottom: var(--space-3);
+}
+
+/* "Official page" is the card's one action: a big purple pill. */
+[data-design='a'] .card__links a {
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-6);
+  background: var(--accent);
+  color: var(--accent-text);
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+[data-design='a'] .card__links a::after {
+  content: '\2192';
+  transition: transform 0.2s;
+}
+
+[data-design='a'] .card__links a:hover {
+  background: var(--a-orange);
+  color: var(--a-ink);
+}
+
+[data-design='a'] .card__links a:hover::after {
+  transform: translateX(3px);
+}
+
+[data-design='a'] .card__verified {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3) var(--space-1) 1.875rem;
+  background: var(--surface)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2l2.3 2.3 4.7-4.7' fill='none' stroke='%238b5cf6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat 0.625rem 0.5rem / 0.875rem;
+  color: var(--text);
+  border-radius: 12px; /* Spanish date can wrap to two lines */
+  font-weight: 600;
+}
+
+[data-design='a'] .empty {
+  padding: var(--space-4);
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+}
+
+/* ---------------------------------------------------------------- footer */
+
+[data-design='a'] .site-footer {
+  margin-top: var(--space-8);
+  background: var(--a-ink);
+  box-shadow: 0 0 0 100vmax var(--a-ink);
+  clip-path: inset(0 -100vmax);
+  border-top: 0;
+  color: var(--a-on-band-muted);
+}
+
+/* ---------------------------------------------------------------- motion */
+
+/* Keyframes only set the START state, so if an animation never runs the
+   content simply shows at its normal, fully visible end state. */
+@keyframes a-rise {
+  from { opacity: 0; transform: translateY(18px); }
+}
+
+@keyframes a-in-left {
+  from { opacity: 0; transform: translateX(-24px); }
+}
+
+@keyframes a-steps {
+  from { transform: scaleY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-design='a'] *,
+  [data-design='a'] *::before,
+  [data-design='a'] *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  [data-design='a'] .card:hover,
+  [data-design='a'] .card__links a:hover::after {
+    transform: none;
+  }
+}
+
+@media (min-width: 40rem) {
+  [data-design='a'] .section > h2 {
+    margin-inline: 0;
+    border-radius: var(--radius);
+  }
+}

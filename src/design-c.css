@@ -1,0 +1,356 @@
+/*
+ * design-c.css — design option C — Simple, "local and warm": clean layout with a subtle El Paso feel (desert / Franklin Mountains tones), friendly.
+ *
+ * Loaded AFTER styles.css (second <link> in index.html), so rules here at
+ * the same specificity override the base. styles.css still provides the
+ * reset, layout skeleton, skip link, focus ring and the base card structure;
+ * override whatever this design needs, including the :root tokens.
+ *
+ * Palette (Ian, Nov 10): royal purple, white, tangerine orange.
+ * Orange is never used as text on white. See the design brief for the rest.
+ */
+
+/* ------------------------------------------------------------------ *
+ * Tokens. System font stack: nothing extra to download on slow data.
+ * Every text pair meets WCAG AA (ratios listed in the design report).
+ * ------------------------------------------------------------------ */
+
+:root[data-design='c'] {
+  --bg: #ffffff;
+  --surface: #fff4e8;        /* warm sand tint */
+  --border: #e9d8c4;         /* decorative card edge only */
+  --border-strong: #8c7aa6;  /* control borders, 3.85:1 on white */
+  --text: #24133d;           /* near-black purple, 17:1 on white */
+  --text-muted: #5e4e73;     /* 7.46:1 on white, 6.88:1 on sand */
+  --accent: #5b2a9e;         /* royal purple, 9.25:1 on white */
+  --accent-text: #ffffff;
+  --accent-hover: #45207a;
+  --accent-tint: #f3edfb;
+  --tangerine: #f28c28;      /* fills and rules only, never text on white */
+  --deadline-bg: #f7a34b;
+  --deadline-text: #24133d;  /* 8.33:1 on --deadline-bg */
+  --focus: #5b2a9e;
+  --radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-design='c'] {
+    --bg: #1c1030;           /* deep purple night */
+    --surface: #2a1a47;
+    --border: #3e2b63;
+    --border-strong: #7d6a9c; /* 3.78:1 on bg */
+    --text: #ffffff;
+    --text-muted: #d3c7e6;
+    --accent: #ffb366;       /* orange links on dark, 10.2:1 */
+    --accent-text: #1c1030;
+    --accent-hover: #ffc98f;
+    --accent-tint: #2a1a47;
+    --tangerine: #f7a34b;
+    --deadline-bg: #f7a34b;
+    --deadline-text: #1c1030;
+    --focus: #ffb366;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Header: sand band whose lower edge is a Franklin Mountains ridge.
+ * ------------------------------------------------------------------ */
+
+[data-design='c'] .site-header {
+  position: relative;
+  max-width: none;
+  padding-bottom: 2.75rem;
+  background: var(--surface);
+}
+
+/* The ridge: a strip of page colour cut by an SVG mask, so the mountains
+   are the shape left in the header tint. One tiny inline data URI. */
+[data-design='c'] .site-header::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 2rem;
+  background: var(--bg);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 32' preserveAspectRatio='none'%3E%3Cpath d='M0 32V24l38-8 26 5 40-15 22 8 30-12 34 14 24-5 46 12 30-9 38 11 32-7 40 10v13z'/%3E%3C/svg%3E") bottom / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 32' preserveAspectRatio='none'%3E%3Cpath d='M0 32V24l38-8 26 5 40-15 22 8 30-12 34 14 24-5 46 12 30-9 38 11 32-7 40 10v13z'/%3E%3C/svg%3E") bottom / 100% 100% no-repeat;
+  pointer-events: none;
+}
+
+/* Header band is full width; its contents keep the reading measure. */
+[data-design='c'] .site-header > * {
+  max-width: calc(var(--measure) - 2rem);
+  margin-inline: auto;
+}
+
+[data-design='c'] .site-header__bar {
+  align-items: center;
+}
+
+[data-design='c'] .brand__name {
+  font-size: 1.375rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  color: var(--accent);
+}
+
+[data-design='c'] .brand__tagline {
+  color: var(--text-muted);
+}
+
+[data-design='c'] .lang-toggle__btn {
+  background: var(--bg);
+  border-color: var(--border-strong);
+  color: var(--text);
+  font-weight: 500;
+}
+
+[data-design='c'] .lang-toggle__btn:hover {
+  background: var(--accent-tint);
+}
+
+[data-design='c'] .lang-toggle__btn[aria-pressed='true'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
+}
+
+[data-design='c'] .trust-line {
+  margin-top: var(--space-4);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--tangerine);
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ *
+ * Page intro
+ * ------------------------------------------------------------------ */
+
+[data-design='c'] main {
+  padding-top: var(--space-4);
+}
+
+[data-design='c'] h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+[data-design='c'] .requirements-note {
+  padding: var(--space-3) var(--space-4);
+  background: var(--accent-tint);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+/* ------------------------------------------------------------------ *
+ * Sections
+ * ------------------------------------------------------------------ */
+
+[data-design='c'] h2 {
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 3px solid var(--tangerine);
+  font-size: 1.375rem;
+  font-weight: 800;
+}
+
+[data-design='c'] .month-heading {
+  display: inline-block;
+  margin: var(--space-6) 0 var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  background: var(--accent-tint);
+  color: var(--accent);
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* The first month sits right under the section heading's rule. */
+[data-design='c'] .month-heading:first-child {
+  margin-top: 0;
+}
+
+/* In dark mode the brand, h1 and month labels go white rather than orange:
+   orange stays for links and the deadline band. */
+@media (prefers-color-scheme: dark) {
+  [data-design='c'] .brand__name,
+  [data-design='c'] h1,
+  [data-design='c'] .month-heading {
+    color: var(--text);
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Cards. The deadline is a full-bleed tangerine band across the card:
+ * the one thing the eye lands on.
+ * ------------------------------------------------------------------ */
+
+[data-design='c'] .card {
+  padding: var(--space-4);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden; /* clips the deadline band to the rounded corners */
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-design='c'] .card {
+    background: var(--surface);
+  }
+}
+
+/* Same spacing whatever the heading level (h3 in "Open now", h4 below). */
+[data-design='c'] .card__title {
+  margin: 0 0 var(--space-3);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+[data-design='c'] .card__deadline {
+  margin: 0 calc(-1 * var(--space-4)) var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--deadline-bg);
+  color: var(--deadline-text);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+[data-design='c'] .card__facts {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+[data-design='c'] .card__facts dt {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+[data-design='c'] .card__facts dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+[data-design='c'] .card__label {
+  font-weight: 700;
+}
+
+[data-design='c'] .card__reqs li::marker {
+  color: var(--tangerine);
+}
+
+[data-design='c'] .card__disclaimer {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+[data-design='c'] .card__note {
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--border-strong);
+}
+
+[data-design='c'] .card__links {
+  margin-bottom: var(--space-3);
+}
+
+/* "Official page": outlined, clearly tappable, quieter than the deadline. */
+[data-design='c'] .card__links a {
+  padding: var(--space-2) var(--space-4);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+[data-design='c'] .card__links a::after {
+  content: '\2192';
+  margin-left: 0.4em;
+}
+
+[data-design='c'] .card__links a:hover {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+[data-design='c'] .card__verified {
+  margin: 0;
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--border-strong);
+}
+
+[data-design='c'] .empty {
+  padding: var(--space-4);
+  background: var(--surface);
+  border-radius: var(--radius);
+}
+
+/* ------------------------------------------------------------------ *
+ * Footer
+ * ------------------------------------------------------------------ */
+
+[data-design='c'] .site-footer {
+  border-top: 3px solid var(--tangerine);
+}
+
+@media (min-width: 40rem) {
+  [data-design='c'] h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Wide screens: brand, trust line and language toggle share one row across
+   the full band, lined up with the page content below. The bar's box is
+   dropped (display: contents) so its two children join the header's grid. */
+@media (min-width: 56.25rem) {
+  [data-design='c'] .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: var(--space-4) var(--space-6);
+    padding-inline: max(
+      var(--space-8),
+      calc((100% - var(--measure)) / 2 + var(--space-8))
+    );
+  }
+
+  [data-design='c'] .site-header > * {
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  [data-design='c'] .site-header__bar {
+    display: contents;
+  }
+
+  /* Visual order only: brand, trust line, toggle. The trust line is not
+     focusable, so keyboard order is unchanged. */
+  [data-design='c'] .trust-line {
+    order: 1;
+    margin-top: 0;
+  }
+
+  [data-design='c'] .lang-toggle {
+    order: 2;
+  }
+}
+
+/* Only colour fades, and only for people who have not asked for less motion. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-design='c'] .card__links a,
+  [data-design='c'] .lang-toggle__btn {
+    transition: background-color 120ms ease-out, color 120ms ease-out;
+  }
+}
