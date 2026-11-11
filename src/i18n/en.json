@@ -7,7 +7,8 @@
     "footer_note": "Always confirm details on the scholarship's own website before you apply. Deadlines change."
   },
   "page": {
-    "intro": "Scholarships El Paso-area students can apply for, soonest deadline first. Always check the official page before you apply."
+    "intro": "Scholarships El Paso-area students can apply for, soonest deadline first. Always check the official page before you apply.",
+    "requirements_note": "We list the main requirements we confirmed. Most applications ask for more (essays, documents, recommendations), so always read the full application on the official page."
   },
   "sections": {
     "open_now": "Open now",
@@ -118,7 +119,8 @@
     "institutions": "For students at {schools}",
     "no_fafsa_required": "FAFSA not required",
     "no_tasfa": "Does not accept TASFA",
-    "no_interview": "No interview"
+    "no_interview": "No interview",
+    "requirements_note": "Main requirements only. The application may ask for more."
   },
   "value": {
     "not_listed": "Not listed — check source",

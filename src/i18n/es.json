@@ -11,7 +11,8 @@
     "footer_note": "Confirma siempre los detalles en el sitio web de la beca antes de aplicar. Las fechas límite cambian."
   },
   "page": {
-    "intro": "Becas a las que pueden aplicar los estudiantes del área de El Paso, empezando por la fecha límite más próxima. Revisa siempre la página oficial antes de aplicar."
+    "intro": "Becas a las que pueden aplicar los estudiantes del área de El Paso, empezando por la fecha límite más próxima. Revisa siempre la página oficial antes de aplicar.",
+    "requirements_note": "Mostramos los requisitos principales que confirmamos. La mayoría de las solicitudes piden más (ensayos, documentos, cartas de recomendación), así que lee siempre la solicitud completa en la página oficial."
   },
   "sections": {
     "open_now": "Abiertas ahora",
@@ -122,7 +123,8 @@
     "institutions": "Para estudiantes de {schools}",
     "no_fafsa_required": "No requiere FAFSA",
     "no_tasfa": "No acepta TASFA",
-    "no_interview": "Sin entrevista"
+    "no_interview": "Sin entrevista",
+    "requirements_note": "Solo los requisitos principales. La solicitud puede pedir más."
   },
   "value": {
     "not_listed": "No especificado — consulta la fuente",

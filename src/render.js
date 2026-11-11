@@ -160,6 +160,12 @@ export function renderCard(entry, headingLevel) {
     );
   }
 
+  // Always shown, even when no requirement is known: the card never lists
+  // everything an application asks for (Ian, Nov 10).
+  prose.append(
+    el('p', { className: 'card__disclaimer', text: t('card.requirements_note'), attrs: { lang: pageLang } })
+  );
+
   const notes = entryText(entry, entry.notes);
   if (notes) prose.append(el('p', { className: 'card__notes', text: notes }));
 
