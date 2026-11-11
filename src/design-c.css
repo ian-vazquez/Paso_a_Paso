@@ -1,0 +1,11 @@
+/*
+ * design-c.css — design option C — Simple, "local and warm": clean layout with a subtle El Paso feel (desert / Franklin Mountains tones), friendly.
+ *
+ * Loaded AFTER styles.css (via ?design=c in src/main.js), so rules here at
+ * the same specificity override the base. styles.css still provides the
+ * reset, layout skeleton, skip link, focus ring and the base card structure;
+ * override whatever this design needs, including the :root tokens.
+ *
+ * Palette (Ian, Nov 10): royal purple, white, tangerine orange.
+ * Orange is never used as text on white. See the design brief for the rest.
+ */

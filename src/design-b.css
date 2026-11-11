@@ -1,0 +1,11 @@
+/*
+ * design-b.css — design option B — Simple, "official and trustworthy": editorial typography, generous white space, restrained palette.
+ *
+ * Loaded AFTER styles.css (via ?design=b in src/main.js), so rules here at
+ * the same specificity override the base. styles.css still provides the
+ * reset, layout skeleton, skip link, focus ring and the base card structure;
+ * override whatever this design needs, including the :root tokens.
+ *
+ * Palette (Ian, Nov 10): royal purple, white, tangerine orange.
+ * Orange is never used as text on white. See the design brief for the rest.
+ */
