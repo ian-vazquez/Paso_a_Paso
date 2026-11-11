@@ -182,11 +182,6 @@ main {
   letter-spacing: -0.01em;
 }
 
-.brand__tagline {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-}
-
 .lang-toggle {
   display: flex;
   gap: var(--space-1);
@@ -226,7 +221,10 @@ main {
   font-weight: 600;
 }
 
+/* Sits in the footer, sized to its text rather than the full width. */
 .trust-line {
+  width: fit-content;
+  max-width: 100%;
   margin: var(--space-4) 0 0;
   padding: var(--space-2) var(--space-3);
   background: var(--surface);

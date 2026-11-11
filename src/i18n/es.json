@@ -124,7 +124,7 @@
     "no_fafsa_required": "No requiere FAFSA",
     "no_tasfa": "No acepta TASFA",
     "no_interview": "Sin entrevista",
-    "requirements_note": "Solo los requisitos principales. La solicitud puede pedir más."
+    "requirements_note": "Puede haber más pasos obligatorios en la solicitud que los que se muestran aquí."
   },
   "value": {
     "not_listed": "No especificado — consulta la fuente",

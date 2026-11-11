@@ -120,7 +120,7 @@
     "no_fafsa_required": "FAFSA not required",
     "no_tasfa": "Does not accept TASFA",
     "no_interview": "No interview",
-    "requirements_note": "Main requirements only. The application may ask for more."
+    "requirements_note": "There may be more required application steps than those listed here."
   },
   "value": {
     "not_listed": "Not listed — check source",
