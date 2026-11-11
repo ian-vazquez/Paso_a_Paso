@@ -1,7 +1,7 @@
 /*
  * design-c.css — design option C — Simple, "local and warm": clean layout with a subtle El Paso feel (desert / Franklin Mountains tones), friendly.
  *
- * Loaded AFTER styles.css (via ?design=c in src/main.js), so rules here at
+ * Loaded AFTER styles.css (second <link> in index.html), so rules here at
  * the same specificity override the base. styles.css still provides the
  * reset, layout skeleton, skip link, focus ring and the base card structure;
  * override whatever this design needs, including the :root tokens.
