@@ -344,7 +344,7 @@
   display: inline-block;
   padding: var(--space-1) var(--space-3) var(--space-1) 1.875rem;
   background: var(--surface)
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23ff8a1f'/%3E%3Cpath d='M4.5 8.2l2.3 2.3 4.7-4.7' fill='none' stroke='%2322094d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2l2.3 2.3 4.7-4.7' fill='none' stroke='%238b5cf6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
     no-repeat 0.625rem 0.5rem / 0.875rem;
   color: var(--text);
   border-radius: 12px; /* Spanish date can wrap to two lines */

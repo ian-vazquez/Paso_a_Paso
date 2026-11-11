@@ -93,17 +93,6 @@
   color: var(--accent);
 }
 
-/* Small tangerine sun before the name. Decorative. */
-[data-design='c'] .brand__name::before {
-  content: '';
-  display: inline-block;
-  width: 0.7em;
-  height: 0.7em;
-  margin-right: 0.4em;
-  border-radius: 50%;
-  background: var(--tangerine);
-}
-
 [data-design='c'] .brand__tagline {
   color: var(--text-muted);
 }
