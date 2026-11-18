@@ -77,7 +77,7 @@ Verified records dictated by Ian from official scholarship pages. Date checked: 
 - **Date checked:** 2026-11-17
 
 ## 5. Dr. Juan Andrade Jr. Scholarship
-- **URL:** https://www.ushli.org/dr-juan-andrade-scholarship-for-young-hispanic-leaders/
+- **URL:** https://www.ushli.org/dr-juan-andrade-jr-scholarship-for-young-hispanic-leaders/ (corrected by Ian on 2026-11-18; was https://www.ushli.org/dr-juan-andrade-scholarship-for-young-hispanic-leaders/)
 - **Deadline + cycle:** Dec 30, 2026; already open (opening date not provided)
 - **Amount:** $1,000 one-time
 - **GPA min:** not provided

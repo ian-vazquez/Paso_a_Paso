@@ -21,7 +21,7 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
   _Public-school seniors in the U.S., D.C., or Puerto Rico only (private and homeschooled students are not eligible). GPA 2.5+. Up to 100 awards of $5,000, renewable up to 3 years or until a bachelor's degree; the recipient's educator of choice also gets a $500 gift card. Must plan to enroll in a 2-year or 4-year college. Equitable employees and associates cannot apply._  
   Verified: 2026-11-16
 - [ ] **Dr. Juan Andrade Jr. Scholarship** — Dec 30, 2026 *(Ian, batch 4)*  
-  https://www.ushli.org/dr-juan-andrade-scholarship-for-young-hispanic-leaders/  
+  https://www.ushli.org/dr-juan-andrade-jr-scholarship-for-young-hispanic-leaders/ *(corrected URL from Ian, 2026-11-18)*  
   _$1,000 one-time. Full-time undergraduates (enrolled or accepted) at a two- or four-year institution by "fall 27, spring 28" (page wording). Financial need. Non-U.S. citizens are eligible. 2 essays, 2 recommendations (academic + professional/community service), portrait picture, 1-page resume, unofficial transcript._  
   Verified: 2026-11-17
 - [ ] **Taco Bell Live Más Scholarship** — Jan 5, 2027 *(Ian)*  
