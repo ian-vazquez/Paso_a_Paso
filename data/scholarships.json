@@ -437,5 +437,330 @@
     },
     "translation_reviewed": false,
     "last_verified": "2026-11-09"
+  },
+  {
+    "id": "hagan-scholarship-2027",
+    "name": "Hagan Scholarship",
+    "sponsor": "Hagan Scholarships",
+    "amount_min": null,
+    "amount_max": null,
+    "amount_display": {
+      "en": "",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2026-12-01",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "merit",
+      "need_based"
+    ],
+    "grade_levels": [
+      "hs_senior"
+    ],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": 3.5,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": 1,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "One unsealed letter of recommendation. Finalists send the first 2 pages of the FAFSA showing the SAI.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://haganscholarships.org/application/",
+    "apply_url": null,
+    "summary": {
+      "en": "For U.S. high school seniors graduating this year. Household income must not have exceeded $125,000. Cannot be used at a community college, junior college, or online institution. You must work 240 hours from Jan 1 to Sep 1, 2027, and the work must be paid. You must also keep a 4-year graduation schedule.",
+      "es": ""
+    },
+    "notes": {
+      "en": "You must apply for federal and state grants if you are eligible.",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-16"
+  },
+  {
+    "id": "equitable-excellence-2027",
+    "name": "Equitable Excellence Scholarship",
+    "sponsor": "Equitable Foundation",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "amount_display": {
+      "en": "$5,000; up to 100 awards. Each recipient's educator of choice also receives a $500 gift card.",
+      "es": ""
+    },
+    "renewable": true,
+    "deadline": "2026-12-22",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "merit"
+    ],
+    "grade_levels": [
+      "hs_senior"
+    ],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": 2.5,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://www1.equitable.com/foundation/equitable-excellence-scholarship",
+    "apply_url": null,
+    "summary": {
+      "en": "For high school seniors at a public school in the U.S., D.C., or Puerto Rico. Private and homeschooled students are not eligible. You must plan to enroll in a 2-year or 4-year college or university. Renewable for up to 3 years or until you earn a bachelor's degree.",
+      "es": ""
+    },
+    "notes": {
+      "en": "Employees of Equitable, or anyone associated with Equitable, cannot apply. Also listed at https://scholarshipamerica.org/scholarship/equitableexcellence/",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-16"
+  },
+  {
+    "id": "dr-juan-andrade-jr-2027",
+    "name": "Dr. Juan Andrade Jr. Scholarship",
+    "sponsor": "USHLI",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "amount_display": {
+      "en": "$1,000, one-time",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2026-12-30",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "need_based"
+    ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": true,
+      "recs_needed": 2,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "2 essay questions. 2 recommendations (1 academic, 1 from a professional or community service setting). Portrait picture, 1-page resume, and unofficial transcript.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://www.ushli.org/dr-juan-andrade-scholarship-for-young-hispanic-leaders/",
+    "apply_url": null,
+    "summary": {
+      "en": "For students enrolled or accepted as full-time undergraduates at a four-year or two-year institution, who must be full-time undergraduates by \"fall 27, spring 28\" (page wording). You must demonstrate financial need. Non-U.S. citizens are eligible to apply.",
+      "es": ""
+    },
+    "notes": {
+      "en": "",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-17"
+  },
+  {
+    "id": "jfk-profile-in-courage-essay-2027",
+    "name": "JFK Profile in Courage Essay Contest",
+    "sponsor": "JFK Library",
+    "amount_min": 1000,
+    "amount_max": 10000,
+    "amount_display": {
+      "en": "1st place: $10,000. 2nd place: $3,000. 3 finalists: $1,000 each. 15 honorable mentions (no money).",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2027-01-11",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "merit"
+    ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": null,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": true,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": true,
+      "interview": null,
+      "other": {
+        "en": "",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://JFKLibrary.org/essaycontest",
+    "apply_url": null,
+    "summary": {
+      "en": "Open to U.S. citizens in grades 9–12. Write one essay about someone who performed an act of political courage during or after 1917. Only the essay is judged.",
+      "es": ""
+    },
+    "notes": {
+      "en": "",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-17"
+  },
+  {
+    "id": "army-rotc-scholarship-2027",
+    "name": "Army ROTC Scholarship",
+    "sponsor": "U.S. Army",
+    "amount_min": null,
+    "amount_max": null,
+    "amount_display": {
+      "en": "Tuition covered 100%",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": "2027-01-18",
+    "cycle_status": "open",
+    "opens_month": null,
+    "categories": [
+      "merit"
+    ],
+    "grade_levels": [],
+    "residency": "national",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [],
+    "gpa_min": 2.5,
+    "fields_of_study": [],
+    "demographics": [],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": true,
+      "interview": null,
+      "other": {
+        "en": "Accepting the scholarship means a future service obligation of 8 years in the Army.",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://goarmy.com/careers-and-jobs/find-your-path/army-officers/rotc/scholarships",
+    "apply_url": null,
+    "summary": {
+      "en": "Accepting this scholarship means a future service obligation of 8 years in the Army. For U.S. citizens at least 17 and under 31 years old who have a high school diploma and have taken the SAT or ACT. You must pass the Army physical fitness assessment, then the Army fitness test once your contract is complete. The scholarship can only be used at specific schools; check the official page.",
+      "es": ""
+    },
+    "notes": {
+      "en": "Multiple application rounds. The first round has passed. Next round: Jan 18, 2027.",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-17"
+  },
+  {
+    "id": "hispanic-scholarship-consortium-2027",
+    "name": "Hispanic Scholarship Consortium",
+    "sponsor": "Hispanic Scholarship Consortium",
+    "amount_min": null,
+    "amount_max": null,
+    "amount_display": {
+      "en": "",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": null,
+    "cycle_status": "upcoming",
+    "opens_month": 1,
+    "categories": [
+      "demographic"
+    ],
+    "grade_levels": [
+      "hs_senior",
+      "college"
+    ],
+    "residency": "texas",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [
+      "associate",
+      "bachelor"
+    ],
+    "gpa_min": 2.5,
+    "fields_of_study": [],
+    "demographics": [
+      "hispanic"
+    ],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://www.hispanicscholar.org/apply",
+    "apply_url": null,
+    "summary": {
+      "en": "For graduating high school seniors and current certificate, associate, and bachelor's degree students of Hispanic Latino heritage who live in Texas. GPA 2.5 on a 4.0 scale. You must plan to enroll full time or part time in a certificate, associate, or bachelor's degree program. Opens January 2027 for the 2027–28 year.",
+      "es": ""
+    },
+    "notes": {
+      "en": "",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-17"
   }
 ]

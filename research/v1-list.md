@@ -4,6 +4,10 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
 
 ## Open at the workshop — in deadline order
 
+- [ ] **Hagan Scholarship** — Dec 1, 2026 *(Ian, batch 4)*  
+  https://haganscholarships.org/application/  
+  _U.S. high school seniors graduating this year. GPA 3.5+. Household income must not have exceeded $125,000. Cannot be used at a community college, junior college, or online institution. Must work 240 paid hours from Jan 1 to Sep 1, 2027, and keep a 4-year graduation schedule. One unsealed recommendation letter; finalists send the first 2 pages of the FAFSA showing the SAI. Must apply for federal and state grants if eligible._  
+  Verified: 2026-11-16
 - [ ] **Burger King Scholars (General Track)** — Dec 15, 2026, 11:59 PM CT *(Ian, BK Foundation page: 2027–2028 cycle open Oct 15–Dec 15, 2026)*  
   https://scholarshipamerica.org/scholarship/burgerking/  
   _Class of 2027 seniors, GPA 2.0+, living in the US. $1,000–$60,000, most $1,000–$5,000. Needs a transcript and the first two pages of the most recent IRS Form 1040. Only the first 30,000 community applications are reviewed. Selection weighs GPA, work experience, extracurriculars, financial need and community service. Apply at https://burgerking.scholarsapply.org. Run by Scholarship America._  
@@ -12,6 +16,14 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
   https://www.regions.com/about-regions/inclusion-belonging-impact/supporting-communities/essay-contest-scholarship  
   _Quarterly essay contest. Legal U.S. resident of an eligible state (Texas is one); age 16+; at least one year (or 18 semester hours) left before undergraduate graduation; if not yet in college, start freshman year by the 2027–28 school year; cumulative GPA 2.0+ *(Ian, official rules)*. $8,000 *(Ian)*. The chart only covers 2026, so 2027 quarters are unconfirmed._  
   Verified: 2026-11-09
+- [ ] **Equitable Excellence Scholarship** — Dec 22, 2026 *(Ian, batch 4; open now confirmed by Ian, 2026-11-18)*  
+  https://www1.equitable.com/foundation/equitable-excellence-scholarship  
+  _Public-school seniors in the U.S., D.C., or Puerto Rico only (private and homeschooled students are not eligible). GPA 2.5+. Up to 100 awards of $5,000, renewable up to 3 years or until a bachelor's degree; the recipient's educator of choice also gets a $500 gift card. Must plan to enroll in a 2-year or 4-year college. Equitable employees and associates cannot apply._  
+  Verified: 2026-11-16
+- [ ] **Dr. Juan Andrade Jr. Scholarship** — Dec 30, 2026 *(Ian, batch 4)*  
+  https://www.ushli.org/dr-juan-andrade-scholarship-for-young-hispanic-leaders/  
+  _$1,000 one-time. Full-time undergraduates (enrolled or accepted) at a two- or four-year institution by "fall 27, spring 28" (page wording). Financial need. Non-U.S. citizens are eligible. 2 essays, 2 recommendations (academic + professional/community service), portrait picture, 1-page resume, unofficial transcript._  
+  Verified: 2026-11-17
 - [ ] **Taco Bell Live Más Scholarship** — Jan 5, 2027 *(Ian)*  
   https://tacobellfoundation.org/live-mas-scholarship/  
   _Ages 16–26. $5,000, $10,000 or $25,000; renewable up to 3 times. Two-minute video or 250–500-word essay. No GPA, test scores or résumé. Legal resident of the 50 states or D.C., or dependent child of an active-duty U.S. service member *(Ian, eligibility page)*. On track for a diploma/GED or enrolled in a two-year, four-year, vocational or trade program._  
@@ -20,10 +32,18 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
   https://www.amazonfutureengineer.com/scholarships  
   _$10,000 per year, up to $40,000 total *(Ian)*. U.S. high school senior currently enrolled in or finished a high school or college dual-credit course in computer science or engineering (or opt in to Amazon's assessment instead). Authorized to work in the U.S. Financial need. Cumulative GPA 2.3+ on a 4.0 scale. Plans a bachelor's in computer science, computer engineering, data science, information systems, electrical, automation, mechanical or industrial engineering, or a related field *(Ian, eligibility page)*._  
   Verified: 2026-11-09
+- [ ] **JFK Profile in Courage Essay Contest** — Jan 11, 2027 *(Ian, batch 4)*  
+  https://JFKLibrary.org/essaycontest  
+  _U.S. citizens in grades 9–12 (Ian, confirmed 2026-11-17). One essay about someone who performed an act of political courage during or after 1917; only the essay is judged. 1st $10,000, 2nd $3,000, 3 finalists $1,000 each, 15 honorable mentions (no money; Ian, 2026-11-18)._  
+  Verified: 2026-11-17
 - [ ] **APIA Scholars General Scholarship** — Jan 15, 2027 *(Ian)*  
   https://apiascholars.org/scholarships/  
   _Open to all undergraduate students at U.S.-accredited colleges; focus on students at or below the poverty line and first-generation college students. $2,500 one-year to $20,000 multi-year awards. High financial need. Citizen, national or legal permanent resident of the U.S., Marshall Islands, FSM or Palau. Enrolling as an undergraduate (associate or bachelor's) *(Ian, apiascholars.org)*._  
   Verified: 2026-11-09
+- [ ] **Army ROTC Scholarship** — Jan 18, 2027 (next round; first round passed) *(Ian, batch 4; open now confirmed by Ian, 2026-11-18)*  
+  https://goarmy.com/careers-and-jobs/find-your-path/army-officers/rotc/scholarships  
+  _**8-year Army service obligation if you accept.** Tuition covered 100%. U.S. citizens, age 17 to under 31, high school diploma, SAT or ACT taken, high school GPA 2.5+. Must pass the Army physical fitness assessment, then the Army fitness test on contract completion. Only usable at specific schools._  
+  Verified: 2026-11-17
 - [ ] **UTEP Future Miner Scholarship Application** — Jan 31, 2027 *(Ian, portal dashboard)*; Terry and Loya section by Jan 11, 2027 *(Ian, application)*  
   https://futureminer.awardspring.com  
   _One application for incoming UTEP students. Submitting it gets you considered for the UTEP Excellence Scholarship (top 25% of junior class; $2,000–$8,000 per year, renewable up to 4 years), the Presidential Scholarship (up to 10 students; full cost of attendance, including on-campus housing), and many endowed scholarships, with automatic matching. An optional extra section (two essays: overcoming a challenge, and leadership) adds the Terry Scholarship and the Miguel A. Loya Engineering Scholarship; that section is for U.S. citizens or permanent residents and must be finished by Jan 11. The application tells you to finish your UTEP admission while you wait for results, so you can apply before you're admitted *(Ian, application)*. Submitting lets UTEP share your name, major, address, GPA, FAFSA information (including federal tax information) and email with scholarship donors._  
@@ -44,6 +64,10 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
 - [ ] **FirstLight Community Foundation Graduating Seniors Scholarship** — Opens Jan  
   https://firstlightcommunityfoundation.org/scholarships/  
   Verified: 2026-11-09
+- [ ] **Hispanic Scholarship Consortium** — Opens Jan 2027, deadline not stated *(Ian, batch 4)*  
+  https://www.hispanicscholar.org/apply *(official URL from Ian, 2026-11-18; replaces the BigFuture link)*  
+  _2027–28 cycle. Graduating seniors and current certificate, associate, and bachelor's students of Hispanic Latino heritage who live in Texas. GPA 2.5 on a 4.0 scale. Must plan to enroll full or part time in a certificate, associate, or bachelor's program._  
+  Verified: 2026-11-17
 - [ ] **EPCC Foundation Scholarship** — Opens Jan 1, closes Mar 31  
   https://www.epcc.edu/Admissions/FinancialAid/Scholarships
 
@@ -105,7 +129,11 @@ For these, verify the **opening month**, not the deadline. Enter them as `cycle_
 - [ ] **Dell Scholars Program** — Jan 12 *(Ian, Nov 9)*  
   https://www.dellscholars.org/  
   Verified: 2026-11-09  
-  _Held for v1 (Nov 9, 2026): taken off by Ian. Quoted facts from dellscholars.org (amount, Texas seniors, 2.4 GPA, Pell eligible, apply link) are in research/review/batch-3.md. Bring back in January._
+  _Held for v1 (Nov 9, 2026): taken off by Ian. Quoted facts from dellscholars.org (amount, Texas seniors, 2.4 GPA, Pell eligible, apply link) are in research/review/batch-3.md. Bring back in January._  
+  _Still held after batch 4 (Nov 18, 2026): the batch-4 URL is the application's print view (https://apply.dellscholars.org/Application/Print), not a public page, and its check date (2026-10-02) was carried over, not re-checked. Needs a public page and a fresh check._
+- [ ] **Avacare Medical Scholarship** — Dec 15, 2026  
+  https://bigfuture.collegeboard.org/scholarships/avacare-medical-scholarship  
+  _Removed by Ian, 2026-11-18. (Source was the BigFuture aggregator.) Details are in research/review/batch-4.md._
 
 ## Closes before the workshop (not listed)
 
@@ -118,3 +146,8 @@ For these, verify the **opening month**, not the deadline. Enter them as `cycle_
 - Optimist International Essay Contest, Greater Texas Foundation Scholarship, Point Foundation Flagship, American Legion Texas Oratorical, NACME: removed by Ian.
 - Makios Technology Fund, El Paso Electric Scholarship: folded into the EPCF umbrella entry.
 - UTEP Excellence, UTEP Presidential and UTEP Terry Scholars: folded into the UTEP Future Miner entry.
+
+## Parking lot
+
+- Schema: consider adding hs_freshman and hs_sophomore before January filters. (JFK Profile in Courage is open to grades 9–12, so its grade_levels is empty for now and the grades are in the summary.)
+- Schema: consider allowing an "unknown" value for residency, application_language, eligible_institutions and demographics (today an empty list means "any" / "no restriction", which can't say "not recorded").
