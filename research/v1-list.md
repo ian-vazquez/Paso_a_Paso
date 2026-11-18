@@ -22,7 +22,7 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
   Verified: 2026-11-16
 - [ ] **Dr. Juan Andrade Jr. Scholarship** — Dec 30, 2026 *(Ian, batch 4)*  
   https://www.ushli.org/dr-juan-andrade-scholarship-for-young-hispanic-leaders/  
-  _$1,000 one-time. Full-time undergraduates (enrolled or accepted) at a two- or four-year institution by fall 2027 / spring 2028. Financial need. Non-U.S. citizens are eligible. 2 essays, 2 recommendations (academic + professional/community service), portrait picture, 1-page resume, unofficial transcript._  
+  _$1,000 one-time. Full-time undergraduates (enrolled or accepted) at a two- or four-year institution by "fall 27, spring 28" (page wording). Financial need. Non-U.S. citizens are eligible. 2 essays, 2 recommendations (academic + professional/community service), portrait picture, 1-page resume, unofficial transcript._  
   Verified: 2026-11-17
 - [ ] **Taco Bell Live Más Scholarship** — Jan 5, 2027 *(Ian)*  
   https://tacobellfoundation.org/live-mas-scholarship/  
@@ -34,7 +34,7 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
   Verified: 2026-11-09
 - [ ] **JFK Profile in Courage Essay Contest** — Jan 11, 2027 *(Ian, batch 4)*  
   https://JFKLibrary.org/essaycontest  
-  _U.S. citizens in grades 9–12 (Ian, confirmed 2026-11-17). One essay about someone who performed an act of political courage during or after 1917; only the essay is judged. 1st $10,000, 2nd $3,000, 3 finalists $1,000 each, 15 honorable mentions (amount not stated)._  
+  _U.S. citizens in grades 9–12 (Ian, confirmed 2026-11-17). One essay about someone who performed an act of political courage during or after 1917; only the essay is judged. 1st $10,000, 2nd $3,000, 3 finalists $1,000 each, 15 honorable mentions (no money; Ian, 2026-11-18)._  
   Verified: 2026-11-17
 - [ ] **APIA Scholars General Scholarship** — Jan 15, 2027 *(Ian)*  
   https://apiascholars.org/scholarships/  
@@ -64,7 +64,7 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
 - [ ] **FirstLight Community Foundation Graduating Seniors Scholarship** — Opens Jan  
   https://firstlightcommunityfoundation.org/scholarships/  
   Verified: 2026-11-09
-- [ ] **Hispanic Scholarship Consortium (HSC Scholars Program)** — Opens Jan 2027, deadline not stated *(Ian, batch 4)*  
+- [ ] **Hispanic Scholarship Consortium** — Opens Jan 2027, deadline not stated *(Ian, batch 4)*  
   https://www.hispanicscholar.org/apply *(official URL from Ian, 2026-11-18; replaces the BigFuture link)*  
   _2027–28 cycle. Graduating seniors and current certificate, associate, and bachelor's students of Hispanic Latino heritage who live in Texas. GPA 2.5 on a 4.0 scale. Must plan to enroll full or part time in a certificate, associate, or bachelor's program._  
   Verified: 2026-11-17

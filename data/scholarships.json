@@ -557,7 +557,7 @@
       "en": "$1,000, one-time",
       "es": ""
     },
-    "renewable": false,
+    "renewable": null,
     "deadline": "2026-12-30",
     "cycle_status": "open",
     "opens_month": null,
@@ -578,7 +578,7 @@
       "recs_needed": 2,
       "fafsa_required": null,
       "accepts_tasfa": null,
-      "citizenship_required": false,
+      "citizenship_required": null,
       "interview": null,
       "other": {
         "en": "2 essay questions. 2 recommendations (1 academic, 1 from a professional or community service setting). Portrait picture, 1-page resume, and unofficial transcript.",
@@ -589,7 +589,7 @@
     "source_url": "https://www.ushli.org/dr-juan-andrade-scholarship-for-young-hispanic-leaders/",
     "apply_url": null,
     "summary": {
-      "en": "For students enrolled or accepted as full-time undergraduates at a four-year or two-year institution, who will be full-time undergraduates by fall 2027 / spring 2028. You must demonstrate financial need. Non-U.S. citizens are eligible to apply.",
+      "en": "For students enrolled or accepted as full-time undergraduates at a four-year or two-year institution, who must be full-time undergraduates by \"fall 27, spring 28\" (page wording). You must demonstrate financial need. Non-U.S. citizens are eligible to apply.",
       "es": ""
     },
     "notes": {
@@ -606,7 +606,7 @@
     "amount_min": 1000,
     "amount_max": 10000,
     "amount_display": {
-      "en": "1st place: $10,000. 2nd place: $3,000. 3 finalists: $1,000 each. 15 honorable mentions (amount not stated).",
+      "en": "1st place: $10,000. 2nd place: $3,000. 3 finalists: $1,000 each. 15 honorable mentions (no money).",
       "es": ""
     },
     "renewable": null,
@@ -697,7 +697,7 @@
       "es": ""
     },
     "notes": {
-      "en": "Applications are reviewed in rounds. The first round has passed; the next round closes Jan 18, 2027.",
+      "en": "Multiple application rounds. The first round has passed. Next round: Jan 18, 2027.",
       "es": ""
     },
     "translation_reviewed": false,
@@ -705,7 +705,7 @@
   },
   {
     "id": "hispanic-scholarship-consortium-2027",
-    "name": "Hispanic Scholarship Consortium (HSC Scholars Program)",
+    "name": "Hispanic Scholarship Consortium",
     "sponsor": "Hispanic Scholarship Consortium",
     "amount_min": null,
     "amount_max": null,
