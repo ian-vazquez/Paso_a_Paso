@@ -702,5 +702,65 @@
     },
     "translation_reviewed": false,
     "last_verified": "2026-11-17"
+  },
+  {
+    "id": "hispanic-scholarship-consortium-2027",
+    "name": "Hispanic Scholarship Consortium (HSC Scholars Program)",
+    "sponsor": "Hispanic Scholarship Consortium",
+    "amount_min": null,
+    "amount_max": null,
+    "amount_display": {
+      "en": "",
+      "es": ""
+    },
+    "renewable": null,
+    "deadline": null,
+    "cycle_status": "upcoming",
+    "opens_month": 1,
+    "categories": [
+      "demographic"
+    ],
+    "grade_levels": [
+      "hs_senior",
+      "college"
+    ],
+    "residency": "texas",
+    "districts": [],
+    "schools": [],
+    "eligible_institutions": [],
+    "degree_types": [
+      "associate",
+      "bachelor"
+    ],
+    "gpa_min": 2.5,
+    "fields_of_study": [],
+    "demographics": [
+      "hispanic"
+    ],
+    "requirements": {
+      "essay_required": null,
+      "recs_needed": null,
+      "fafsa_required": null,
+      "accepts_tasfa": null,
+      "citizenship_required": null,
+      "interview": null,
+      "other": {
+        "en": "",
+        "es": ""
+      }
+    },
+    "application_language": "en",
+    "source_url": "https://www.hispanicscholar.org/apply",
+    "apply_url": null,
+    "summary": {
+      "en": "For graduating high school seniors and current certificate, associate, and bachelor's degree students of Hispanic Latino heritage who live in Texas. GPA 2.5 on a 4.0 scale. You must plan to enroll full time or part time in a certificate, associate, or bachelor's degree program. Opens January 2027 for the 2027–28 year.",
+      "es": ""
+    },
+    "notes": {
+      "en": "",
+      "es": ""
+    },
+    "translation_reviewed": false,
+    "last_verified": "2026-11-17"
   }
 ]

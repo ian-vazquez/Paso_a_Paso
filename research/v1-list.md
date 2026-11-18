@@ -65,7 +65,7 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
   https://firstlightcommunityfoundation.org/scholarships/  
   Verified: 2026-11-09
 - [ ] **Hispanic Scholarship Consortium (HSC Scholars Program)** — Opens Jan 2027, deadline not stated *(Ian, batch 4)*  
-  URL: waiting on the official URL from Ian (the BigFuture link is an aggregator and won't be used). **Not in the site data until the URL is in.**  
+  https://www.hispanicscholar.org/apply *(official URL from Ian, 2026-11-18; replaces the BigFuture link)*  
   _2027–28 cycle. Graduating seniors and current certificate, associate, and bachelor's students of Hispanic Latino heritage who live in Texas. GPA 2.5 on a 4.0 scale. Must plan to enroll full or part time in a certificate, associate, or bachelor's program._  
   Verified: 2026-11-17
 - [ ] **EPCC Foundation Scholarship** — Opens Jan 1, closes Mar 31  
