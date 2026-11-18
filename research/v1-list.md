@@ -16,7 +16,7 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
   https://www.regions.com/about-regions/inclusion-belonging-impact/supporting-communities/essay-contest-scholarship  
   _Quarterly essay contest. Legal U.S. resident of an eligible state (Texas is one); age 16+; at least one year (or 18 semester hours) left before undergraduate graduation; if not yet in college, start freshman year by the 2027–28 school year; cumulative GPA 2.0+ *(Ian, official rules)*. $8,000 *(Ian)*. The chart only covers 2026, so 2027 quarters are unconfirmed._  
   Verified: 2026-11-09
-- [ ] **Equitable Excellence Scholarship** — Dec 22, 2026 *(Ian, batch 4)*  
+- [ ] **Equitable Excellence Scholarship** — Dec 22, 2026 *(Ian, batch 4; open now confirmed by Ian, 2026-11-18)*  
   https://www1.equitable.com/foundation/equitable-excellence-scholarship  
   _Public-school seniors in the U.S., D.C., or Puerto Rico only (private and homeschooled students are not eligible). GPA 2.5+. Up to 100 awards of $5,000, renewable up to 3 years or until a bachelor's degree; the recipient's educator of choice also gets a $500 gift card. Must plan to enroll in a 2-year or 4-year college. Equitable employees and associates cannot apply._  
   Verified: 2026-11-16
@@ -40,7 +40,7 @@ Status key: *(Ian)* = you told me. *(Claude, official page)* = I read it on the 
   https://apiascholars.org/scholarships/  
   _Open to all undergraduate students at U.S.-accredited colleges; focus on students at or below the poverty line and first-generation college students. $2,500 one-year to $20,000 multi-year awards. High financial need. Citizen, national or legal permanent resident of the U.S., Marshall Islands, FSM or Palau. Enrolling as an undergraduate (associate or bachelor's) *(Ian, apiascholars.org)*._  
   Verified: 2026-11-09
-- [ ] **Army ROTC Scholarship** — Jan 18, 2027 (next round; first round passed) *(Ian, batch 4)*  
+- [ ] **Army ROTC Scholarship** — Jan 18, 2027 (next round; first round passed) *(Ian, batch 4; open now confirmed by Ian, 2026-11-18)*  
   https://goarmy.com/careers-and-jobs/find-your-path/army-officers/rotc/scholarships  
   _**8-year Army service obligation if you accept.** Tuition covered 100%. U.S. citizens, age 17 to under 31, high school diploma, SAT or ACT taken, high school GPA 2.5+. Must pass the Army physical fitness assessment, then the Army fitness test on contract completion. Only usable at specific schools._  
   Verified: 2026-11-17
@@ -150,3 +150,4 @@ For these, verify the **opening month**, not the deadline. Enter them as `cycle_
 ## Parking lot
 
 - Schema: consider adding hs_freshman and hs_sophomore before January filters. (JFK Profile in Courage is open to grades 9–12, so its grade_levels is empty for now and the grades are in the summary.)
+- Schema: consider allowing an "unknown" value for residency, application_language, eligible_institutions and demographics (today an empty list means "any" / "no restriction", which can't say "not recorded").
