@@ -39,9 +39,10 @@
           language is announced by screen readers via aria-pressed, and so it
           works with one tap on a phone.
 
-          Hidden for the v1 workshop release, which is English only (see
-          ENGLISH_ONLY in src/main.js). Remove the hidden attribute to bring
-          it back.
+          Hidden on the live site, which stays English only until the Spanish
+          review is done (see ENGLISH_ONLY in src/main.js). PR preview builds
+          un-hide it from main.js. To launch Spanish, remove the hidden
+          attribute here and set ENGLISH_ONLY to false.
         -->
         <nav class="lang-toggle" aria-label="Language / Idioma" hidden>
           <button type="button" class="lang-toggle__btn" data-set-lang="en" lang="en">

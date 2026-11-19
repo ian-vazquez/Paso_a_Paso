@@ -13,11 +13,13 @@
  *   - Scholarship text (summary, amount, notes, requirement details) is shown
  *     in English unless translation_reviewed is true, with the
  *     t('card.summary_english_only') note when the page is in Spanish.
+ *     Exception: PR preview builds show the unreviewed Spanish draft, marked
+ *     with t('card.draft_translation') (see SPANISH_PREVIEW in i18n.js).
  *   - Text goes in via textContent, not innerHTML — the data is Ian's, but this
  *     keeps a stray character in a scholarship name from ever becoming markup.
  */
 
-import { t, getLang } from './i18n.js';
+import { t, getLang, SPANISH_PREVIEW } from './i18n.js';
 
 /* ------------------------------------------------------------------ *
  * Small helpers
@@ -63,11 +65,21 @@ function formatGpa(gpa) {
 }
 
 /**
- * The language for an entry's own text. Spanish is used only when Ian has
- * approved the translation; otherwise everything falls back to English.
+ * The language for an entry's own text. On the live site Spanish is used only
+ * when Ian has approved the translation; otherwise everything falls back to
+ * English. On a PR preview build (SPANISH_PREVIEW) an unreviewed draft is
+ * shown too, so the reviewer can read it in place, and the card says it is a
+ * draft (see isDraft).
  */
 function entryLang(entry) {
-  return getLang() === 'es' && entry.translation_reviewed ? 'es' : 'en';
+  if (getLang() !== 'es') return 'en';
+  if (entry.translation_reviewed) return 'es';
+  return SPANISH_PREVIEW && entry.summary?.es?.trim() ? 'es' : 'en';
+}
+
+/** Showing Spanish that Ian has not reviewed yet (preview builds only). */
+function isDraft(entry) {
+  return entryLang(entry) === 'es' && !entry.translation_reviewed;
 }
 
 function entryText(entry, field) {
@@ -173,6 +185,9 @@ export function renderCard(entry, headingLevel) {
 
   if (pageLang === 'es' && textLang === 'en') {
     card.append(el('p', { className: 'card__note', text: t('card.summary_english_only') }));
+  }
+  if (isDraft(entry)) {
+    card.append(el('p', { className: 'card__note', text: t('card.draft_translation') }));
   }
   if (pageLang === 'es' && entry.application_language === 'en') {
     card.append(el('p', { className: 'card__note', text: t('card.application_in_english') }));

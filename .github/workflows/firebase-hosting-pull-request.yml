@@ -44,7 +44,14 @@ jobs:
           cache: npm
 
       - run: npm ci
+
+      # Preview builds only: shows the EN/ES toggle and the draft Spanish card
+      # text so the translation can be reviewed on a phone. The merge workflow
+      # does not set this, so the live site stays English only. See
+      # SPANISH_PREVIEW in src/i18n.js.
       - run: npm run build
+        env:
+          VITE_SPANISH_PREVIEW: 'true'
 
       # --- deploy to a preview channel --------------------------------------
       - uses: FirebaseExtended/action-hosting-deploy@v0

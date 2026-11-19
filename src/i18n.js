@@ -17,6 +17,24 @@ const DICTIONARIES = { en, es };
 export const SUPPORTED_LANGS = ['en', 'es'];
 export const DEFAULT_LANG = 'en';
 
+/**
+ * True on PR preview builds and on `npm run dev`; false on the live site.
+ *
+ * The PR workflow (.github/workflows/firebase-hosting-pull-request.yml) builds
+ * with VITE_SPANISH_PREVIEW=true. The merge-to-main workflow does not set it,
+ * so the live build has this false and stays English only until Ian confirms
+ * the Spanish review is done. Vite replaces import.meta.env.* at build time,
+ * so the value is baked into the bundle: nothing is read at runtime.
+ *
+ * What it turns on (Ian, Nov 19 2026):
+ *   - the EN/ES toggle (src/main.js)
+ *   - draft Spanish card text even when translation_reviewed is false, with a
+ *     "draft translation" note (src/render.js). The live site keeps the
+ *     CLAUDE.md section 5 rule: unreviewed card text is shown in English.
+ */
+export const SPANISH_PREVIEW =
+  import.meta.env?.VITE_SPANISH_PREVIEW === 'true' || import.meta.env?.DEV === true;
+
 /** The one and only storage key used by this site. */
 const STORAGE_KEY = 'pasoapaso.lang';
 
