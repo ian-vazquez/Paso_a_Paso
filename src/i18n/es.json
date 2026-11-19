@@ -1,13 +1,13 @@
 {
   "_meta": {
     "translation_reviewed": false,
-    "note": "DRAFT — translated by Claude, not reviewed by a fluent speaker. Ian reviews and edits before launch. Keys beginning with _ are ignored by src/i18n.js."
+    "note": "DRAFT — translated by Claude, not reviewed by a fluent speaker. Register: tú (decided Nov 19 2026, CLAUDE.md open decision 9). Ian reviews and edits before Spanish goes live. Keys beginning with _ are ignored by src/i18n.js."
   },
   "site": {
     "title": "Becas a las que puedes aplicar",
     "tagline": "Becas para estudiantes de El Paso",
     "trust_line": "Sin cuenta. No guardamos tu información personal.",
-    "meta_description": "Una lista gratuita y bilingüe de becas para estudiantes del área de El Paso. Sin cuenta. No guardamos tu información personal.",
+    "meta_description": "Una lista gratuita de becas para estudiantes del área de El Paso. Sin cuenta. No guardamos tu información personal.",
     "footer_note": "Confirma siempre los detalles en el sitio web de la beca antes de aplicar. Las fechas límite cambian."
   },
   "page": {
@@ -39,7 +39,7 @@
     "degree_type": "Qué pienso estudiar",
     "no_essay": "Sin ensayo",
     "no_citizenship": "Sin requisito de ciudadanía",
-    "accepts_tasfa": "Acepta TASFA",
+    "accepts_tasfa": "Acepta la TASFA (la solicitud de ayuda financiera estatal de Texas)",
     "show_closed": "Mostrar también becas cerradas que vuelven a abrir",
     "reset": "Borrar todos los filtros"
   },
@@ -64,8 +64,8 @@
     "trade_technical": "Programa técnico o vocacional"
   },
   "grade_levels": {
-    "hs_junior": "Estudiante de tercer año de preparatoria",
-    "hs_senior": "Estudiante de último año de preparatoria",
+    "hs_junior": "Estudiante de 11.º grado (junior) de preparatoria",
+    "hs_senior": "Estudiante de 12.º grado (senior) de preparatoria",
     "college": "Estudiante universitario"
   },
   "demographics": {
@@ -107,13 +107,13 @@
     "essay_required": "Requiere ensayo",
     "no_essay_required": "Sin ensayo",
     "recs_needed": "Cartas de recomendación: {count}",
-    "fafsa_required": "Requiere FAFSA",
-    "accepts_tasfa": "Acepta TASFA",
-    "citizenship_required": "Requiere ciudadanía o residencia estadounidense",
+    "fafsa_required": "Requiere la FAFSA (la solicitud federal de ayuda financiera para estudiantes)",
+    "accepts_tasfa": "Acepta la TASFA (la solicitud de ayuda financiera estatal de Texas)",
+    "citizenship_required": "Requiere ciudadanía o residencia de EE. UU.",
     "no_citizenship_required": "Sin requisito de ciudadanía",
     "interview": "Requiere entrevista",
     "renewable": "Renovable",
-    "gpa_min": "Promedio mínimo {gpa}",
+    "gpa_min": "Promedio (GPA) mínimo de {gpa}",
     "application_in_english": "La solicitud está en inglés.",
     "summary_english_only": "Este resumen aún no está traducido, así que se muestra en inglés.",
     "who": "Para quién es",
@@ -121,10 +121,11 @@
     "official_page": "Página oficial",
     "check_dates": "Consulta la página oficial para ver las fechas.",
     "institutions": "Para estudiantes de {schools}",
-    "no_fafsa_required": "No requiere FAFSA",
-    "no_tasfa": "No acepta TASFA",
+    "no_fafsa_required": "No requiere la FAFSA (la solicitud federal de ayuda financiera para estudiantes)",
+    "no_tasfa": "No acepta la TASFA (la solicitud de ayuda financiera estatal de Texas)",
     "no_interview": "Sin entrevista",
-    "requirements_note": "Puede haber más pasos obligatorios en la solicitud que los que se muestran aquí."
+    "requirements_note": "Puede haber más pasos obligatorios en la solicitud que los que se muestran aquí.",
+    "draft_translation": "Borrador: esta traducción aún no ha sido revisada."
   },
   "value": {
     "not_listed": "No especificado — consulta la fuente",
@@ -135,8 +136,8 @@
     "count_one": "1 beca",
     "count_other": "{count} becas",
     "empty_heading": "Ninguna beca coincide con estos filtros.",
-    "empty_body": "Intenta quitar un filtro, bajar el promedio, o mostrar las becas que vuelven a abrir el próximo ciclo.",
+    "empty_body": "Intenta quitar un filtro, bajar el promedio o mostrar las becas que vuelven a abrir el próximo ciclo.",
     "loading": "Cargando becas…",
-    "load_error": "No se pudo cargar la lista de becas. Por favor actualiza la página."
+    "load_error": "No se pudo cargar la lista de becas. Por favor, actualiza la página."
   }
 }
