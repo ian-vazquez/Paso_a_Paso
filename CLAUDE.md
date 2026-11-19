@@ -290,6 +290,8 @@ Name, sponsor, amount display, deadline or cycle-status badge, category badges, 
 - EN/ES toggle is visible in the header. Default is the browser language, falling back to English. The choice is saved to localStorage (language only).  
 - `<html lang>` updates when the language changes.  
 - If `translation_reviewed` is false, **fall back to the English summary** and show a small note saying so ("Este resumen aún no está traducido, así que se muestra en inglés."). Decided at Checkpoint 1, Open Decision 3: clear English beats unreviewed Spanish that might be wrong. This applies to the per-entry `summary` and `notes` text, not to the UI strings in `es.json`.  
+- **Spanish preview exception (Ian, Nov 19, 2026):** PR preview builds (built with `VITE_SPANISH_PREVIEW=true`; also `npm run dev`) show the EN/ES toggle and show unreviewed Spanish card text with a "Borrador: esta traducción aún no ha sido revisada." note, so the reviewer can read it on a phone. The live site keeps the toggle hidden and stays English only until Ian confirms the Spanish review is done; when Spanish launches there, the English-fallback rule above applies.  
+- Spanish register is `tú` (Open Decision 9). Scholarship and sponsor names stay in English. FAFSA, TASFA, Pell (and similar acronyms) stay as-is, with a short Spanish explanation in parentheses on first use in each card. Translate only what the English says: eligibility and exclusion rules (citizenship, income caps, service obligations, GPA) must be exactly as strict in Spanish as in English.  
 - Test layouts with Spanish, which runs about 20–30% longer. Nothing may overflow or truncate badly.
 
 ### Quality bar
@@ -431,7 +433,8 @@ AI chat · live scraping or auto-discovery · accounts or saved lists · essay h
 6. **Site name:** Paso a Paso.  
 7. **Workshop year:** 2026\.
 8. **Custom domain or a second Hosting site?** Default Firebase URL. (Answered after Checkpoint 1.)
+9. **Spanish register: `tú` or `usted`?** `tú` everywhere: casual, speaking to students. Applies to every string in `es.json` and every bilingual field in `scholarships.json`. (Answered Nov 19, 2026.)
 
 ### Still open
 
-9. **Spanish register: `tú` or `usted`?** The current drafts mix registers and no strings have been changed pending this decision. It matters because the audience is both students (`tú` reads natural) and parents (`usted` reads respectful). Whatever is chosen applies to every string in `es.json` and to every scholarship summary.  
+(none)
